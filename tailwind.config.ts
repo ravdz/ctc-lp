@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import aspectRatio from "@tailwindcss/aspect-ratio";
 
 export default {
 	content: [
@@ -26,6 +27,7 @@ export default {
 			},
 			fontSize: {
 				"7xl": "5rem",
+				"7.5xl": "5.625rem",
 				"8xl": "6.25rem",
 			},
 			lineHeight: {
@@ -36,5 +38,5 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [aspectRatio],
 } satisfies Config;

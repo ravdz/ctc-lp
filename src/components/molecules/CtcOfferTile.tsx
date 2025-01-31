@@ -23,10 +23,13 @@ export const CtcOfferTile = ({ prefix, title, description, link, className = "" 
 			)}
 		>
 			<div className="mb-24 flex flex-col items-start justify-start">
-				<Text className="font-montserrat text-sm text-gray-700">{prefix}</Text>
-				<Heading is="h3" className="mb-6 text-xl font-semibold text-gray-700">
-					{title}
-				</Heading>
+				<header className="mb-6">
+					<Text className="font-montserrat text-sm text-gray-700">{prefix}</Text>
+					<Heading is="h3" className="text-xl font-semibold text-gray-700">
+						{title}
+					</Heading>
+				</header>
+
 				<Text className="w-full font-montserrat text-base text-gray-700 xl:pr-10" is="p">
 					{description}
 				</Text>
