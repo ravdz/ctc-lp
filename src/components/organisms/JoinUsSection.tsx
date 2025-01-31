@@ -65,7 +65,7 @@ export const JoinUsSection = () => {
 								title={title}
 								description={description}
 								link={link}
-								className={index > 1 ? "col-span-2" : "col-span-1"}
+								className={index > 1 ? "md:col-span-2" : "md:col-span-1"}
 							/>
 						))}
 					</div>
