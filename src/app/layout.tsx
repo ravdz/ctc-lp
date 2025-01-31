@@ -7,11 +7,13 @@ import "./globals.css";
 const montserrat = Montserrat({
 	weight: ["200", "300", "400", "600", "700"],
 	variable: "--font-montserrat",
+	subsets: ["latin"],
 });
 
 const abhayaLibre = Abhaya_Libre({
 	weight: ["400"],
 	variable: "--font-abhaya-libre",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
