@@ -1,4 +1,4 @@
-import { CtaSection } from "@/components/organisms/CtaSection";
+import { HomeHeader } from "@/components/organisms/HomeHeader";
 import { FeatureSection } from "@/components/organisms/FeatureSection";
 import { UpcomingEventsFeed } from "@/components/organisms/UpcomingEventsFeed";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
@@ -16,7 +16,7 @@ const partnersLogos = [
 const Home = () => {
 	return (
 		<div>
-			<CtaSection />
+			<HomeHeader />
 			<FeatureSection />
 			<UpcomingEventsFeed />
 			<JoinUsSection />

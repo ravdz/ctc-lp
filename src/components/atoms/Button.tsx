@@ -3,6 +3,7 @@ import * as Headless from "@headlessui/react";
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const variants = {
 	primary:
@@ -18,6 +19,7 @@ type Props = {
 	disabled?: boolean;
 	hasArrow?: boolean;
 	children: React.ReactNode;
+	href?: string | { pathname: string };
 	onClick?: () => void;
 };
 
@@ -28,8 +30,26 @@ export const Button = ({
 	disabled = false,
 	hasArrow = false,
 	children,
+	href,
 	onClick,
 }: Props) => {
+	if (href) {
+		return (
+			<Headless.Button
+				as={Link}
+				href={href}
+				onClick={onClick}
+				disabled={disabled}
+				aria-disabled={disabled}
+				className={twMerge("flex items-center justify-center", variants[variant], className)}
+			>
+				{children}
+				{hasArrow && (
+					<Image src={"/img/arrow.png"} alt={"arrow"} width={24} height={24} className="ml-2" />
+				)}
+			</Headless.Button>
+		);
+	}
 	return (
 		<Headless.Button
 			onClick={onClick}

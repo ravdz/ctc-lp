@@ -12,7 +12,7 @@ const ctcOffers = [
 		description:
 			"Access to 1 event per year, advisory programs available only after 1 full year of membership. Access to resources & invitation to consortias. Limited matchmaking.",
 		link: {
-			url: "",
+			url: "/join-us",
 			label: "request invite",
 		},
 	},
@@ -23,7 +23,7 @@ const ctcOffers = [
 		description:
 			"Full access to events, advisory programs, consortias, founder-investor matchmaking, exclusive member content.",
 		link: {
-			url: "",
+			url: "/join-us",
 			label: "become a member",
 		},
 	},
@@ -34,7 +34,7 @@ const ctcOffers = [
 		description:
 			"Access to 1 event per year, advisory programs available only after 1 full year of membership. Access to resources & invitation to consortias. Limited matchmaking.",
 		link: {
-			url: "",
+			url: "/join-us",
 			label: "become a sponsor",
 		},
 	},
@@ -45,18 +45,18 @@ export const JoinUsSection = () => {
 		<section>
 			<Container className="py-24 md:py-36">
 				<div className="grid w-full gap-20 lg:grid-cols-5 xl:gap-28">
-					<div className="lg:col-span-2">
-						<Heading is="h2" className="mb-12 text-3xl">
+					<header className="lg:col-span-2">
+						<Heading is="h2" className="mb-12 text-3xl font-light lg:text-6xl">
 							Unite, inspire,<br></br>transform
 						</Heading>
 						<Text is="p" className="mb-16 text-gray-700">
 							Sharpen your additive impact — become a member & gain access to exclusive experiences.
 							Give back, educate, inspire & enjoy!
 						</Text>
-						<Button className="pr-1" hasArrow>
+						<Button className="inline-flex pr-1" href="/services" hasArrow>
 							read more about the community
 						</Button>
-					</div>
+					</header>
 					<div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:col-span-3">
 						{ctcOffers.map(({ id, prefix, title, description, link }, index) => (
 							<CtcOfferTile

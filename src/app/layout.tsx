@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Abhaya_Libre } from "next/font/google";
-import { Header } from "@/components/organisms/Header";
+import { Navigation } from "@/components/organisms/Navigation";
 import { Footer } from "@/components/organisms/Footer";
 import "./globals.css";
 
@@ -32,7 +32,7 @@ export default function RootLayout({
 				<meta name="robots" content="noindex,nofollow" />
 			</head>
 			<body className={`${montserrat.variable} ${abhayaLibre.variable}`}>
-				<Header />
+				<Navigation />
 				<main>{children}</main>
 				<Footer />
 			</body>

@@ -5,7 +5,7 @@ import { Button } from "@/components/atoms/Button";
 
 type Props = {
 	className?: string;
-	prefix: string;
+	prefix?: string;
 	title: string;
 	description: string;
 	link: {
@@ -24,7 +24,7 @@ export const CtcOfferTile = ({ prefix, title, description, link, className = "" 
 		>
 			<div className="mb-24 flex flex-col items-start justify-start">
 				<header className="mb-6">
-					<Text className="font-montserrat text-sm text-gray-700">{prefix}</Text>
+					{prefix && <Text className="font-montserrat text-sm text-gray-700">{prefix}</Text>}
 					<Heading is="h3" className="text-xl font-semibold text-gray-700">
 						{title}
 					</Heading>
@@ -34,8 +34,8 @@ export const CtcOfferTile = ({ prefix, title, description, link, className = "" 
 					{description}
 				</Text>
 			</div>
-			<div>
-				<Button className="ml-auto pr-1" hasArrow>
+			<div className="flex justify-end">
+				<Button className="ml-auto" href={link.url}>
 					{link.label}
 				</Button>
 			</div>

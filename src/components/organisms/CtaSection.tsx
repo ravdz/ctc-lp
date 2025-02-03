@@ -3,29 +3,30 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
 
-export const CtaSection = () => {
+type Props = {
+	data: {
+		title: string;
+		description: string;
+		link: {
+			url: string;
+			label: string;
+		};
+	};
+};
+export const CtaSection = ({ data: { title, description, link } }: Props) => {
 	return (
 		<section>
-			<Container className="py-32 md:py-44">
-				<div>
-					<Text className="mb-2 block font-montserrat text-sm text-gray-700 sm:text-base md:whitespace-nowrap lg:mb-4">
-						Hello, we are
+			<Container className="py-16 md:py-20">
+				<div className="flex flex-col items-start justify-start gap-10 border-t border-gray-900 pt-24 md:gap-12">
+					<Heading className="text-3xl font-light lowercase md:text-4xl lg:text-6xl" is="h2">
+						{title}
+					</Heading>
+					<Text is="p" className="max-w-100 text-gray-700">
+						{description}
 					</Text>
-					<div className="relative grid w-full grid-cols-1 items-start md:grid-cols-2 xl:grid-cols-5">
-						<Heading className="mb-10 whitespace-nowrap text-4xl font-extralight uppercase tracking-3 sm:text-5xl md:mb-0 md:text-6xl lg:text-7xl xl:col-span-2 xl:text-8xl">
-							Climate tech<br></br>connect
-						</Heading>
-						<div className="xl:mt-34 flex flex-col items-start justify-end md:mt-20 lg:mt-32 xl:col-span-3 xl:pl-20">
-							<Text className="mb-3 font-montserrat text-base md:mb-12" is="p">
-								A non-profit foundation dedicated to fostering connections and unlocking
-								opportunities for climate tech founders, investors, and talent across the Benelux
-								region.
-							</Text>
-							<Button className="pr-1" hasArrow>
-								read more about our mission
-							</Button>
-						</div>
-					</div>
+					<Button className="lowercase" href={link.url}>
+						{link.label}
+					</Button>
 				</div>
 			</Container>
 		</section>

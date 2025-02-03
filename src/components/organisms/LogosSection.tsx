@@ -18,7 +18,7 @@ export const LogosSection = ({ heading, logos }: Props) => {
 		<section>
 			<Container className="md:py-22 py-16">
 				<div>
-					<Heading is="h2" className="mb-12 text-3xl">
+					<Heading is="h2" className="mb-12 text-3xl font-light">
 						{heading}
 					</Heading>
 					<ul className="flex flex-wrap items-center justify-center gap-12">

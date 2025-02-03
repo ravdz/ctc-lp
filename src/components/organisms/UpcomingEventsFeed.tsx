@@ -10,7 +10,7 @@ const events = [
 		description:
 			"Here's a description of the topic and the speaker of this amazing upcoming event that we'll be hosting very soon.",
 		link: {
-			url: "",
+			url: "/join-us",
 			label: "request a membership invite",
 		},
 	},
@@ -21,7 +21,7 @@ const events = [
 		description:
 			"Here's a description of the topic and the speaker of this amazing upcoming event that we'll be hosting very soon.",
 		link: {
-			url: "",
+			url: "/join-us",
 			label: "request a membership invite",
 		},
 	},
@@ -29,7 +29,7 @@ const events = [
 
 export const UpcomingEventsFeed = () => {
 	return (
-		<section>
+		<section id="events">
 			<Container className="md:py-22 py-16">
 				<div>
 					<Heading is="h2" className="mb-12 text-3xl">

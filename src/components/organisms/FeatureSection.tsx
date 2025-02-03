@@ -46,9 +46,12 @@ export const FeatureSection = () => {
 			<Container className="md:py-22 py-16">
 				<div className="grid w-full gap-20 lg:grid-cols-2 xl:gap-28">
 					<div>
-						<Heading is="h2" className="mb-12 text-3xl">
-							A place where your ideas will be shaped to their best
-						</Heading>
+						<header className="mb-12">
+							<Heading is="h2" className="text-3xl">
+								A place where your ideas will be shaped to their best
+							</Heading>
+						</header>
+
 						<div className="flex flex-col items-stretch justify-start gap-6">
 							<Text is="p" className="font-montserrat text-base text-gray-700">
 								CTC is a community, born to empower all of you: founders, changemakers, stakeholders
@@ -66,13 +69,13 @@ export const FeatureSection = () => {
 							</Text>
 						</div>
 					</div>
-					<div>
+					<div className="flex flex-col justify-end">
 						<ul className="mb-10 flex flex-col items-stretch justify-start gap-7">
 							{features.map(({ id, title, description, items }) => (
 								<FeatureItem key={id} title={title} description={description} items={items} />
 							))}
 						</ul>
-						<Button className="ml-auto pr-1" hasArrow>
+						<Button className="ml-auto pr-1" href="/services" hasArrow>
 							read more about our services
 						</Button>
 					</div>

@@ -1,8 +1,10 @@
 import { twMerge } from "tailwind-merge";
 import { useMemo } from "react";
 
+export type HeadingTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+
 type Props = {
-	is?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+	is?: HeadingTag;
 	children: React.ReactNode;
 	className?: string;
 };
