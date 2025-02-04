@@ -5,7 +5,7 @@ export const Footer = () => {
 		<footer className="pt-32 md:pt-48">
 			<div className="mb-5 flex items-center justify-end px-6 lg:px-8">
 				<a
-					className="m-0 ml-auto break-all p-0 font-montserrat text-2xl font-light text-gray-900 md:text-3xl lg:text-4xl xl:text-6xl xl:tracking-3"
+					className="m-0 ml-auto break-all p-0 font-montserrat text-2xl font-light text-gray-900 transition-colors hover:text-gray-700 md:text-3xl lg:text-4xl xl:text-6xl xl:tracking-3"
 					href="mailto:contact@climatetechconnect.nl"
 				>
 					contact@climatetechconnect.nl
@@ -15,8 +15,9 @@ export const Footer = () => {
 				<ul className="flex items-center justify-start">
 					<li>
 						<Link
-							className="font-montserrat text-base font-light lowercase text-gray-900 sm:text-xl lg:text-3xl"
+							className="font-montserrat text-base font-light lowercase text-gray-900 transition-colors hover:text-gray-700 sm:text-xl lg:text-3xl"
 							href={""}
+							target="_blank"
 						>
 							linkedin
 						</Link>

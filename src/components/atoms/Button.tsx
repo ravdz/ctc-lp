@@ -5,43 +5,42 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const variants = {
-	primary:
-		"rounded-3xl bg-white border border-gray-500 text-gray-700 font-montserrat text-base px-5 pb-1 pt-1.5",
-	secondary:
-		"rounded-3xl bg-gray-900 border border-gray-900 text-white font-montserrat uppercase text-base px-5 pb-1 pt-1.5",
-};
-
 type Props = {
-	variant?: keyof typeof variants;
 	className?: string;
 	type?: "button" | "submit" | "reset";
 	disabled?: boolean;
 	hasArrow?: boolean;
 	children: React.ReactNode;
 	href?: string | { pathname: string };
+	scroll?: boolean;
 	onClick?: () => void;
 };
 
 export const Button = ({
-	variant = "primary",
 	className = "",
 	type = "button",
 	disabled = false,
 	hasArrow = false,
 	children,
 	href,
+	scroll = false,
 	onClick,
 }: Props) => {
+	const styles = twMerge(
+		"flex items-center justify-center rounded-3xl border border-gray-500 bg-white px-5 pb-1 pt-1.5 font-montserrat text-base text-gray-700 transition-colors hover:border-gray-900 hover:bg-gray-900 hover:text-white",
+		className,
+	);
+
 	if (href) {
 		return (
 			<Headless.Button
 				as={Link}
 				href={href}
+				scroll={scroll}
 				onClick={onClick}
 				disabled={disabled}
 				aria-disabled={disabled}
-				className={twMerge("flex items-center justify-center", variants[variant], className)}
+				className={styles}
 			>
 				{children}
 				{hasArrow && (
@@ -56,7 +55,7 @@ export const Button = ({
 			disabled={disabled}
 			type={type}
 			aria-disabled={disabled}
-			className={twMerge("flex items-center justify-center", variants[variant], className)}
+			className={styles}
 		>
 			{children}
 			{hasArrow && (

@@ -40,6 +40,10 @@ export default {
 			minHeight: {
 				"100": "27.68rem",
 			},
+			height: {
+				"18": "4.75rem",
+				"22": "5.75rem",
+			},
 		},
 	},
 	plugins: [aspectRatio],

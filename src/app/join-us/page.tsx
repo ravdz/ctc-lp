@@ -37,7 +37,9 @@ const JoinUs = () => {
 						We believe the real world value can be created through high quality social ties &
 						relationships.
 					</Heading>
-					<Button className="lowercase">Get access</Button>
+					<Button href="/sign-up" className="lowercase">
+						Get access
+					</Button>
 				</div>
 			</SubpageHero>
 			<section>
@@ -79,7 +81,7 @@ const JoinUs = () => {
 							title="CTC for members"
 							description="CTC was born to empower all of you: founders & changemakers, stakeholders, impact investors & angels."
 							link={{
-								url: "",
+								url: "/sign-up",
 								label: "request to join",
 							}}
 						/>
@@ -88,7 +90,7 @@ const JoinUs = () => {
 							title="CTC for sponsors"
 							description="CTC was born to empower all of you: founders & changemakers, stakeholders, impact investors & angels."
 							link={{
-								url: "",
+								url: "/sign-up",
 								label: "apply",
 							}}
 						/>
@@ -128,7 +130,7 @@ const JoinUs = () => {
 									high quality social ties & relationships.
 								</Text>
 								<div className="flex items-start justify-end border-t border-gray-900 pt-5 md:col-span-2 md:pt-3">
-									<Button hasArrow className="pr-1 lowercase" href="/#events">
+									<Button hasArrow className="pr-1 lowercase" href="/#events" scroll>
 										Check upcoming services
 									</Button>
 								</div>
