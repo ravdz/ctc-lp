@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Abhaya_Libre } from "next/font/google";
+import { Montserrat, Abhaya_Libre, Sometype_Mono } from "next/font/google";
 import { Navigation } from "@/components/organisms/Navigation";
 import { Footer } from "@/components/organisms/Footer";
 import "./globals.css";
@@ -7,6 +7,12 @@ import "./globals.css";
 const montserrat = Montserrat({
 	weight: ["200", "300", "400", "600", "700"],
 	variable: "--font-montserrat",
+	subsets: ["latin"],
+});
+
+const sometypeMono = Sometype_Mono({
+	weight: ["400", "700"],
+	variable: "--font-sometype-mono",
 	subsets: ["latin"],
 });
 
@@ -32,7 +38,7 @@ export default function RootLayout({
 			<head>
 				<meta name="robots" content="noindex,nofollow" />
 			</head>
-			<body className={`${montserrat.variable} ${abhayaLibre.variable}`}>
+			<body className={`${montserrat.variable} ${sometypeMono.variable} ${abhayaLibre.variable}`}>
 				<Navigation />
 				<main>{children}</main>
 				<Footer />

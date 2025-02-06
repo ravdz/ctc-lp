@@ -12,14 +12,30 @@ export default {
 			fontFamily: {
 				montserrat: ["var(--font-montserrat)"],
 				"abhaya-libre": ["var(--font-abhaya-libre)"],
+				"sometype-mono": ["var(--font-sometype-mono)"],
 			},
 			colors: {
+				blue: {
+					600: "#2D38CE",
+					300: "#98AFF2",
+				},
+				green: {
+					800: "#7D7B6A",
+					600: "#8E9075",
+					300: "#624049",
+					200: "#8E9075",
+				},
+				brown: {
+					600: "#624049",
+				},
 				gray: {
 					900: "#000000",
+					800: "#0A1E25",
 					700: "#404042",
-					500: "#D9D9D9",
+					500: "#52575D",
+					// 500: "#D9D9D9",
 					300: "#DFDFDF",
-					100: "#EDEDED",
+					100: "#ECECEC",
 				},
 			},
 			letterSpacing: {
@@ -43,6 +59,10 @@ export default {
 			height: {
 				"18": "4.75rem",
 				"22": "5.75rem",
+			},
+			gridTemplateColumns: {
+				"3-5-2-5": "3fr 5fr 2fr 5fr",
+				"2-3": "2fr 3fr",
 			},
 		},
 	},

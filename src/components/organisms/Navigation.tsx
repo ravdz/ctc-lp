@@ -35,7 +35,7 @@ export const Navigation = () => {
 						CTC
 					</Link>
 				</Heading>
-				<LogoIcon className="w-8" />
+				<LogoIcon className="w-8 fill-blue-600" />
 				<Menu>
 					<MenuButton className="rounded-3xl border border-gray-900 bg-gray-900 px-5 pb-1 pt-1.5 font-montserrat text-base uppercase text-white transition-colors hover:bg-gray-700">
 						Menu
@@ -49,7 +49,7 @@ export const Navigation = () => {
 						{links.map(({ id, url, label }) => (
 							<MenuItem key={id}>
 								<Link
-									className="font-abhaya-libre text-base lowercase text-white transition-colors hover:text-gray-300"
+									className="font-sometype-mono text-base lowercase text-white transition-colors hover:text-gray-300"
 									href={url}
 									scroll={true}
 								>
