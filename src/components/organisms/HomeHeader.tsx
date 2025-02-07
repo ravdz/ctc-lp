@@ -34,21 +34,21 @@ export const HomeHeader = () => {
 				<div className="relative mt-32 grid grid-cols-2-3 lg:mt-20 lg:grid-cols-3-5-2-5">
 					<SingleCircle className="absolute right-10 top-0 z-10 w-52 -translate-y-1/2 md:w-auto lg:w-52 xl:w-auto" />
 					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/hero-grid/1.png" alt="image 1" fill className="object-cover" />
+						<Image src="/img/2.jpg" alt="image 1" fill className="object-cover" />
 					</div>
 					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/hero-grid/2.png" alt="image 2" fill className="object-cover" />
+						<Image src="/img/1.jpg" alt="image 2" fill className="object-cover" />
 					</div>
 					<div className="grid h-64 grid-rows-5 sm:h-96">
 						<div className="relative row-span-3 w-full overflow-hidden rounded-3xl">
-							<Image src="/img/hero-grid/3.png" alt="image 3" fill className="object-cover" />
+							<Image src="/img/5.png" alt="image 3" fill className="object-cover" />
 						</div>
 						<div className="relative row-span-2 w-full overflow-hidden rounded-3xl">
-							<Image src="/img/hero-grid/4.png" alt="image 4" fill className="object-cover" />
+							<Image src="/img/3.png" alt="image 4" fill className="object-cover" />
 						</div>
 					</div>
 					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/hero-grid/5.png" alt="image 5" fill className="object-cover" />
+						<Image src="/img/7.jpg" alt="image 5" fill className="object-cover" />
 					</div>
 				</div>
 			</Container>

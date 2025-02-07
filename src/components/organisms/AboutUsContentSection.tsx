@@ -3,6 +3,7 @@ import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { ArrowDown } from "@/svg/ArrowDown";
+import { FallingCircle } from "@/svg/FallingCircle";
 
 const infoItems = [
 	{ id: 1, title: "Foundation name", info: "Climate `Tech Connect" },
@@ -16,12 +17,12 @@ export const AboutUsContentSection = () => {
 		<section>
 			<Container className="pb-32 pt-16 md:pb-44 md:pt-20">
 				<div className="border-t border-gray-500 pt-24">
-					<div className="mb-32 flex flex-wrap items-center justify-end gap-y-20 md:mb-44">
+					<div className="relative mb-44 flex flex-wrap items-center justify-end gap-y-20 md:mb-56">
 						{infoItems.map(({ id, title, info }) => (
-							<div key={id} className="basis-full md:basis-1/2 lg:basis-1/3">
+							<div key={id} className="relative z-10 basis-full md:basis-1/2 lg:basis-1/3">
 								<Heading
 									is="h3"
-									className="font-sometype-mono mb-6 text-base uppercase text-green-200"
+									className="mb-6 font-sometype-mono text-base uppercase text-green-200"
 								>
 									{title}
 								</Heading>
@@ -30,7 +31,9 @@ export const AboutUsContentSection = () => {
 								</Text>
 							</div>
 						))}
+						<FallingCircle className="absolute bottom-0 left-0 z-0 w-32 translate-y-2/3 lg:w-48" />
 					</div>
+
 					<div className="mb-52 flex flex-col items-start justify-start gap-20 md:mb-64">
 						<div className="flex flex-col items-start justify-start gap-10 md:flex-row xl:gap-20">
 							<Heading is="h2" className="shrink-0">
@@ -57,16 +60,16 @@ export const AboutUsContentSection = () => {
 
 						<div className="grid w-full grid-cols-4 lg:grid-cols-8">
 							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60">
-								<Image src="/img/about-us-grid/1.png" alt="image 1" fill className="object-cover" />
+								<Image src="/img/8.jpg" alt="image 1" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60">
-								<Image src="/img/about-us-grid/2.png" alt="image 2" fill className="object-cover" />
+								<Image src="/img/4.png" alt="image 2" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-3 sm:h-60">
-								<Image src="/img/about-us-grid/3.png" alt="image 3" fill className="object-cover" />
+								<Image src="/img/9.jpg" alt="image 3" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-1 sm:h-60">
-								<Image src="/img/about-us-grid/4.png" alt="image 4" fill className="object-cover" />
+								<Image src="/img/6.png" alt="image 4" fill className="object-cover" />
 							</div>
 						</div>
 					</div>
@@ -86,7 +89,7 @@ export const AboutUsContentSection = () => {
 								<div>
 									<Heading
 										is="h3"
-										className="font-sometype-mono mb-4 text-xl text-gray-500 sm:text-3xl"
+										className="mb-4 font-sometype-mono text-xl text-gray-500 sm:text-3xl"
 									>
 										+200
 									</Heading>
@@ -95,7 +98,7 @@ export const AboutUsContentSection = () => {
 								<div>
 									<Heading
 										is="h3"
-										className="font-sometype-mono mb-4 text-xl text-gray-500 sm:text-3xl"
+										className="mb-4 font-sometype-mono text-xl text-gray-500 sm:text-3xl"
 									>
 										&gt;8 events
 									</Heading>
@@ -107,7 +110,7 @@ export const AboutUsContentSection = () => {
 								<div>
 									<Heading
 										is="h3"
-										className="font-sometype-mono mb-4 text-xl text-gray-500 sm:text-3xl"
+										className="mb-4 font-sometype-mono text-xl text-gray-500 sm:text-3xl"
 									>
 										150k eur
 									</Heading>
@@ -116,7 +119,7 @@ export const AboutUsContentSection = () => {
 								<div>
 									<Heading
 										is="h3"
-										className="font-sometype-mono mb-4 text-xl text-gray-500 sm:text-3xl"
+										className="mb-4 font-sometype-mono text-xl text-gray-500 sm:text-3xl"
 									>
 										+10
 									</Heading>
