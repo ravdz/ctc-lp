@@ -17,14 +17,14 @@ export const CtaSection = ({ data: { title, description, link } }: Props) => {
 	return (
 		<section>
 			<Container className="py-16 md:py-20">
-				<div className="flex flex-col items-start justify-start gap-10 border-t border-gray-900 pt-24 md:gap-12">
-					<Heading className="text-3xl font-light lowercase md:text-4xl lg:text-6xl" is="h2">
+				<div className="flex flex-col items-start justify-start gap-10 border-t border-green-200 pt-24 md:gap-12">
+					<Heading className="font-light md:text-4xl lg:text-6xl" is="h2">
 						{title}
 					</Heading>
-					<Text is="p" className="max-w-100 text-gray-700">
+					<Text is="p" className="max-w-100 text-base sm:text-xl">
 						{description}
 					</Text>
-					<Button className="lowercase" href={link.url}>
+					<Button className="pr-1" hasArrow href={link.url}>
 						{link.label}
 					</Button>
 				</div>

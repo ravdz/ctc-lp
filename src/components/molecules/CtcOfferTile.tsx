@@ -18,24 +18,24 @@ export const CtcOfferTile = ({ prefix, title, description, link, className = "" 
 	return (
 		<div
 			className={twMerge(
-				"flex w-full flex-col items-stretch justify-between rounded-xl bg-gray-300 px-5 py-4",
+				"flex w-full flex-col items-stretch justify-between rounded-xl bg-white px-5 py-4",
 				className,
 			)}
 		>
 			<div className="mb-24 flex flex-col items-start justify-start">
 				<header className="mb-6">
-					{prefix && <Text className="font-montserrat text-sm text-gray-700">{prefix}</Text>}
-					<Heading is="h3" className="text-xl font-semibold text-gray-700">
+					{prefix && <Text className="text-md text-gray-900">{prefix}</Text>}
+					<Heading is="h3" className="text-xl font-semibold uppercase text-gray-700">
 						{title}
 					</Heading>
 				</header>
 
-				<Text className="w-full font-montserrat text-base text-gray-700 xl:pr-10" is="p">
+				<Text className="w-full text-md xl:pr-10" is="p">
 					{description}
 				</Text>
 			</div>
 			<div className="flex justify-end">
-				<Button className="ml-auto" href={link.url}>
+				<Button className="ml-auto pr-1" href={link.url} hasArrow>
 					{link.label}
 				</Button>
 			</div>

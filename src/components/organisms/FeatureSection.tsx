@@ -3,6 +3,7 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
 import { FeatureItem } from "@/components/molecules/FeatureItem";
+import { Star } from "@/svg/Star";
 
 const features = [
 	{
@@ -46,14 +47,13 @@ export const FeatureSection = () => {
 			<Container className="md:py-22 py-16">
 				<div className="grid w-full gap-20 lg:grid-cols-2 xl:gap-28">
 					<div>
-						<header className="mb-12">
-							<Heading is="h2" className="text-3xl">
-								A place where your ideas will be shaped to their best
-							</Heading>
+						<header className="relative mb-12">
+							<Heading is="h2">A place where your ideas will be shaped to their best</Heading>
+							<Star className="absolute -right-4 -top-16 z-10 lg:-right-10" />
 						</header>
 
 						<div className="flex flex-col items-stretch justify-start gap-6">
-							<Text is="p" className="font-montserrat text-base text-gray-700">
+							<Text is="p">
 								CTC is a community, born to empower all of you: founders, changemakers, stakeholders
 								& impact investors. A network with a sense of connection is poised to spread new
 								ideas & drive change.

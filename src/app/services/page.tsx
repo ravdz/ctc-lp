@@ -1,6 +1,8 @@
 import { SubpageHero } from "@/components/organisms/SubpageHero";
 import { CtaSection } from "@/components/organisms/CtaSection";
 import { ServiceSection } from "@/components/organisms/ServiceSection";
+import { CrossedCircles } from "@/svg/CrossedCircles";
+import { Container } from "@/components/atoms/Container";
 
 const services = [
 	{
@@ -40,9 +42,17 @@ const Services = () => {
 	return (
 		<div>
 			<SubpageHero title="Services" />
-			{services.map(({ id, name, description, list }) => (
-				<ServiceSection key={id} name={name} description={description} list={list} />
-			))}
+			<div className="overflow-hidden">
+				{services.map(({ id, name, description, list }) => (
+					<ServiceSection key={id} name={name} description={description} list={list} />
+				))}
+				<Container>
+					<div className="relative">
+						<CrossedCircles className="absolute bottom-0 right-0 w-44 sm:-translate-y-1/3 md:w-64 lg:w-96" />
+					</div>
+				</Container>
+			</div>
+
 			<CtaSection data={cta} />
 		</div>
 	);

@@ -10,12 +10,9 @@ type Props = {
 export const SubpageHero = ({ title, children, titleTag }: Props) => {
 	return (
 		<section>
-			<Container className="py-28 md:py-40">
+			<Container className="py-20 md:py-28">
 				<div className="flex flex-col gap-10 md:gap-14">
-					<Heading
-						is={titleTag}
-						className="text-center font-abhaya-libre text-xl lowercase text-gray-700"
-					>
+					<Heading is={titleTag} className="text-center text-xl lowercase text-brown-600">
 						{title}
 					</Heading>
 					{children}

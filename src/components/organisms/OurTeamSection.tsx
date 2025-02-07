@@ -40,7 +40,7 @@ export const OurTeamSection = () => {
 		<section>
 			<Container className="pb-32 pt-16 md:pb-44 md:pt-20">
 				<div>
-					<Heading is="h2" className="mb-12 text-3xl">
+					<Heading is="h2" className="mb-12">
 						Our team
 					</Heading>
 					<ul className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">

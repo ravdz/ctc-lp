@@ -30,14 +30,11 @@ const JoinUs = () => {
 		<div>
 			<SubpageHero title="The power of niche appeal">
 				<div className="flex flex-col items-center justify-start gap-14 md:gap-20">
-					<Heading
-						is="h2"
-						className="max-w-2xl text-center font-abhaya-libre text-3xl text-gray-700"
-					>
+					<Heading is="h2" className="max-w-2xl text-center font-abhaya-libre text-gray-700">
 						We believe the real world value can be created through high quality social ties &
 						relationships.
 					</Heading>
-					<Button href="/sign-up" className="lowercase">
+					<Button href="/sign-up" className="pr-1 lowercase" hasArrow>
 						Get access
 					</Button>
 				</div>

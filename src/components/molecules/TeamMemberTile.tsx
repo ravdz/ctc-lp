@@ -15,14 +15,14 @@ type Props = {
 export const TeamMemberTile = ({ name, position, linkedin, image }: Props) => {
 	return (
 		<li>
-			<div className="relative flex w-full items-center justify-center rounded-xl bg-gray-300 pb-[90%]">
+			<div className="relative flex w-full items-center justify-center rounded-xl bg-green-200 pb-[90%]">
 				<Image src={image.src} alt={image.alt} fill className="object-cover" />
 			</div>
-			<div className="flex flex-col items-start justify-start p-4">
-				<Text className="mb-1 font-montserrat text-base text-gray-700">{position}</Text>
-				<Text className="font-montserrat text-xl font-semibold text-gray-700">{name}</Text>
+			<div className="flex flex-col items-start justify-start pt-10">
+				<Text className="mb-1 font-sometype-mono text-md uppercase">{position}</Text>
+				<Text className="font-montserrat text-xl font-semibold">{name}</Text>
 				<Link
-					className="mt-3 flex h-7 w-7 items-center justify-center rounded-full bg-gray-900 font-montserrat text-base font-normal text-white transition-colors hover:bg-gray-700"
+					className="mt-3 flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 font-montserrat text-md text-white transition-colors hover:bg-gray-900"
 					target="_blank"
 					href={linkedin}
 				>

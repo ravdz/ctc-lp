@@ -8,14 +8,14 @@ import { SingleCircle } from "@/svg/SingleCircle";
 
 export const HomeHeader = () => {
 	return (
-		<section>
+		<section className="overflow-hidden">
 			<Container className="py-32 md:py-44">
 				<header>
 					<Text className="mb-2 block text-sm sm:text-base md:whitespace-nowrap lg:mb-4 lg:text-xl">
 						Hello, we are
 					</Text>
 					<div className="relative grid w-full grid-cols-1 items-start md:grid-cols-2 xl:grid-cols-5">
-						<Heading className="mb-10 whitespace-nowrap text-4xl font-extralight uppercase tracking-3 sm:text-5xl md:mb-0 md:text-6xl lg:text-7xl xl:col-span-2 xl:text-8xl">
+						<Heading className="mb-10 text-4xl font-extralight uppercase tracking-3 sm:text-5xl md:mb-0 md:whitespace-nowrap md:text-6xl lg:text-7xl xl:col-span-2 xl:text-8xl">
 							Climate tech<br></br>connect
 						</Heading>
 

@@ -3,6 +3,7 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
 import { CtcOfferTile } from "@/components/molecules/CtcOfferTile";
+import { MultipleCircles } from "@/svg/MultipleCircles";
 
 const ctcOffers = [
 	{
@@ -42,20 +43,21 @@ const ctcOffers = [
 
 export const JoinUsSection = () => {
 	return (
-		<section>
+		<section className="overflow-hidden">
 			<Container className="py-24 md:py-36">
 				<div className="grid w-full gap-20 lg:grid-cols-5 xl:gap-28">
-					<header className="lg:col-span-2">
-						<Heading is="h2" className="mb-12 text-3xl font-light lg:text-6xl">
+					<header className="relative lg:col-span-2">
+						<Heading is="h2" className="mb-12 font-light lg:text-6xl">
 							Unite, inspire,<br></br>transform
 						</Heading>
-						<Text is="p" className="mb-16 text-gray-700">
+						<Text is="p" className="mb-16">
 							Sharpen your additive impact — become a member & gain access to exclusive experiences.
 							Give back, educate, inspire & enjoy!
 						</Text>
-						<Button className="inline-flex pr-1" href="/services" hasArrow>
+						<Button className="relative z-10 inline-flex pr-1" href="/services" hasArrow>
 							read more about the community
 						</Button>
+						<MultipleCircles className="-translate-1/2 absolute bottom-0 left-full w-44 -translate-x-1/2 translate-y-1/2 lg:left-0 lg:w-60 lg:translate-x-0 lg:translate-y-0 xl:w-72" />
 					</header>
 					<div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:col-span-3">
 						{ctcOffers.map(({ id, prefix, title, description, link }, index) => (

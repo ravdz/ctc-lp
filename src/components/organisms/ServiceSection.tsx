@@ -14,20 +14,22 @@ export const ServiceSection = ({ name, description, list }: Props) => {
 			<Container className="pb-32 pt-16 md:pb-44 md:pt-20">
 				<div className="flex flex-col items-start justify-start gap-10 md:gap-12">
 					<header>
-						<Heading className="mb-10 text-3xl font-light md:mb-12 md:text-4xl lg:text-6xl" is="h2">
+						<Heading className="mb-10 md:mb-12" is="h2">
 							{name}
 						</Heading>
-						<Text is="p" className="max-w-100 text-gray-700">
+						<Text is="p" className="max-w-1/2 text-base sm:text-xl">
 							{description}
 						</Text>
 					</header>
 
-					<ul className="mt-5 flex flex-wrap items-start justify-start gap-10">
+					<ul className="mt-5 flex flex-wrap items-center justify-start gap-2">
 						{list.map((item, index) => (
-							<li key={index} className="flex items-center justify-start gap-2">
-								<Text is="p" className="lowercase text-gray-700">
-									{item}
-								</Text>
+							<li
+								key={index}
+								className="flex items-center justify-start font-montserrat text-base lowercase text-blue-600"
+							>
+								{index !== 0 && <span className="mr-2 block text-xs text-blue-600">✺</span>}
+								{item}
 							</li>
 						))}
 					</ul>
