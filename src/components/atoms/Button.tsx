@@ -22,7 +22,6 @@ type Props = {
 	hasArrow?: boolean;
 	children: React.ReactNode;
 	href?: string | { pathname: string };
-	scroll?: boolean;
 	onClick?: () => void;
 };
 
@@ -33,7 +32,6 @@ type ButtonProps = {
 	type: Props["type"];
 	disabled: Props["disabled"];
 	onClick: Props["onClick"];
-	scroll?: Props["scroll"];
 };
 
 export const Button = ({
@@ -44,7 +42,6 @@ export const Button = ({
 	hasArrow = false,
 	children,
 	href,
-	scroll = false,
 	onClick,
 }: Props) => {
 	const styles = twMerge(
@@ -63,7 +60,7 @@ export const Button = ({
 	};
 
 	if (href) {
-		props = { ...props, href, as: Link, scroll };
+		props = { ...props, href, as: Link };
 	}
 
 	return (
