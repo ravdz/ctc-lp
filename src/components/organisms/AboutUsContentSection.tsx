@@ -6,7 +6,7 @@ import { ArrowDown } from "@/svg/ArrowDown";
 import { FallingCircle } from "@/svg/FallingCircle";
 
 const infoItems = [
-	{ id: 1, title: "Foundation name", info: "Climate `Tech Connect" },
+	{ id: 1, title: "Foundation name", info: "Climate Tech Connect" },
 	{ id: 2, title: "Representative director", info: "Leopold van Oosten" },
 	{ id: 3, title: "Office", info: "Amsterdam, Posthoornkerk" },
 	{ id: 4, title: "Fields of activities", info: "Events, advisory, consortia creation, legal, " },
@@ -58,17 +58,17 @@ export const AboutUsContentSection = () => {
 							</div>
 						</div>
 
-						<div className="grid w-full grid-cols-4 lg:grid-cols-8">
-							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60">
+						<div className="grid w-full grid-cols-4 lg:grid-cols-12">
+							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60 lg:col-span-3 xl:h-80">
 								<Image src="/img/8.jpg" alt="image 1" fill className="object-cover" />
 							</div>
-							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60">
+							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:h-60 lg:col-span-3 xl:h-80">
 								<Image src="/img/4.png" alt="image 2" fill className="object-cover" />
 							</div>
-							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-3 sm:h-60">
+							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-3 sm:h-60 lg:col-span-4 xl:h-80">
 								<Image src="/img/9.jpg" alt="image 3" fill className="object-cover" />
 							</div>
-							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-1 sm:h-60">
+							<div className="relative col-span-2 h-40 overflow-hidden rounded-3xl sm:col-span-1 sm:h-60 lg:col-span-2 xl:h-80">
 								<Image src="/img/6.png" alt="image 4" fill className="object-cover" />
 							</div>
 						</div>

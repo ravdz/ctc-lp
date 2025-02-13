@@ -14,6 +14,9 @@ export default {
 				"abhaya-libre": ["var(--font-abhaya-libre)"],
 				"sometype-mono": ["var(--font-sometype-mono)"],
 			},
+			animation: {
+				"spin-slow": "spin 6s linear infinite",
+			},
 			colors: {
 				blue: {
 					600: "#2D38CE",
@@ -38,6 +41,13 @@ export default {
 					50: "#F8F8F8",
 				},
 			},
+			textDecorationThickness: {
+				1: "0.0625rem",
+				2: "0.125rem",
+				3: "0.1875rem",
+				4: "0.25rem",
+				5: "0.3125rem",
+			},
 			letterSpacing: {
 				"3": "0.3125rem",
 			},
@@ -45,6 +55,7 @@ export default {
 				xs: "0.8125rem",
 				sm: "0.875rem",
 				md: "0.9375rem",
+				"6.5xl": "4.375rem",
 				"7xl": "5rem",
 				"7.5xl": "5.625rem",
 				"8xl": "6.25rem",

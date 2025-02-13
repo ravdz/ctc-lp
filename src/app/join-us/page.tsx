@@ -80,7 +80,7 @@ const JoinUs = () => {
 				</Container>
 			</section>
 			<section>
-				<Container className="pb-20 pt-28 md:pb-36 md:pt-24">
+				<Container className="pb-10 pt-28 md:pb-24 md:pt-24">
 					<div>
 						<div className="grid gap-10 pb-20 md:pb-36 lg:grid-cols-2">
 							<CtcOfferTile

@@ -28,16 +28,18 @@ const links = [
 
 export const Navigation = () => {
 	return (
-		<header className="relative z-10 h-18 lg:h-22">
-			<div className="fixed flex w-full items-center justify-between bg-gray-100/80 px-6 py-5 lg:px-8 lg:py-7">
+		<header className="relative z-10 h-16 lg:h-18">
+			<div className="fixed flex h-16 w-full items-center justify-between bg-gray-100/80 px-6 lg:h-18 lg:px-8">
 				<Heading className="text-base font-bold tracking-3">
 					<Link className="text-gray-900 transition-colors hover:text-gray-700" href="/">
 						CTC
 					</Link>
 				</Heading>
-				<LogoIcon className="w-8 fill-blue-600" />
+				<Link href="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+					<LogoIcon className="w-10 fill-blue-600" />
+				</Link>
 				<Menu>
-					<MenuButton className="rounded-3xl border border-gray-900 bg-gray-900 px-5 pb-1 pt-1.5 font-montserrat text-base uppercase text-white transition-colors hover:bg-gray-700">
+					<MenuButton className="rounded-3xl border border-gray-900 bg-gray-900 px-4 pb-0.5 pt-1 font-montserrat text-md uppercase text-white transition-colors hover:bg-gray-700">
 						Menu
 					</MenuButton>
 					<MenuItems

@@ -24,7 +24,7 @@ export const FeatureItem = ({ title, description, items }: Props) => {
 			<ul className="flex flex-wrap items-center justify-start gap-2">
 				{items.map((item, index) => (
 					<li
-						className="flex items-center justify-start font-abhaya-libre text-xs lowercase text-gray-500"
+						className="flex items-center justify-start font-sometype-mono text-xs lowercase text-gray-500"
 						key={item.id}
 					>
 						{index !== 0 && <span className="mr-2 block text-xs text-gray-500">✺</span>}

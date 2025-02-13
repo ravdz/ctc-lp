@@ -9,9 +9,9 @@ import { ButtonBridge } from "@/svg/ButtonBidge";
 
 const variants = {
 	primary:
-		"rounded-3xl border border-gray-900 hover:border-gray-700 bg-white px-3 py-1 text-blue-600 gap-3 hover:text-blue-300",
+		"rounded-3xl border border-gray-900 hover:bg-gray-900 bg-white px-3 py-1 text-blue-600 gap-3 hover:text-white transition-[background-color] duration-200 ease-in-out",
 	secondary:
-		"text-white bg-gray-100 [&>*:first-child]:bg-gray-900 [&:hover>*:first-child]:bg-gray-700 [&>*:first-child]:rounded-3xl [&>*:first-child]:px-3 [&>*:first-child]:pb-0.5 [&>*:first-child]:pt-1 [&>*:last-child]:bg-gray-900 [&>*:last-child]:rounded-3xl [&>*:last-child]:w-7 [&>*:last-child]:h-6 [&:hover>*:last-child]:bg-gray-700",
+		"text-white bg-gray-100 [&>*:first-child]:bg-gray-900 transition-colors [&:hover>*:first-child]:bg-gray-700 [&>*:first-child]:rounded-3xl [&>*:first-child]:px-3 [&>*:first-child]:py-1 [&>*:last-child]:bg-gray-900 [&>*:last-child]:rounded-3xl [&>*:last-child]:w-7 [&>*:last-child]:h-6 [&:hover>*:last-child]:bg-gray-700",
 };
 
 type Props = {
@@ -45,7 +45,7 @@ export const Button = ({
 	onClick,
 }: Props) => {
 	const styles = twMerge(
-		"flex items-center justify-center text-sm font-sometype-mono lowercase transition-colors group disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed",
+		"flex items-center justify-center text-sm font-sometype-mono lowercase group disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed",
 		variants[variant],
 		disabled && "opacity-50 cursor-not-allowed text-gray-500 hover:text-gray-500",
 		className,
@@ -74,7 +74,7 @@ export const Button = ({
 			)}
 
 			<div className="flex items-center justify-center transition-colors">
-				{hasArrow && <AnimatedArrow />}
+				{hasArrow && <AnimatedArrow variant={variant} />}
 			</div>
 		</Headless.Button>
 	);
