@@ -11,7 +11,7 @@ type Props = {
 export const SubpageHero = ({ title, customTitle, children, titleTag }: Props) => {
 	return (
 		<section>
-			<Container className="py-20 md:py-28">
+			<Container className="py-16 md:py-20">
 				<div className="relative flex flex-col gap-10 md:gap-14">
 					{customTitle ? (
 						customTitle

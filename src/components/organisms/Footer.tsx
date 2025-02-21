@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { Star } from "@/svg/Star";
+import { Galaxy } from "@/svg/Galaxy";
 import { SmileyFace } from "@/svg/SmileyFace";
 
 export const Footer = () => {
 	return (
-		<footer className="overflow-hidden pt-28 md:pt-44">
+		<footer className="overflow-hidden pt-20 md:pt-36">
 			<div className="mb-12 flex items-center justify-end px-6 lg:px-8">
 				<div className="relative flex items-end justify-end gap-2 md:gap-4 lg:gap-6">
-					<Star className="absolute bottom-full right-full w-12 md:w-16 xl:w-24" />
+					<Galaxy className="absolute bottom-full right-full w-12 md:w-16 xl:w-24" />
 					<a
 						className="relative m-0 ml-auto break-all p-0 font-montserrat text-2xl font-light text-gray-900 underline decoration-1 underline-offset-2 transition-colors hover:text-gray-700 md:text-3xl md:decoration-2 md:underline-offset-4 lg:text-4xl xl:text-6xl xl:tracking-3 xl:decoration-3 xl:underline-offset-8"
 						href="mailto:contact@climatetechconnect.nl"

@@ -38,7 +38,7 @@ const teamMembers = [
 export const OurTeamSection = () => {
 	return (
 		<section>
-			<Container className="pb-32 pt-16 md:pb-44 md:pt-20">
+			<Container className="py-12 md:py-16">
 				<div>
 					<Heading is="h2" className="mb-12">
 						Our team

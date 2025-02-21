@@ -4,8 +4,8 @@ import { SubpageHero } from "@/components/organisms/SubpageHero";
 import { Text } from "@/components/atoms/Text";
 import { Container } from "@/components/atoms/Container";
 import { CtcOfferTile } from "@/components/molecules/CtcOfferTile";
-import { Serpent } from "@/svg/Serpent";
 import { Balls } from "@/svg/Balls";
+import { AnimatedSerpent } from "@/components/atoms/AnimatedSerpent";
 
 const JoinUs = () => {
 	return (
@@ -26,10 +26,10 @@ const JoinUs = () => {
 						Get access
 					</Button>
 				</div>
-				<Serpent className="absolute left-0 top-full mt-5 w-48 md:mt-0 lg:w-64" />
+				<AnimatedSerpent className="absolute left-0 top-full mt-10 w-64 md:mt-0" />
 			</SubpageHero>
 			<section>
-				<Container className="py-32 md:py-44">
+				<Container className="pb-14 pt-44 md:pb-20">
 					<div>
 						<div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-32 xl:gap-40">
 							<header>
@@ -80,9 +80,9 @@ const JoinUs = () => {
 				</Container>
 			</section>
 			<section>
-				<Container className="pb-10 pt-28 md:pb-24 md:pt-24">
+				<Container className="py-14 md:py-20">
 					<div>
-						<div className="grid gap-10 pb-20 md:pb-36 lg:grid-cols-2">
+						<div className="grid gap-10 pb-16 md:pb-20 lg:grid-cols-2">
 							<CtcOfferTile
 								variant="secondary"
 								className="lg:min-h-96"
@@ -108,9 +108,8 @@ const JoinUs = () => {
 					</div>
 				</Container>
 			</section>
-
 			<section>
-				<Container className="pb-32 pt-28 md:pb-44 md:pt-24">
+				<Container className="pb-14 pt-10 md:pb-20 md:pt-16">
 					<div className="flex flex-col gap-20">
 						<div>
 							<Heading is="h3" className="text-3xl">

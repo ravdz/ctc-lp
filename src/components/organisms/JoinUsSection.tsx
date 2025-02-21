@@ -44,7 +44,7 @@ const ctcOffers = [
 export const JoinUsSection = () => {
 	return (
 		<section className="overflow-hidden">
-			<Container className="py-24 md:py-36">
+			<Container className="py-16 md:py-20">
 				<div className="grid w-full gap-20 lg:grid-cols-5 xl:gap-28">
 					<header className="relative lg:col-span-2">
 						<Heading is="h2" className="mb-12 font-light lg:text-6xl">

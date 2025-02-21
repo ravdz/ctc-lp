@@ -3,7 +3,7 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
 import { FeatureItem } from "@/components/molecules/FeatureItem";
-import { Star } from "@/svg/Star";
+import { Galaxy } from "@/svg/Galaxy";
 
 const features = [
 	{
@@ -49,7 +49,7 @@ export const FeatureSection = () => {
 					<div>
 						<header className="relative mb-12">
 							<Heading is="h2">A place where your ideas will be shaped to their best</Heading>
-							<Star className="absolute -right-4 -top-16 z-10 lg:-right-10" />
+							<Galaxy className="absolute -right-4 -top-16 z-10 lg:-right-10" />
 						</header>
 
 						<div className="flex flex-col items-stretch justify-start gap-6">

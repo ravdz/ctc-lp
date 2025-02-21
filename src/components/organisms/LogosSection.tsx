@@ -16,7 +16,7 @@ type Props = {
 export const LogosSection = ({ heading, logos }: Props) => {
 	return (
 		<section>
-			<Container className="md:py-22 py-16">
+			<Container className="py-12 md:py-16">
 				<div>
 					<Heading is="h2" className="mb-12">
 						{heading}

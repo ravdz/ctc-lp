@@ -16,8 +16,8 @@ type Props = {
 export const CtaSection = ({ data: { title, description, link } }: Props) => {
 	return (
 		<section>
-			<Container className="py-16 md:py-20">
-				<div className="flex flex-col items-start justify-start gap-10 border-t border-green-200 pt-24 md:gap-12">
+			<Container className="py-10 md:py-14">
+				<div className="flex flex-col items-start justify-start gap-10 border-t border-green-200 pt-14 md:gap-12 md:pt-16">
 					<Heading className="font-light md:text-4xl lg:text-6xl" is="h2">
 						{title}
 					</Heading>

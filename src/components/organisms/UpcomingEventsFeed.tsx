@@ -23,7 +23,7 @@ export const UpcomingEventsFeed = () => {
 		<section id="events">
 			<Container className="md:py-22 py-16">
 				<div className="relative">
-					<ArrowDown className="absolute bottom-full left-0 w-8 -translate-y-6 md:w-10 lg:w-auto lg:-translate-y-10" />
+					<ArrowDown className="absolute bottom-full left-0 w-8 -translate-y-6 md:w-10 lg:w-auto" />
 					<Heading is="h2" className="mb-12">
 						Upcoming events
 					</Heading>

@@ -11,7 +11,7 @@ type Props = {
 export const ServiceSection = ({ name, description, list }: Props) => {
 	return (
 		<section>
-			<Container className="pb-32 pt-16 md:pb-44 md:pt-20">
+			<Container className="pb-14 pt-10 md:pb-16 md:pt-14">
 				<div className="flex flex-col items-start justify-start gap-10 md:gap-12">
 					<header>
 						<Heading className="mb-10 md:mb-12" is="h2">

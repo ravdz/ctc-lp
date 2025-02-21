@@ -4,12 +4,12 @@ import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
-import { SingleCircle } from "@/svg/SingleCircle";
+import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 
 export const HomeHeader = () => {
 	return (
 		<section className="overflow-hidden">
-			<Container className="py-32 md:py-44">
+			<Container className="pb-16 pt-24 md:pb-28 md:pt-32">
 				<header>
 					<Text className="mb-2 block text-sm sm:text-base md:whitespace-nowrap lg:mb-4 lg:text-xl">
 						Hello, we are
@@ -32,7 +32,7 @@ export const HomeHeader = () => {
 					</div>
 				</header>
 				<div className="relative mt-32 grid grid-cols-2-3 lg:mt-20 lg:grid-cols-3-5-2-5">
-					<SingleCircle className="absolute right-10 top-0 z-10 w-52 -translate-y-1/2 md:w-auto lg:w-52 xl:w-auto" />
+					<AnimatedCircle className="absolute right-10 top-0 z-10 w-44 -translate-y-1/2 rotate-12 sm:w-56 md:w-72" />
 					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
 						<Image src="/img/2.jpg" alt="image 1" fill className="object-cover" />
 					</div>
