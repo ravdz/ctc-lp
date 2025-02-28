@@ -5,50 +5,92 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
+import { Star } from "@/svg/Star";
+import { GreenGradient } from "@/svg/GreenGradient";
 
 export const HomeHeader = () => {
 	return (
 		<section className="overflow-hidden">
-			<Container className="pb-16 pt-24 md:pb-28 md:pt-32">
-				<header>
-					<Text className="mb-2 block text-sm sm:text-base md:whitespace-nowrap lg:mb-4 lg:text-xl">
-						Hello, we are
-					</Text>
-					<div className="relative grid w-full grid-cols-1 items-start md:grid-cols-2 xl:grid-cols-5">
-						<Heading className="mb-10 text-4xl font-extralight uppercase tracking-3 sm:text-5xl md:mb-0 md:whitespace-nowrap md:text-6xl lg:text-7xl xl:col-span-2 xl:text-8xl">
-							Climate tech<br></br>connect
-						</Heading>
-
-						<div className="xl:mt-34 flex flex-col items-start justify-end md:mt-20 lg:mt-32 xl:col-span-3 xl:pl-20">
-							<Text className="mb-3 md:mb-12" is="p">
-								A non-profit foundation dedicated to fostering connections and unlocking
-								opportunities for climate tech founders, investors, and talent across the Benelux
-								region.
+			<Container className="pb-24 pt-14 md:pb-36 xl:pt-7">
+				<div className="grid grid-cols-1 gap-10 md:grid-cols-7 lg:gap-20 xl:gap-40">
+					<header className="flex flex-col items-start justify-between gap-8 md:col-span-3">
+						<div>
+							<Heading className="mb-8 text-3xl font-light tracking-3 lg:text-4xl xl:text-6xl/[4.5rem]">
+								Climate texh community, events & resources
+							</Heading>
+							<Text is="p">We are a Benelux based climate tech community.</Text>
+						</div>
+						<div className="flex flex-col items-start justify-start gap-4">
+							<Text is="p" className="font-sometype-mono text-2xs">
+								Connect with +150 visionaires working on climate in Benelux
 							</Text>
-							<Button variant="secondary" href="/about-us" hasArrow>
-								read more about our mission
+							<Button
+								variant="secondary"
+								className="text-base lg:text-xl xl:text-2xl"
+								href="/join-us"
+								hasArrow
+							>
+								Become a member
 							</Button>
 						</div>
-					</div>
-				</header>
-				<div className="relative mt-32 grid grid-cols-2-3 lg:mt-20 lg:grid-cols-3-5-2-5">
-					<AnimatedCircle className="absolute right-10 top-0 z-10 w-44 -translate-y-1/2 rotate-12 sm:w-56 md:w-72" />
-					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/2.jpg" alt="image 1" fill className="object-cover" />
-					</div>
-					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/1.jpg" alt="image 2" fill className="object-cover" />
-					</div>
-					<div className="grid h-64 grid-rows-5 sm:h-96">
-						<div className="relative row-span-3 w-full overflow-hidden rounded-3xl">
-							<Image src="/img/5.png" alt="image 3" fill className="object-cover" />
+					</header>
+					<div className="grid grid-cols-1 gap-3.5 sm:h-200 sm:grid-cols-3 md:col-span-4 md:h-96 lg:h-200">
+						<div className="grid grid-rows-5 gap-3.5">
+							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
+								<Image src="/img/2.jpg" alt="image 1" fill className="object-cover" />
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
+									Climate tech summit
+								</Text>
+							</div>
+							<div className="row-span-2 w-full rounded-2xl bg-green-500 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
+								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
+									Investor <span className="text-green-600"> / </span> founder<br></br>
+									matchmaking
+								</Text>
+							</div>
 						</div>
-						<div className="relative row-span-2 w-full overflow-hidden rounded-3xl">
-							<Image src="/img/3.png" alt="image 4" fill className="object-cover" />
+						<div className="grid grid-rows-2 gap-3.5">
+							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-800 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
+								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
+									Curated, exclusive events
+								</Text>
+								<div className="absolute -right-10 top-0 w-full pb-[100%] sm:bottom-0 sm:top-auto lg:-right-5">
+									<AnimatedCircle
+										orbitSpeed={2500}
+										className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 -rotate-[30deg]"
+										orbitingObject={<Star className="h-4 w-4 text-brown-600" />}
+									/>
+									<AnimatedCircle
+										className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+										orbitDirection="counterclockwise"
+										orbitingObject={<div className="h-2 w-2 rounded-full bg-brown-600" />}
+									/>
+								</div>
+							</div>
+							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
+								<Image src="/img/1.jpg" alt="image 1" fill className="object-cover" />
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white px-2 py-1 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
+									Community & Talent Pool
+								</Text>
+							</div>
 						</div>
-					</div>
-					<div className="relative h-64 overflow-hidden rounded-3xl sm:h-96">
-						<Image src="/img/7.jpg" alt="image 5" fill className="object-cover" />
+						<div className="grid grid-rows-10 gap-3.5">
+							<div className="relative row-span-4 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
+								<Image src="/img/5.png" alt="image 5" fill className="object-cover" />
+							</div>
+							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
+								<Image src="/img/7.jpg" alt="image 7" fill className="object-cover" />
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
+									Consortia
+								</Text>
+							</div>
+							<div className="sm:pb-auto relative row-span-3 flex w-full items-end justify-start rounded-2xl bg-pink-500 p-6 pb-[66%] sm:p-4 md:p-2 lg:p-3 xl:p-4">
+								<GreenGradient className="absolute right-0 top-0 z-0 w-3/4 lg:w-40" />
+								<Text className="absolute bottom-6 left-6 text-xl sm:relative sm:bottom-auto sm:left-auto sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
+									Resources<br></br>& advisory
+								</Text>
+							</div>
+						</div>
 					</div>
 				</div>
 			</Container>

@@ -2,8 +2,14 @@ import { twMerge } from "tailwind-merge";
 import { ArrowRightIcon } from "@/svg/ArrowRightIcon";
 
 const variants = {
-	primary: "group-hover:bg-white [&>div>svg]:group-hover:fill-gray-900",
-	secondary: "group-hover:bg-gray-700",
+	primary: {
+		container: "h-6 w-8",
+		arrow: "[&>svg]:w-3 translate-x-1.5 gap-6 group-hover:translate-x-[calc(100%-6px)]",
+	},
+	secondary: {
+		container: "w-10 h-8 group-hover:bg-gray-700",
+		arrow: "[&>svg]:w-4 translate-x-2 gap-8 group-hover:translate-x-[calc(100%-8px)]",
+	},
 };
 
 type Props = {
@@ -14,11 +20,16 @@ export const AnimatedArrow = ({ variant }: Props) => {
 	return (
 		<div
 			className={twMerge(
-				"relative flex h-5 w-6 items-center justify-center overflow-hidden rounded-3xl bg-gray-900 transition-colors",
-				variants[variant],
+				"relative flex items-center justify-center overflow-hidden rounded-3xl bg-gray-600 transition-colors",
+				variants[variant].container,
 			)}
 		>
-			<div className="absolute right-1/2 top-1/2 flex -translate-y-1/2 translate-x-1.5 items-center justify-center gap-4 transition-transform duration-500 ease-in-out group-hover:translate-x-[calc(100%-6px)]">
+			<div
+				className={twMerge(
+					"absolute right-1/2 top-1/2 flex -translate-y-1/2 items-center justify-center transition-transform duration-500 ease-in-out",
+					variants[variant].arrow,
+				)}
+			>
 				<ArrowRightIcon className="fill-white" />
 				<ArrowRightIcon className="fill-white" />
 			</div>

@@ -1,23 +1,72 @@
 import Image from "next/image";
-import { AnimatedCounter } from "../molecules/AnimatedCounter";
+import { AnimatedCounter } from "@/components/molecules/AnimatedCounter";
 import { Container } from "@/components/atoms/Container";
-import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
-import { ArrowDown } from "@/svg/ArrowDown";
-import { FallingCircle } from "@/svg/FallingCircle";
-
-const infoItems = [
-	{ id: 1, title: "Foundation name", info: "Climate Tech Connect" },
-	{ id: 2, title: "Representative director", info: "Leopold van Oosten" },
-	{ id: 3, title: "Office", info: "Amsterdam, Posthoornkerk" },
-	{ id: 4, title: "Fields of activities", info: "Events, advisory, consortia creation, legal, " },
-];
+import { Galaxy } from "@/svg/Galaxy";
+import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
+import { WhiteGradient } from "@/svg/WhiteGradient";
 
 export const AboutUsContentSection = () => {
 	return (
 		<section>
 			<Container className="pb-12 md:pb-16">
-				<div className="border-t border-gray-500 pt-16 md:pt-20">
+				<div className="grid grid-cols-1 gap-4 lg:grid-cols-7">
+					<div className="grid grid-cols-3 grid-rows-2 gap-4 lg:col-span-3">
+						<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
+							<Image src="/img/7.jpg" alt="image 7" fill className="object-cover" />
+						</div>
+						<div className="relative col-span-2 row-span-2 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
+							<Image src="/img/2.jpg" alt="image 2" fill className="object-cover" />
+							<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								Benelux focused
+							</Text>
+						</div>
+						<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-800 p-4 pb-[130%]">
+							<Text className="text-lg md:text-xl lg:text-lg xl:text-xl">Events annualy</Text>
+							<Text className="absolute bottom-4 right-4 flex items-center justify-start text-5xl font-normal text-blue-300">
+								+<AnimatedCounter target={8} duration={2} className="font-montserrat font-normal" />
+							</Text>
+							<AnimatedCircle className="absolute bottom-0 left-0 z-0 w-[130%] translate-x-[-40%] translate-y-[-16%] rotate-[254deg]" />
+						</div>
+					</div>
+					<div className="grid grid-cols-2 grid-rows-2 gap-4 lg:col-span-2">
+						<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-green-500 pb-[100%]">
+							<Galaxy className="absolute right-4 top-4 z-10 w-1/3" />
+							<div className="absolute bottom-4 left-0 z-10 flex flex-col items-start justify-center px-4">
+								<Text className="items-cente font-normarl flex justify-start text-5xl text-gray-900">
+									+
+									<AnimatedCounter
+										target={150}
+										duration={2}
+										className="font-montserrat font-normal"
+									/>
+								</Text>
+								<Text className="pl-7 text-xl lg:pl-6 lg:text-base xl:pl-7 xl:text-xl">
+									Members
+								</Text>
+							</div>
+							<WhiteGradient className="absolute bottom-0 left-0 z-0 w-full" />
+						</div>
+						<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
+							<Image src="/img/4.png" alt="image 4" fill className="object-cover" />
+						</div>
+						<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%]">
+							<Image src="/img/1.jpg" alt="image 1" fill className="object-cover" />
+							<Text className="text-2xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								Climate tech innovation
+							</Text>
+						</div>
+					</div>
+					<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
+						<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
+							<Image src="/img/5.png" alt="image 5" fill className="object-cover" />
+							<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								Quality, unscalable experience
+							</Text>
+						</div>
+					</div>
+				</div>
+				{/* <div className="border-t border-gray-500 pt-16 md:pt-20">
 					<div className="relative mb-48 flex flex-wrap items-center justify-end gap-y-20 md:mb-52">
 						{infoItems.map(({ id, title, info }) => (
 							<div key={id} className="relative z-10 basis-full md:basis-1/2 lg:basis-1/3">
@@ -130,7 +179,7 @@ export const AboutUsContentSection = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</Container>
 		</section>
 	);

@@ -20,10 +20,12 @@ export default {
 			colors: {
 				blue: {
 					600: "#2D38CE",
+					400: "#D5EBFF",
 					300: "#98AFF2",
 				},
 				green: {
 					800: "#7D7B6A",
+					600: "#29E794",
 					500: "#B3B697",
 					200: "#8E9075",
 				},
@@ -32,13 +34,17 @@ export default {
 				},
 				gray: {
 					900: "#000000",
-					800: "#0A1E25",
+					800: "#171C1F",
 					700: "#404042",
+					600: "#0A1E25",
 					500: "#52575D",
 					400: "#CCCCCC",
 					300: "#DFDFDF",
 					100: "#ECECEC",
 					50: "#F8F8F8",
+				},
+				pink: {
+					500: "#FFE1E9",
 				},
 			},
 			textDecorationThickness: {
@@ -52,6 +58,9 @@ export default {
 				"3": "0.3125rem",
 			},
 			fontSize: {
+				"4xs": "0.5rem",
+				"3xs": "0.625rem",
+				"2xs": "0.75rem",
 				xs: "0.8125rem",
 				sm: "0.875rem",
 				md: "0.9375rem",
@@ -75,6 +84,11 @@ export default {
 				"7.5": "1.90625rem",
 				"18": "4.75rem",
 				"22": "5.75rem",
+				"30": "7.5rem",
+				"200": "35.813rem",
+			},
+			width: {
+				"76": "18.75rem",
 			},
 			gridTemplateColumns: {
 				"3-5-2-5": "3fr 5fr 2fr 5fr",

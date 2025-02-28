@@ -1,17 +1,15 @@
 import { twMerge } from "tailwind-merge";
 import * as Headless from "@headlessui/react";
 
-import React from "react";
+import React, { useMemo } from "react";
 import Link from "next/link";
 
 import { AnimatedArrow } from "@/components/atoms/AnimatedArrow";
-import { ButtonBridge } from "@/svg/ButtonBidge";
 
 const variants = {
-	primary:
-		"rounded-3xl border border-gray-900 hover:bg-gray-900 bg-white px-3 py-1 text-blue-600 gap-3 hover:text-white transition-[background-color] duration-200 ease-in-out",
+	primary: "bg-transparent border border-gray-900 text-gray-500 hover:border-gray-700",
 	secondary:
-		"text-white bg-gray-100 [&>*:first-child]:bg-gray-900 transition-colors [&:hover>*:first-child]:bg-gray-700 [&>*:first-child]:rounded-3xl [&>*:first-child]:px-3 [&>*:first-child]:py-1 [&>*:last-child]:bg-gray-900 [&>*:last-child]:rounded-3xl [&>*:last-child]:w-7 [&>*:last-child]:h-6 [&:hover>*:last-child]:bg-gray-700",
+		"text-white bg-gray-900 border border-gray-900 hover:border-gray-700 hover:bg-gray-700 ",
 };
 
 type Props = {
@@ -44,12 +42,14 @@ export const Button = ({
 	href,
 	onClick,
 }: Props) => {
-	const styles = twMerge(
-		"flex items-center justify-center text-sm font-sometype-mono lowercase group disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed",
-		variants[variant],
-		disabled && "opacity-50 cursor-not-allowed text-gray-500 hover:text-gray-500",
-		className,
-	);
+	const styles = useMemo(() => {
+		return twMerge(
+			`flex items-center justify-center pl-5 gap-3 py-1 ${hasArrow ? "pr-1" : "pr-5"} text-base uppercase font-montserrat group transition-colors rounded-3xl disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed`,
+			variants[variant],
+			disabled && "opacity-50 cursor-not-allowed text-gray-500 hover:text-gray-500",
+			className,
+		);
+	}, [className, disabled, hasArrow, variant]);
 
 	let props: ButtonProps = {
 		className: styles,
@@ -65,17 +65,12 @@ export const Button = ({
 
 	return (
 		<Headless.Button {...props}>
-			<div className="transition-colors">{children}</div>
-
-			{variant === "secondary" && (
-				<div className="relative flex w-2 items-center justify-center">
-					<ButtonBridge className="absolute w-3 fill-gray-900 transition-colors group-hover:fill-gray-700" />
+			{children}
+			{hasArrow && (
+				<div className="flex items-center justify-center transition-colors">
+					<AnimatedArrow variant={variant} />
 				</div>
 			)}
-
-			<div className="flex items-center justify-center transition-colors">
-				{hasArrow && <AnimatedArrow variant={variant} />}
-			</div>
 		</Headless.Button>
 	);
 };

@@ -46,20 +46,19 @@ export const CtcOfferTile = ({
 				className,
 			)}
 		>
-			<div className="mb-24 flex flex-col items-start justify-start">
+			<div className="mb-5 flex flex-col items-start justify-start">
 				<header className="mb-6">
 					{prefix && <Text className={variants[variant].prefix}>{prefix}</Text>}
 					<Heading is="h3" className={variants[variant].title}>
 						{title}
 					</Heading>
 				</header>
-
 				<Text className={variants[variant].description} is="p">
 					{description}
 				</Text>
 			</div>
 			<div className="flex justify-end">
-				<Button className="ml-auto pr-1" href={link.url} hasArrow>
+				<Button className="ml-auto lowercase" href={link.url} hasArrow>
 					{link.label}
 				</Button>
 			</div>

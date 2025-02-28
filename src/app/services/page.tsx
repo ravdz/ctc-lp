@@ -59,7 +59,6 @@ const Services = () => {
 								orbitingObject={<div className="h-3 w-3 rounded-full bg-brown-600" />}
 							/>
 						</div>
-						{/* <CrossedCircles className="absolute bottom-0 right-0 w-44 sm:-translate-y-1/3 md:w-64 lg:w-96" /> */}
 					</div>
 				</Container>
 			</div>

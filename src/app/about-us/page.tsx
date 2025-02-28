@@ -4,27 +4,23 @@ import { SubpageHero } from "@/components/organisms/SubpageHero";
 import { AboutUsContentSection } from "@/components/organisms/AboutUsContentSection";
 import { OurTeamSection } from "@/components/organisms/OurTeamSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
-import { CtaSection } from "@/components/organisms/CtaSection";
-import { SmallStar } from "@/svg/SmallStar";
+import { Star } from "@/svg/Star";
+import { Button } from "@/components/atoms/Button";
+import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 
 const partnersLogos = [
-	{ id: 1, src: "/img/logos/logo1.svg", alt: "Partner 1", width: 100, height: 100 },
-	{ id: 2, src: "/img/logos/logo2.svg", alt: "Partner 2", width: 50, height: 50 },
-	{ id: 3, src: "/img/logos/logo3.svg", alt: "Partner 3", width: 100, height: 100 },
-	{ id: 4, src: "/img/logos/logo4.svg", alt: "Partner 4", width: 100, height: 100 },
-	{ id: 5, src: "/img/logos/logo5.svg", alt: "Partner 5", width: 100, height: 100 },
-	{ id: 6, src: "/img/logos/logo6.svg", alt: "Partner 6", width: 100, height: 100 },
-];
-
-const cta = {
-	title: "Become a member",
-	description:
-		"CTC was born to empower all of you: founders & changemakers, stakeholders, impact investors & angels. It’s a place where your ideas will be shaped to their best & drive meaningful impact.",
-	link: {
-		url: "/join-us",
-		label: "Become a member",
+	{ id: 1, src: "/img/logos/endeit.png", alt: "endeit logo", width: 137, height: 137 },
+	{ id: 2, src: "/img/logos/deroos.png", alt: "deroos logo", width: 121, height: 121 },
+	{
+		id: 3,
+		src: "/img/logos/amsterdam-standard.png",
+		alt: "amsterdam standard logo",
+		width: 230,
+		height: 230,
 	},
-};
+	{ id: 4, src: "/img/logos/junction.png", alt: "junction logo", width: 133, height: 133 },
+	{ id: 5, src: "/img/logos/sfpim.png", alt: "sfpim logo", width: 94, height: 94 },
+];
 
 const AboutUs = () => {
 	return (
@@ -37,34 +33,51 @@ const AboutUs = () => {
 					>
 						Establishing Benelux as the Europe&rsquo;s climate tech leader
 					</Heading>
-					<div className="flex flex-col items-start justify-start gap-4 lg:pt-5">
-						<Text is="p" className="text-gray-500">
-							Our collective efforts in the next decades will determine the fate of a large portion
-							of the planet — it&rsquo;s about time we shift our role from nature takers to
-							stewards.
-						</Text>
-						<Text is="p" className="text-gray-500">
-							Our environment shapes us probably more thank we think. That&rsquo;s why we created
-							CTC — we believe the real-world, transformative movement can be created through high
-							quality social ties & relationships. Everyday we are immersed in different networks,
-							that can have both negative and positive impact on us.
-						</Text>
-						<Text is="p" className="text-gray-500">
-							In a sustainability context, community is not only for solving the basic human need of
-							connection - it&rsquo;s about education, storytelling, contirbuting to the solutions
-							of different systemic issues.
-						</Text>
-						<Text is="p" className="relative mt-6 font-bold text-gray-500">
-							Sharpen your impact with CTC.
-							<SmallStar className="absolute bottom-full left-full" />
-						</Text>
+					<div className="flex flex-col items-start justify-between gap-6 lg:pt-5">
+						<div className="flex flex-col items-start justify-start gap-4">
+							<Text is="p" className="text-gray-500">
+								Our collective efforts in the next decades will determine the fate of a large
+								portion of the planet — it&rsquo;s about time we shift our role from nature takers
+								to stewards.
+							</Text>
+							<Text is="p" className="text-gray-500">
+								Our environment shapes us probably more thank we think. That&rsquo;s why we created
+								CTC —
+								<b>
+									we believe the real-world, transformative movement can be created through high
+									quality social ties & relationships.
+								</b>
+								Everyday we are immersed in different networks, that can have both negative and
+								positive impact on us.
+							</Text>
+							<Text is="p" className="text-gray-500">
+								In a sustainability context, community is not only for solving the basic human need
+								of connection - it&rsquo;s about education, storytelling, contirbuting to the
+								solutions of different systemic issues.
+							</Text>
+						</div>
+
+						<div>
+							<Text is="p" className="relative w-fit font-bold text-gray-500">
+								Sharpen your impact with CTC.
+								<Star className="absolute bottom-full left-full w-5 -rotate-6 fill-green-600" />
+							</Text>
+							<Button
+								variant="secondary"
+								className="mt-4 text-base lg:text-xl xl:text-2xl"
+								href="/join-us"
+								hasArrow
+							>
+								Become a member
+							</Button>
+						</div>
 					</div>
 				</div>
 			</SubpageHero>
 			<AboutUsContentSection />
+			<LogosSection heading="Our partners" logos={partnersLogos} />
 			<OurTeamSection />
-			<LogosSection heading="Partners" logos={partnersLogos} />
-			<CtaSection data={cta} />
+			<JoinUsSection />
 		</div>
 	);
 };

@@ -16,12 +16,12 @@ type Props = {
 export const LogosSection = ({ heading, logos }: Props) => {
 	return (
 		<section>
-			<Container className="py-12 md:py-16">
+			<Container className="bg-white pb-28 pt-20 md:pb-44 md:pt-24">
 				<div>
-					<Heading is="h2" className="mb-12">
+					<Heading is="h2" className="mb-20">
 						{heading}
 					</Heading>
-					<ul className="flex flex-wrap items-center justify-center gap-12">
+					<ul className="flex flex-wrap items-center justify-around gap-12 sm:justify-between">
 						{logos.map(({ id, src, alt = "", width, height }) => (
 							<li key={id}>
 								<Image src={src} alt={alt} width={width} height={height} />
