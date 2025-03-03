@@ -228,7 +228,7 @@ const JoinUs = () => {
 				</Container>
 			</section>
 			<SliderSection slides={slides} />
-			<StepsSection steps={steps} boldedHeadings={false} />
+			<StepsSection heading="How to join the community" steps={steps} boldedHeadings={false} />
 			<PricingSection />
 			<FaqSection heading="Membership FAQ" className="pb-40 pt-20" items={faq} />
 		</div>

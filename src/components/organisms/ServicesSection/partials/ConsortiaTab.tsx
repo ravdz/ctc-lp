@@ -12,7 +12,7 @@ export const ConsortiaTab = () => {
 						"Let us know your needs",
 						"Get matched with our curated database of top climate tech talents",
 					]}
-					link={{ label: "Read more", url: "/" }}
+					link={{ label: "Read more", url: "/services/consortia-creation" }}
 					badge="success fee"
 				/>
 			</div>

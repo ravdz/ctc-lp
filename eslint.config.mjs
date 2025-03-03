@@ -21,6 +21,13 @@ const eslintConfig = [
 			"prettier",
 			"next/core-web-vitals",
 		],
+		settings: {
+			"import/resolver": {
+				node: {
+					extensions: [".js", ".jsx", ".ts", ".tsx"],
+				},
+			},
+		},
 		rules: {
 			// sort imports
 			"import/order": "error",

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AnimatedCounter } from "@/components/molecules/AnimatedCounter";
 import { Container } from "@/components/atoms/Container";
 import { Text } from "@/components/atoms/Text";
-import { Galaxy } from "@/svg/Galaxy";
+import { Galaxy } from "@/svg/AnimatedGalaxy";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 import { WhiteGradient } from "@/svg/WhiteGradient";
 import { Heading } from "@/components/atoms/Heading";

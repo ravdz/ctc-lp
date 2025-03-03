@@ -49,7 +49,7 @@ export const Card = ({ card, open, onOpen, className = "", openWidth, closedWidt
 					<Text className="w-full break-words px-9 py-10 text-left text-3xl font-normal text-gray-900 md:px-11 md:py-12">
 						{card.title}
 					</Text>
-					<BigArrow className="w-44 self-end" />
+					<BigArrow className="absolute bottom-0 right-0 w-44 self-end" />
 				</button>
 			</div>
 		</div>

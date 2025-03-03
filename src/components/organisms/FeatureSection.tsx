@@ -2,7 +2,7 @@ import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { FeatureItem } from "@/components/molecules/FeatureItem";
-import { Galaxy } from "@/svg/Galaxy";
+import { Galaxy } from "@/svg/AnimatedGalaxy";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 import { PinkGradient } from "@/svg/PinkGradient";
 

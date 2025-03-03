@@ -6,6 +6,7 @@ import { Star } from "@/svg/Star";
 
 type Props = {
 	className?: string;
+	heading: string;
 	boldedHeadings?: boolean;
 	steps: {
 		id: number;
@@ -15,12 +16,12 @@ type Props = {
 	}[];
 };
 
-export const StepsSection = ({ steps, className = "", boldedHeadings = true }: Props) => {
+export const StepsSection = ({ steps, heading, className = "", boldedHeadings = true }: Props) => {
 	return (
 		<section>
 			<Container className={twMerge("py-10", className)}>
 				<Heading className="mb-14 text-3xl font-normal md:mb-20" is="h2">
-					How to join the community
+					{heading}
 				</Heading>
 				<ul className="flex flex-col items-start justify-start">
 					{steps.map(({ id, label, description, list }, index) => (
@@ -52,8 +53,10 @@ export const StepsSection = ({ steps, className = "", boldedHeadings = true }: P
 									{list?.length && (
 										<ul className="flex flex-col items-start justify-start">
 											{list.map((item, index) => (
-												<li key={index} className="text-base md:text-xl">
-													— {item}
+												<li key={index}>
+													<Text is="p" className="text-base md:text-xl">
+														— {item}
+													</Text>
 												</li>
 											))}
 										</ul>

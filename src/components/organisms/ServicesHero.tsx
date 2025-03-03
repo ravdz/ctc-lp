@@ -5,7 +5,7 @@ import { Text } from "@/components/atoms/Text";
 import { RedGradient } from "@/svg/RedGradient";
 import { Star } from "@/svg/Star";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
-import { Galaxy } from "@/svg/Galaxy";
+import { Galaxy } from "@/svg/AnimatedGalaxy";
 import { WhiteGradient } from "@/svg/WhiteGradient";
 
 export const ServicesHero = () => {

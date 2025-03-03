@@ -3,7 +3,7 @@ import { Button } from "@/components/atoms/Button";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Badge } from "@/components/atoms/Badge";
-import { Galaxy } from "@/svg/Galaxy";
+import { Galaxy } from "@/svg/AnimatedGalaxy";
 
 type Props = {
 	event?: {
