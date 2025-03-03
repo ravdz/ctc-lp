@@ -11,8 +11,8 @@ const faq = [
 		question: "How do I get started with your services?",
 		answer: (
 			<Text is="p" className="text-base text-gray-900">
-				The first step is to schedule a call with us. During this consultation, we'll discuss your
-				needs, goals, and challenges to determine how we can best support you.
+				The first step is to schedule a call with us. During this consultation, we&apos;ll discuss
+				your needs, goals, and challenges to determine how we can best support you.
 			</Text>
 		),
 	},

@@ -1,12 +1,11 @@
 "use client";
 import { useState, useMemo } from "react";
+import { AnimatedArrowDown } from "../atoms/AnimatedArrowDown";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { EventTile } from "@/components/molecules/EventTile";
-import { ArrowDown } from "@/svg/ArrowDown";
 import { Button } from "@/components/atoms/Button";
 import { Text } from "@/components/atoms/Text";
-import { AnimatedArrowDown } from "../atoms/AnimatedArrowDown";
 
 const events = [
 	{

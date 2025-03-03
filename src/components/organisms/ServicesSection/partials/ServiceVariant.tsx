@@ -21,7 +21,7 @@ export const ServiceVariant = ({ title, description, items, link, badge }: Props
 				<Heading is="h3">{title}</Heading>
 				<div className="relative flex h-14 items-center justify-center">
 					<Badge className="absolute left-1/2 top-1/2 z-0 h-full -translate-x-1/2 -translate-y-1/2" />
-					<Text className="text-3xs/3 z-10 w-3/4 text-center font-sometype-mono text-white">
+					<Text className="z-10 w-3/4 text-center font-sometype-mono text-3xs/3 text-white">
 						{badge}
 					</Text>
 				</div>
@@ -32,18 +32,18 @@ export const ServiceVariant = ({ title, description, items, link, badge }: Props
 			<ul className="mt-8 flex flex-wrap items-center justify-start gap-2">
 				{items.map((item, index) => (
 					<li
-						className="text-3xs flex items-center justify-start font-sometype-mono lowercase text-gray-500"
+						className="flex items-center justify-start font-sometype-mono text-3xs lowercase text-gray-500"
 						key={index}
 					>
-						<span className="text-3xs mr-2 block text-gray-500">✺</span>
+						<span className="mr-2 block text-3xs text-gray-500">✺</span>
 						{item}
 						{index + 1 === items.length && (
-							<span className="text-3xs ml-2 block text-gray-500">✺</span>
+							<span className="ml-2 block text-3xs text-gray-500">✺</span>
 						)}
 					</li>
 				))}
 			</ul>
-			<Button className="ml-auto mt-6 bg-white lowercase" href={link.href} hasArrow>
+			<Button className="ml-auto mt-6 bg-white lowercase" href={link.url} hasArrow>
 				{link.label}
 			</Button>
 		</div>

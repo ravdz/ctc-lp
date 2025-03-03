@@ -27,7 +27,7 @@ const FeatureItem = ({ item }: { item: Item }) => {
 					</Heading>
 					<div className="absolute bottom-1/2 right-0 flex h-20 w-20 items-center justify-center">
 						<Badge className="absolute left-0 top-0 h-full" />
-						<Text className="text-3xs relative z-10 w-3/4 text-center font-sometype-mono text-white">
+						<Text className="relative z-10 w-3/4 text-center font-sometype-mono text-3xs text-white">
 							{badge}
 						</Text>
 					</div>
