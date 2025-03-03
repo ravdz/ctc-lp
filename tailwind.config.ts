@@ -76,9 +76,13 @@ export default {
 				"1/2": "50%",
 				"86": "22.5rem",
 				"100": "27.68rem",
+				"8xl": "128rem",
 			},
 			minHeight: {
 				"100": "27.68rem",
+			},
+			minWidth: {
+				"110": "68.75rem",
 			},
 			height: {
 				"7.5": "1.90625rem",

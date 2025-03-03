@@ -12,7 +12,7 @@ const ctcOffers = [
 		description:
 			"Are you a climate tech founder, investor or stakeholder? Read more about the benefits of joining.",
 		link: {
-			url: "/join-us",
+			url: "/community",
 			label: "read more",
 		},
 	},
@@ -33,7 +33,7 @@ const ctcOffers = [
 		description:
 			"Are you interested in becoming a CTC annual or event sponsor? Read more about our sponsorship options & fill in a simple form.",
 		link: {
-			url: "/join-us",
+			url: "/community",
 			label: "read more",
 		},
 	},
@@ -66,7 +66,7 @@ export const JoinUsSection = () => {
 								</Text>
 							</li>
 						</ul>
-						<Button className="uppercase" variant="secondary" href="/join-us" hasArrow>
+						<Button className="uppercase" variant="secondary" href="/community" hasArrow>
 							Become a member
 						</Button>
 					</header>

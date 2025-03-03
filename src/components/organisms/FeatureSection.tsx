@@ -20,7 +20,7 @@ const features = [
 			{ id: 5, label: "resources" },
 			{ id: 6, label: "advisory" },
 		],
-		url: "/join-us",
+		url: "/community",
 	},
 	{
 		id: 2,

@@ -8,7 +8,7 @@ import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 import { Star } from "@/svg/Star";
 import { GreenGradient } from "@/svg/GreenGradient";
 
-export const HomeHeader = () => {
+export const HomeHero = () => {
 	return (
 		<section className="overflow-hidden">
 			<Container className="pb-24 pt-14 md:pb-36 xl:pt-7">
@@ -27,7 +27,7 @@ export const HomeHeader = () => {
 							<Button
 								variant="secondary"
 								className="text-base lg:text-xl xl:text-2xl"
-								href="/join-us"
+								href="/community"
 								hasArrow
 							>
 								Become a member

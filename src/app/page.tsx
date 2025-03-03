@@ -1,4 +1,4 @@
-import { HomeHeader } from "@/components/organisms/HomeHeader";
+import { HomeHero } from "@/components/organisms/HomeHero";
 import { FeatureSection } from "@/components/organisms/FeatureSection";
 import { UpcomingEventsFeed } from "@/components/organisms/UpcomingEventsFeed";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
@@ -21,7 +21,7 @@ const partnersLogos = [
 const Home = () => {
 	return (
 		<div>
-			<HomeHeader />
+			<HomeHero />
 			<LogosSection heading="Our partners" logos={partnersLogos} />
 			<FeatureSection />
 			<UpcomingEventsFeed />

@@ -33,7 +33,7 @@ const cta = {
 	description:
 		"CTC was born to empower all of you: founders & changemakers, stakeholders, impact investors & angels. It’s a place where your ideas will be shaped to their best & drive meaningful impact.",
 	link: {
-		url: "/join-us",
+		url: "/community",
 		label: "Learn more",
 	},
 };

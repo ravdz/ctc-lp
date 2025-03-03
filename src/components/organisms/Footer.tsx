@@ -61,7 +61,7 @@ export const Footer = () => {
 				{
 					id: 3,
 					label: "Join us",
-					url: "/join-us",
+					url: "/community",
 				},
 			],
 		},
@@ -102,7 +102,7 @@ export const Footer = () => {
 												<li key={link.id}>
 													<Link href={link.url}>
 														<Text
-															className={`font-sometype-mono text-md transition-colors ${link.url === "/join-us" ? "text-green-400" : "text-gray-500 hover:text-gray-500/70"}`}
+															className={`font-sometype-mono text-md transition-colors ${link.url === "/community" ? "text-green-400" : "text-gray-500 hover:text-gray-500/70"}`}
 														>
 															{link.label}
 														</Text>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../atoms/Button";
+import { Button } from "@/components/atoms/Button";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Badge } from "@/components/atoms/Badge";

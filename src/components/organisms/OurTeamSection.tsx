@@ -43,7 +43,7 @@ export const OurTeamSection = () => {
 					<Heading is="h2" className="mb-12">
 						Our team
 					</Heading>
-					<ul className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+					<ul className="grid grid-cols-1 gap-5 px-10 md:grid-cols-2 md:px-20 lg:grid-cols-3">
 						{teamMembers.map(({ id, name, position, linkedin, image }) => (
 							<TeamMemberTile
 								key={id}
