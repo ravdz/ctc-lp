@@ -21,7 +21,7 @@ export const AboutUsContentSection = () => {
 							</div>
 							<div className="relative col-span-2 row-span-2 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
 								<Image src="/img/2.jpg" alt="image 2" fill className="object-cover" />
-								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								<Text className="absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
 									Benelux focused
 								</Text>
 							</div>
@@ -61,7 +61,7 @@ export const AboutUsContentSection = () => {
 							</div>
 							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%]">
 								<Image src="/img/1.jpg" alt="image 1" fill className="object-cover" />
-								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
 									Climate tech innovation
 								</Text>
 							</div>
@@ -69,7 +69,7 @@ export const AboutUsContentSection = () => {
 						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
 								<Image src="/img/5.png" alt="image 5" fill className="object-cover" />
-								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								<Text className="absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
 									Quality, unscalable experience
 								</Text>
 							</div>

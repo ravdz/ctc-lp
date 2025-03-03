@@ -20,7 +20,7 @@ const tabs = [
 ];
 
 export const PricingSection = () => {
-	const [activeTab, setActiveTab] = useState<number>(2);
+	const [activeTab, setActiveTab] = useState<number>(1);
 	return (
 		<section>
 			<Container className="py-10">

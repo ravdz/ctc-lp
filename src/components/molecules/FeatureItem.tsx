@@ -30,7 +30,6 @@ export const FeatureItem = ({ title, description, items, url }: Props) => {
 						key={item.id}
 					>
 						{index !== 0 && <span className="mr-2 block text-3xs text-gray-500">✺</span>}
-
 						{item.label}
 					</li>
 				))}
