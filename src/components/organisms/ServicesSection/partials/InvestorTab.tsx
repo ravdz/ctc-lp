@@ -17,7 +17,7 @@ const cards = [
 				]}
 				link={{
 					label: "Read more",
-					href: "/",
+					url: "/",
 				}}
 			/>
 		),
@@ -38,7 +38,7 @@ const cards = [
 				]}
 				link={{
 					label: "Read more",
-					href: "/",
+					url: "/",
 				}}
 			/>
 		),
@@ -54,7 +54,7 @@ const cards = [
 				items={["securing capital", "cap table management", "psychological & tactital positioning"]}
 				link={{
 					label: "Read more",
-					href: "/",
+					url: "/",
 				}}
 			/>
 		),

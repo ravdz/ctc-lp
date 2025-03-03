@@ -15,7 +15,7 @@ type Props = {
 export const SliderSection = ({ slides }: Props) => {
 	return (
 		<section>
-			<div className="slider mx-auto max-w-8xl py-10">
+			<div className="slider max-w-8xl mx-auto py-10">
 				<div className="relative">
 					<div className="absolute left-0 top-0 z-10 h-full w-5 bg-gradient-to-r from-gray-100 to-transparent"></div>
 					<Swiper
@@ -29,8 +29,6 @@ export const SliderSection = ({ slides }: Props) => {
 						}}
 						freeMode
 						slidesPerView={"auto"}
-						onSlideChange={() => console.log("slide change")}
-						onSwiper={(swiper) => console.log(swiper)}
 						className="h-72"
 					>
 						{slides.map((slide) => (

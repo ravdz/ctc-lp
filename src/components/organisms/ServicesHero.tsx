@@ -7,7 +7,7 @@ import { Star } from "@/svg/Star";
 export const ServicesHero = () => {
 	return (
 		<section>
-			<Container className="relative pb-14 pt-10 md:pb-24 md:pt-20">
+			<Container className="relative overflow-hidden pb-14 pt-10 md:pb-24 md:pt-20">
 				<header className="grid grid-cols-1 items-start gap-16 md:grid-cols-3 md:gap-0 md:gap-y-0">
 					<div className="relative z-10 md:col-span-1 md:row-span-1 md:mb-5">
 						<Heading className="text-5xl/[4rem] font-extralight tracking-3 md:text-6xl/[5rem] lg:text-7xl/[7rem]">

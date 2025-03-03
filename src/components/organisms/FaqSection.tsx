@@ -38,7 +38,7 @@ export const FaqSection = ({ heading, items, className = "" }: Props) => {
 									onClick={() => toggleItem(index)}
 									style={{ cursor: "pointer" }}
 								>
-									<Heading is="h3" className="mb-3 font-normal">
+									<Heading is="h3" className="mb-3 text-xl font-normal md:text-2xl">
 										{question}
 									</Heading>
 									<BigArrow className={`w-16 ${openIndex === index ? "rotate-180" : ""}`} />
@@ -52,7 +52,7 @@ export const FaqSection = ({ heading, items, className = "" }: Props) => {
 											style={{ overflow: "hidden" }}
 											transition={{ duration: 0.3 }}
 										>
-											<Text className="block py-7 text-base text-gray-900">{answer}</Text>
+											<Text className="block py-5 text-base text-gray-900 md:py-7">{answer}</Text>
 										</motion.dd>
 									)}
 								</AnimatePresence>

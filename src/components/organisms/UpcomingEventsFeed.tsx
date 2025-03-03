@@ -6,6 +6,7 @@ import { EventTile } from "@/components/molecules/EventTile";
 import { ArrowDown } from "@/svg/ArrowDown";
 import { Button } from "@/components/atoms/Button";
 import { Text } from "@/components/atoms/Text";
+import { AnimatedArrowDown } from "../atoms/AnimatedArrowDown";
 
 const events = [
 	{
@@ -77,7 +78,7 @@ export const UpcomingEventsFeed = () => {
 		<section id="events">
 			<Container className="md:py-22 py-16">
 				<div className="relative">
-					<ArrowDown className="absolute bottom-full left-0 w-8 -translate-y-6 md:w-10 lg:w-auto" />
+					<AnimatedArrowDown className="absolute bottom-full left-0 -translate-y-6" />
 					<Heading is="h2" className="mb-7">
 						Upcoming events
 					</Heading>

@@ -29,7 +29,7 @@ export const ServicesSection = () => {
 		<section>
 			<Container className="py-10">
 				<div>
-					<div className="mb-7">
+					<div className="mb-10">
 						<Heading is="h2" className="mb-7">
 							Membership options
 						</Heading>
