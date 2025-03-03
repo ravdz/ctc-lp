@@ -97,7 +97,7 @@ const Services = () => {
 			<ServicesHero />
 			<ServicesSection />
 			<ScheduleCallSection />
-			<FaqSection heading="Membership FAQ" className="pb-40 pt-20" items={faq} />
+			<FaqSection heading="Services FAQ" className="pb-40 pt-20" items={faq} />
 		</div>
 	);
 };
