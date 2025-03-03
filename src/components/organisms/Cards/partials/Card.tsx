@@ -17,18 +17,9 @@ type Props = {
 	className?: string;
 	openWidth: number;
 	closedWidth: number;
-	maxHeight: number;
 };
 
-export const Card = ({
-	card,
-	open,
-	onOpen,
-	className = "",
-	openWidth,
-	closedWidth,
-	maxHeight,
-}: Props) => {
+export const Card = ({ card, open, onOpen, className = "", openWidth, closedWidth }: Props) => {
 	const cardWidth = useMemo(() => {
 		return open ? `${openWidth}px` : `${closedWidth}px`;
 	}, [open, openWidth, closedWidth]);
@@ -39,7 +30,7 @@ export const Card = ({
 				`relative overflow-hidden rounded-lg transition-all duration-500`,
 				className,
 			)}
-			style={{ width: cardWidth, height: maxHeight }}
+			style={{ width: cardWidth }}
 		>
 			<div
 				className={`relative rounded-lg transition-colors duration-300 ${open ? "bg-green-600" : "bg-green-500"}`}
