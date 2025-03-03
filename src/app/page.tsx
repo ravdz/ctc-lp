@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { HomeHero } from "@/components/organisms/HomeHero";
 import { FeatureSection } from "@/components/organisms/FeatureSection";
 import { UpcomingEventsFeed } from "@/components/organisms/UpcomingEventsFeed";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
+
+export const metadata: Metadata = {
+	title: "Climate tech community, events & resources | Climate Tech Connect Benelux",
+};
 
 const partnersLogos = [
 	{ id: 1, src: "/img/logos/endeit.png", alt: "endeit logo", width: 137, height: 137 },

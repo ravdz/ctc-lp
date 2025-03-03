@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { ServicesHero } from "@/components/organisms/ServicesHero";
 import { ServicesSection } from "@/components/organisms/ServicesSection";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { Text } from "@/components/atoms/Text";
+
+export const metadata: Metadata = {
+	title: "Hire experts & save time | Solutions for climate tech founders",
+};
 
 const Services = () => {
 	return (

@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { ServicesMatchmakingHero } from "@/components/organisms/ServicesMatchmakingHero";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { Text } from "@/components/atoms/Text";
 import { MatchmakingBenefitsSection } from "@/components/organisms/MatchmakingBenefitsSection";
+
+export const metadata: Metadata = {
+	title: "Find the right investor/startup partner | Investor-founder AI & manual matchmaking",
+};
 
 const steps = [
 	{

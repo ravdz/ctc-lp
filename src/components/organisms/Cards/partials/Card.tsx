@@ -33,7 +33,7 @@ export const Card = ({ card, open, onOpen, className = "", openWidth, closedWidt
 			style={{ width: cardWidth }}
 		>
 			<div
-				className={`relative rounded-lg transition-colors duration-300 ${open ? "bg-green-600" : "bg-green-500"}`}
+				className={`relative h-full rounded-lg transition-colors duration-300 ${open ? "bg-green-600" : "bg-green-500"}`}
 				style={{ width: `${openWidth}px` }}
 			>
 				<div

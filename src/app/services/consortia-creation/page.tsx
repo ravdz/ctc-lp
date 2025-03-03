@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { BenefitsSection } from "@/components/organisms/BenefitsSection";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { ServicesConsortiaCreationHero } from "@/components/organisms/ServicesConsortiaCreationHero";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { Text } from "@/components/atoms/Text";
+
+export const metadata: Metadata = {
+	title: "Form a strategic partnership | Consortia creation support",
+};
 
 const steps = [
 	{

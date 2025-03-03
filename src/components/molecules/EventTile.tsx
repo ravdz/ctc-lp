@@ -4,11 +4,13 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Badge } from "@/components/atoms/Badge";
 import { Galaxy } from "@/svg/AnimatedGalaxy";
+import { Badge as FlagshipBadge } from "@/svg/Badge";
 
 type Props = {
 	event?: {
 		id: number;
 		color: string;
+		isFlagship: boolean;
 		badges: string[];
 		prefix: string;
 		title: string;
@@ -50,7 +52,7 @@ export const EventTile = ({ event }: Props) => {
 							{event.prefix}
 						</Text>
 					)}
-					<div>
+					<div className="relative w-full">
 						<Heading is="h3" className={`text-3xl ${event ? "text-gray-900" : "text-gray-400"}`}>
 							{event?.title || (
 								<>
@@ -58,6 +60,16 @@ export const EventTile = ({ event }: Props) => {
 								</>
 							)}
 						</Heading>
+						{event?.isFlagship && (
+							<div className="absolute left-full top-0 flex h-20 w-20 -translate-x-1/4 -translate-y-1/2 -rotate-[27deg] items-center justify-center md:h-28 md:w-28">
+								<FlagshipBadge className="absolute left-0 top-0 w-full" />
+								<Text className="relative z-10 text-center font-sometype-mono text-sm lowercase text-white md:text-md">
+									Flagship
+									<br />
+									event
+								</Text>
+							</div>
+						)}
 					</div>
 					{event && (
 						<Text className="text-md text-gray-900" is="p">

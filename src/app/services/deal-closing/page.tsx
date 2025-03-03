@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { BenefitsSection } from "@/components/organisms/BenefitsSection";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { ServicesDealClosingHero } from "@/components/organisms/ServicesDealClosingHero";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { Text } from "@/components/atoms/Text";
+
+export const metadata: Metadata = {
+	title: "Close the investment with confidence | Deal-closing guidance",
+};
 
 const steps = [
 	{

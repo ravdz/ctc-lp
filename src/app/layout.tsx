@@ -24,8 +24,6 @@ const abhayaLibre = Abhaya_Libre({
 
 export const metadata: Metadata = {
 	title: "Climate Tech Connect",
-	description:
-		"A non-profit foundation dedicated to fostering connections and unlocking opportunities for climate tech founders, investors, and talent across the Benelux region.",
 };
 
 export default function RootLayout({

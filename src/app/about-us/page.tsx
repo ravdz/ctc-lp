@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { AboutUsContentSection } from "@/components/organisms/AboutUsContentSection";
 import { OurTeamSection } from "@/components/organisms/OurTeamSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { AboutUsHero } from "@/components/organisms/AboutUsHero";
+
+export const metadata: Metadata = {
+	title: "Meet CTC team | Our mission & the team",
+};
 
 const partnersLogos = [
 	{ id: 1, src: "/img/logos/endeit.png", alt: "endeit logo", width: 137, height: 137 },

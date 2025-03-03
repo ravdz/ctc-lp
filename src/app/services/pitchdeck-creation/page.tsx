@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { ServicesPitchdeckCreationHero } from "@/components/organisms/ServicesPitchdeckCreationHero";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { BenefitsSection } from "@/components/organisms/BenefitsSection";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { Text } from "@/components/atoms/Text";
+
+export const metadata: Metadata = {
+	title: "Tell your startup story with impact | Investor-ready pitch deck",
+};
 
 const steps = [
 	{

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Container } from "@/components/atoms/Container";
@@ -6,6 +7,10 @@ import { SliderSection } from "@/components/organisms/SliderSection";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { PricingSection } from "@/components/organisms/PricingSection";
 import { FaqSection } from "@/components/organisms/FaqSection";
+
+export const metadata: Metadata = {
+	title: "Connect, network & innovate | Membership options & the benefits",
+};
 
 const slides = [
 	{

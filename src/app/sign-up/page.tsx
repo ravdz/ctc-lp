@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/atoms/Container";
 import { SubpageHero } from "@/components/organisms/SubpageHero";
+
+export const metadata: Metadata = {
+	title: "Join the Climate Tech Connect community | Climate Tech Connect",
+};
 
 const SignUp = () => {
 	return (

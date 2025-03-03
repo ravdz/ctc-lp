@@ -11,6 +11,7 @@ const events = [
 	{
 		id: 1,
 		badges: ["founders", "scale-ups", "A/B stage"],
+		isFlagship: false,
 		color: "bg-green-500",
 		prefix: "CTS exclusive deepdive:",
 		title: "War stories from the Dealroom",
@@ -30,6 +31,7 @@ const events = [
 	{
 		id: 2,
 		badges: ["founders", "investors"],
+		isFlagship: true,
 		color: "bg-green-600",
 		prefix: "Flagship event:",
 		title: "Climate Tech Summit 2025",
@@ -75,7 +77,7 @@ export const UpcomingEventsFeed = () => {
 
 	return (
 		<section id="events">
-			<Container className="md:py-22 py-16">
+			<Container className="md:py-22 overflow-hidden py-16 pt-24 md:pt-32">
 				<div className="relative">
 					<AnimatedArrowDown className="absolute bottom-full left-0 -translate-y-6" />
 					<Heading is="h2" className="mb-7">
