@@ -9,7 +9,7 @@ const teamMembers = [
 		position: "Director",
 		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
 		image: {
-			src: "/images/team/leopold.jpg",
+			src: "/img/team/leopold.png",
 			alt: "Leopold van Oosten",
 		},
 	},
@@ -19,7 +19,7 @@ const teamMembers = [
 		position: "Operations Manager",
 		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
 		image: {
-			src: "/images/team/paulina.jpg",
+			src: "/img/team/paulina.png",
 			alt: "Paulina Markowska",
 		},
 	},
@@ -29,7 +29,7 @@ const teamMembers = [
 		position: "Board Member",
 		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
 		image: {
-			src: "/images/team/gideon.jpg",
+			src: "/img/team/gideon.png",
 			alt: "Gideon van Kleij",
 		},
 	},
@@ -43,7 +43,7 @@ export const OurTeamSection = () => {
 					<Heading is="h2" className="mb-12">
 						Our team
 					</Heading>
-					<ul className="grid grid-cols-1 gap-5 px-10 md:grid-cols-2 md:px-20 lg:grid-cols-3">
+					<ul className="flex flex-col flex-wrap items-center justify-start gap-5 md:flex-row md:items-center md:justify-around">
 						{teamMembers.map(({ id, name, position, linkedin, image }) => (
 							<TeamMemberTile
 								key={id}

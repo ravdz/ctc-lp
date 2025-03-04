@@ -15,7 +15,7 @@ type Props = {
 export const TeamMemberTile = ({ name, position, linkedin, image }: Props) => {
 	return (
 		<li>
-			<div className="relative flex w-full items-center justify-center rounded-xl bg-green-200 pb-[90%]">
+			<div className="relative flex h-52 w-52 items-center justify-center rounded-full bg-green-200 sm:h-60 sm:w-60 lg:h-80 lg:w-80">
 				<Image src={image.src} alt={image.alt} fill className="object-cover" />
 			</div>
 			<div className="flex flex-col items-start justify-start pt-10">

@@ -48,6 +48,26 @@ const events = [
 			label: "read more",
 		},
 	},
+	{
+		id: 3,
+		badges: ["founders", "investors"],
+		isFlagship: true,
+		color: "bg-blue-400",
+		prefix: "Flagship event:",
+		title: "CLIMATE TECH SUMMIT 2024",
+		description: "Amsterdam (the Netherlands)",
+		image: "/img/26.png",
+		date: new Date(Date.UTC(2022, 9, 22)),
+		location: {
+			place: "POSTHOORNKERK",
+			city: "Amsterdam",
+			country: "Netherlands",
+		},
+		link: {
+			url: "/",
+			label: "read more",
+		},
+	},
 ];
 
 const tabs = [

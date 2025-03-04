@@ -21,7 +21,7 @@ export const HomeHero = () => {
 							<Text is="p">We are a Benelux based climate tech community.</Text>
 						</div>
 						<div className="flex flex-col items-start justify-start gap-4">
-							<Text is="p" className="text-2xs font-sometype-mono">
+							<Text is="p" className="font-sometype-mono text-2xs">
 								Connect with +150 visionaires working on climate in Benelux
 							</Text>
 							<Button
@@ -34,16 +34,16 @@ export const HomeHero = () => {
 							</Button>
 						</div>
 					</header>
-					<div className="sm:h-200 lg:h-200 grid grid-cols-1 gap-3.5 sm:grid-cols-3 md:col-span-4 md:h-96">
+					<div className="grid grid-cols-1 gap-3.5 sm:h-200 sm:grid-cols-3 md:col-span-4 md:h-96 lg:h-200">
 						<div className="grid grid-rows-5 gap-3.5">
 							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/1.png" alt="image 1" fill className="object-cover" />
-								<Text className="text-2xs md:text-4xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
 									Climate tech summit
 								</Text>
 							</div>
 							<div className="row-span-2 w-full rounded-2xl bg-green-500 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
-								<Text className="md:text-2xs text-xl sm:text-base lg:text-sm xl:text-base 2xl:text-lg">
+								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
 									Investor <span className="text-green-600"> / </span> founder<br></br>
 									matchmaking
 								</Text>
@@ -51,7 +51,7 @@ export const HomeHero = () => {
 						</div>
 						<div className="grid grid-rows-2 gap-3.5">
 							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-800 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
-								<Text className="md:text-2xs text-xl sm:text-base lg:text-sm xl:text-base 2xl:text-lg">
+								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
 									Curated, exclusive events
 								</Text>
 								<div className="absolute -right-10 top-0 w-full pb-[100%] sm:bottom-0 sm:top-auto lg:-right-5">
@@ -69,7 +69,7 @@ export const HomeHero = () => {
 							</div>
 							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/2.png" alt="image 2" fill className="object-cover" />
-								<Text className="text-2xs md:text-4xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white px-2 py-1 text-right font-sometype-mono uppercase">
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white px-2 py-1 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
 									Community & Talent Pool
 								</Text>
 							</div>
@@ -80,13 +80,13 @@ export const HomeHero = () => {
 							</div>
 							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/4.png" alt="image 4" fill className="object-cover" />
-								<Text className="text-2xs md:text-4xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
 									Consortia
 								</Text>
 							</div>
 							<div className="sm:pb-auto relative row-span-3 flex w-full items-end justify-start rounded-2xl bg-pink-500 p-6 pb-[66%] sm:p-4 md:p-2 lg:p-3 xl:p-4">
 								<GreenGradient className="absolute right-0 top-0 z-0 w-3/4 lg:w-40" />
-								<Text className="md:text-2xs absolute bottom-6 left-6 text-xl sm:relative sm:bottom-auto sm:left-auto sm:text-base lg:text-sm xl:text-base 2xl:text-lg">
+								<Text className="absolute bottom-6 left-6 text-xl sm:relative sm:bottom-auto sm:left-auto sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
 									Resources<br></br>& advisory
 								</Text>
 							</div>
