@@ -16,7 +16,7 @@ export const HomeHero = () => {
 					<header className="flex flex-col items-start justify-between gap-8 md:col-span-3">
 						<div>
 							<Heading className="mb-8 text-3xl font-light tracking-3 lg:text-4xl xl:text-6xl/[4.5rem]">
-								Climate texh community, events & resources
+								Climate tech community, events & resources
 							</Heading>
 							<Text is="p">We are a Benelux based climate tech community.</Text>
 						</div>

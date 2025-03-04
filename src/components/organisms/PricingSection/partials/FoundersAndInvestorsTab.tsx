@@ -35,7 +35,7 @@ const TableHead = () => {
 export const FoundersAndInvestorsTab = () => {
 	return (
 		<div className="w-full overflow-x-auto pb-5">
-			<div className="min-w-110 w-full">
+			<div className="w-full min-w-110">
 				<div className="mb-5 w-full rounded-lg bg-green-600 p-6 lg:px-12">
 					<table className="w-full table-fixed border-collapse">
 						<TableHead />
@@ -119,20 +119,20 @@ export const FoundersAndInvestorsTab = () => {
 							<tr>
 								<td className="w-1/4 py-2.5 pr-2.5 text-left">
 									<Text className="text-sm text-gray-900 md:text-base/3">Member content</Text>
-									<Text className="text-3xs block text-gray-900">(Legal, AI, GTM, etc.)</Text>
+									<Text className="block text-3xs text-gray-900">(Legal, AI, GTM, etc.)</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">No</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">
+									<Text className="block text-3xs text-gray-900">
 										(incl. access to free consultation hours by the experts)
 									</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">
+									<Text className="block text-3xs text-gray-900">
 										(incl. access to free consultation hours by the experts)
 									</Text>
 								</td>
@@ -146,11 +146,11 @@ export const FoundersAndInvestorsTab = () => {
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">(fee applies)</Text>
+									<Text className="block text-3xs text-gray-900">(fee applies)</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">(fee applies)</Text>
+									<Text className="block text-3xs text-gray-900">(fee applies)</Text>
 								</td>
 							</tr>
 							<tr>
@@ -162,11 +162,11 @@ export const FoundersAndInvestorsTab = () => {
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">(success fee applies)</Text>
+									<Text className="block text-3xs text-gray-900">(success fee applies)</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">(success fee applies)</Text>
+									<Text className="block text-3xs text-gray-900">(success fee applies)</Text>
 								</td>
 							</tr>
 							<tr>
@@ -178,13 +178,13 @@ export const FoundersAndInvestorsTab = () => {
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">
+									<Text className="block text-3xs text-gray-900">
 										(custom discounted fees apply)
 									</Text>
 								</td>
 								<td className="w-1/4 border-b border-white p-2.5 text-center">
 									<Text className="text-sm text-gray-900 md:text-base/3">Yes</Text>
-									<Text className="text-3xs block text-gray-900">
+									<Text className="block text-3xs text-gray-900">
 										(custom discounted fees apply)
 									</Text>
 								</td>
@@ -208,7 +208,7 @@ export const FoundersAndInvestorsTab = () => {
 									<Text className="text-sm text-gray-900 md:text-base/3">
 										Late Stage Peer Coaching Circle
 									</Text>
-									<Text className="text-3xs block text-gray-900">
+									<Text className="block text-3xs text-gray-900">
 										(monthly meetup, groups 6-12)
 									</Text>
 								</td>
