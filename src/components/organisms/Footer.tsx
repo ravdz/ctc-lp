@@ -61,7 +61,7 @@ export const Footer = () => {
 				{
 					id: 3,
 					label: "Join us",
-					url: "/community",
+					url: "/join-us",
 				},
 			],
 		},

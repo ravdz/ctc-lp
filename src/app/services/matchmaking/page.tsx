@@ -7,7 +7,9 @@ import { Text } from "@/components/atoms/Text";
 import { MatchmakingBenefitsSection } from "@/components/organisms/MatchmakingBenefitsSection";
 
 export const metadata: Metadata = {
-	title: "Find the right investor/startup partner | Investor-founder AI & manual matchmaking",
+	title: "Matchmaking Service | Climate Tech Connect",
+	description:
+		"Explore our Matchmaking Service at Climate Tech Connect. Connect with the right partners to accelerate your climate technology projects.",
 };
 
 const steps = [

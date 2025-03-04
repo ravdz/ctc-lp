@@ -26,7 +26,7 @@ const tabs = [
 export const ServicesSection = () => {
 	const [activeTab, setActiveTab] = useState<number>(1);
 	return (
-		<section>
+		<section id="services">
 			<Container className="py-10">
 				<div>
 					<div className="mb-10">

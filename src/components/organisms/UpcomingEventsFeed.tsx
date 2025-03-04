@@ -16,7 +16,7 @@ const events = [
 		prefix: "CTS exclusive deepdive:",
 		title: "War stories from the Dealroom",
 		description: "with Philip de Roos (founder De Roos)",
-		image: "/img/1.jpg",
+		image: "/img/16.jpeg",
 		date: new Date(Date.UTC(2025, 2, 4)),
 		location: {
 			place: "De Roos office",
@@ -36,7 +36,7 @@ const events = [
 		prefix: "Flagship event:",
 		title: "Climate Tech Summit 2025",
 		description: "Ghent (Belgium)",
-		image: "/img/2.jpg",
+		image: "/img/1.png",
 		date: new Date(Date.UTC(2025, 9, 9)),
 		location: {
 			place: "Wintercircus",

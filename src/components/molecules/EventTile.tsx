@@ -100,7 +100,7 @@ export const EventTile = ({ event }: Props) => {
 					)}
 					{event && (
 						<div className="flex items-start justify-end gap-2">
-							<Galaxy className="-mt-3 w-10" />
+							<Galaxy className="-mt-3 w-10 shrink-0" />
 							<Text className="grow-0 text-right text-base uppercase">
 								{event.location.place} <span className="px-2">/</span> {event.location.city}
 								<span className="px-2">/</span> {event.location.country}
@@ -109,7 +109,7 @@ export const EventTile = ({ event }: Props) => {
 					)}
 				</div>
 			</article>
-			<Button className="self-end lowercase" href={event?.link.url} hasArrow disabled={!event}>
+			<Button className="self-end lowercase" hasArrow disabled={!event}>
 				{event?.link.label || "request a membership invite"}
 			</Button>
 		</li>

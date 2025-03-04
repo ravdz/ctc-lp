@@ -7,7 +7,9 @@ import { StepsSection } from "@/components/organisms/StepsSection";
 import { Text } from "@/components/atoms/Text";
 
 export const metadata: Metadata = {
-	title: "Close the investment with confidence | Deal-closing guidance",
+	title: "Deal Closing Service | Climate Tech Connect",
+	description:
+		"Discover our Deal Closing Service at Climate Tech Connect. Facilitate successful deals and partnerships in the climate technology sector.",
 };
 
 const steps = [

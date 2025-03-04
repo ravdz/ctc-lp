@@ -6,7 +6,9 @@ import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { Text } from "@/components/atoms/Text";
 
 export const metadata: Metadata = {
-	title: "Hire experts & save time | Solutions for climate tech founders",
+	title: "Our Services | Climate Tech Connect",
+	description:
+		"Explore the range of services offered by Climate Tech Connect. From consortia creation to deal closing, we support your climate technology initiatives.",
 };
 
 const Services = () => {

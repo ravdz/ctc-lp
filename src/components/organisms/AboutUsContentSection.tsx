@@ -17,11 +17,11 @@ export const AboutUsContentSection = () => {
 					<div className="relative z-10 mb-14 grid grid-cols-1 gap-4 md:mb-24 lg:grid-cols-7">
 						<div className="grid grid-cols-3 grid-rows-2 gap-4 lg:col-span-3">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/7.jpg" alt="image 7" fill className="object-cover" />
+								<Image src="/img/10.png" alt="image 10" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-2 row-span-2 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/2.jpg" alt="image 2" fill className="object-cover" />
-								<Text className="absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
+								<Image src="/img/19.jpg" alt="image 19" fill className="object-cover" />
+								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
 									Benelux focused
 								</Text>
 							</div>
@@ -57,19 +57,19 @@ export const AboutUsContentSection = () => {
 								<WhiteGradient className="absolute bottom-0 left-0 z-0 w-full" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/4.png" alt="image 4" fill className="object-cover" />
+								<Image src="/img/17.png" alt="image 17" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%]">
-								<Image src="/img/1.jpg" alt="image 1" fill className="object-cover" />
-								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
+								<Image src="/img/20.jpg" alt="image 20" fill className="object-cover" />
+								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
 									Climate tech innovation
 								</Text>
 							</div>
 						</div>
 						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/5.png" alt="image 5" fill className="object-cover" />
-								<Text className="absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase lg:text-3xs xl:text-2xs">
+								<Image src="/img/16.jpeg" alt="image 16" fill className="object-cover" />
+								<Text className="text-2xs lg:text-3xs xl:text-2xs absolute left-0 top-5 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono uppercase">
 									Quality, unscalable experience
 								</Text>
 							</div>

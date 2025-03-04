@@ -6,7 +6,9 @@ import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { AboutUsHero } from "@/components/organisms/AboutUsHero";
 
 export const metadata: Metadata = {
-	title: "Meet CTC team | Our mission & the team",
+	title: "About Us | Climate Tech Connect",
+	description:
+		"Learn more about Climate Tech Connect, our mission, our team, and how we are driving innovation in climate technology. Join us in making a difference.",
 };
 
 const partnersLogos = [

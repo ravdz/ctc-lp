@@ -9,64 +9,66 @@ import { PricingSection } from "@/components/organisms/PricingSection";
 import { FaqSection } from "@/components/organisms/FaqSection";
 
 export const metadata: Metadata = {
-	title: "Connect, network & innovate | Membership options & the benefits",
+	title: "Community | Climate Tech Connect",
+	description:
+		"Discover the vibrant community at Climate Tech Connect. Connect with like-minded individuals, participate in events, and join our mission to innovate in climate technology.",
 };
 
 const slides = [
 	{
 		id: 1,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/7.png",
+		title: "Slide 7",
 	},
 	{
 		id: 2,
-		image: "/img/2.jpg",
-		title: "Slide 2",
+		image: "/img/14.png",
+		title: "Slide 14",
 	},
 	{
 		id: 3,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/12.png",
+		title: "Slide 12",
 	},
 	{
 		id: 4,
-		image: "/img/2.jpg",
-		title: "Slide 2",
+		image: "/img/13.png",
+		title: "Slide 13",
 	},
 	{
 		id: 5,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/15.png",
+		title: "Slide 15",
 	},
 	{
 		id: 6,
-		image: "/img/2.jpg",
-		title: "Slide 2",
+		image: "/img/8.png",
+		title: "Slide 8",
 	},
 	{
 		id: 7,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/18.png",
+		title: "Slide 18",
 	},
 	{
 		id: 8,
-		image: "/img/2.jpg",
-		title: "Slide 2",
+		image: "/img/11.png",
+		title: "Slide 11",
 	},
 	{
 		id: 9,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/5.png",
+		title: "Slide 5",
 	},
 	{
 		id: 10,
-		image: "/img/2.jpg",
-		title: "Slide 2",
+		image: "/img/6.png",
+		title: "Slide 6",
 	},
 	{
 		id: 11,
-		image: "/img/1.jpg",
-		title: "Slide 1",
+		image: "/img/9.png",
+		title: "Slide 9",
 	},
 ];
 

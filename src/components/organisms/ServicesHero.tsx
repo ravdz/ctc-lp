@@ -68,24 +68,23 @@ export const ServicesHero = () => {
 								<Galaxy className="absolute bottom-4 right-4 z-10 w-1/3" />
 							</div>
 							<div className="relative col-span-2 row-span-2 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/2.jpg" alt="image 2" fill className="object-cover" />
+								<Image src="/img/22.jpg" alt="image 22" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/7.jpg" alt="image 7" fill className="object-cover" />
+								<Image src="/img/21.jpg" alt="image 21" fill className="object-cover" />
 							</div>
 						</div>
 						<div className="grid grid-cols-2 grid-rows-2 gap-4 lg:col-span-2">
-							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%]">
-								<Image src="/img/1.jpg" alt="image 1" fill className="object-cover" />
+							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%] grayscale">
+								<Image src="/img/23.jpg" alt="image 23" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/4.png" alt="image 4" fill className="object-cover" />
+								<Image src="/img/24.jpg" alt="image 24" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-green-500 pb-[100%]">
 								<Text className="absolute bottom-8 left-0 z-10 flex px-5 text-lg md:text-xl lg:text-lg xl:text-xl">
 									Events annualy
 								</Text>
-
 								<WhiteGradient className="absolute right-0 top-0 z-0 w-full rotate-180" />
 								<AnimatedCircle
 									orbitDirection="counterclockwise"
@@ -95,7 +94,7 @@ export const ServicesHero = () => {
 						</div>
 						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/5.png" alt="image 5" fill className="object-cover" />
+								<Image src="/img/25.jpg" alt="image 25" fill className="object-cover" />
 							</div>
 						</div>
 					</div>

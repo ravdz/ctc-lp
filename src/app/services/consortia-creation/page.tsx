@@ -7,7 +7,9 @@ import { StepsSection } from "@/components/organisms/StepsSection";
 import { Text } from "@/components/atoms/Text";
 
 export const metadata: Metadata = {
-	title: "Form a strategic partnership | Consortia creation support",
+	title: "Consortia Creation Service | Climate Tech Connect",
+	description:
+		"Learn about our Consortia Creation Service at Climate Tech Connect. Collaborate with industry leaders to drive innovation in climate technology.",
 };
 
 const steps = [

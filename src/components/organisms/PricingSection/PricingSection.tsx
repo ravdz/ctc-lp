@@ -22,7 +22,7 @@ const tabs = [
 export const PricingSection = () => {
 	const [activeTab, setActiveTab] = useState<number>(1);
 	return (
-		<section>
+		<section id="membership">
 			<Container className="py-10">
 				<div>
 					<div className="mb-7 flex flex-col-reverse items-start justify-between gap-7 md:flex-row md:items-end md:gap-4">

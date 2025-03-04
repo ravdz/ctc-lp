@@ -7,7 +7,9 @@ import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection"
 import { Text } from "@/components/atoms/Text";
 
 export const metadata: Metadata = {
-	title: "Tell your startup story with impact | Investor-ready pitch deck",
+	title: "Pitchdeck Creation Service | Climate Tech Connect",
+	description:
+		"Learn about our Pitchdeck Creation Service at Climate Tech Connect. Create compelling pitch decks to attract investors and partners for your climate technology projects.",
 };
 
 const steps = [
