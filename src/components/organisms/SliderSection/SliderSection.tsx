@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import "./styles.css";
 
 type Props = {
 	slides: {
@@ -15,7 +16,7 @@ type Props = {
 export const SliderSection = ({ slides }: Props) => {
 	return (
 		<section>
-			<div className="slider mx-auto max-w-8xl py-10">
+			<div className="images-slider max-w-8xl mx-auto py-10">
 				<div className="relative">
 					<div className="absolute left-0 top-0 z-10 h-full w-5 bg-gradient-to-r from-gray-100 to-transparent"></div>
 					<Swiper
@@ -26,6 +27,7 @@ export const SliderSection = ({ slides }: Props) => {
 						speed={15000}
 						autoplay={{
 							delay: 0,
+							disableOnInteraction: false,
 						}}
 						freeMode
 						slidesPerView={"auto"}

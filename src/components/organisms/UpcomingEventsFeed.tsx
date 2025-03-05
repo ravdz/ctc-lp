@@ -89,7 +89,16 @@ export const UpcomingEventsFeed = () => {
 			if (activeTab === 1) {
 				return event.date.getFullYear() === 2025;
 			} else if (activeTab === 2) {
-				return event.date < new Date();
+				const eventDateUnix = Math.floor(event.date.getTime() / 1000);
+				const todayUnix = Math.floor(
+					new Date(
+						new Date().getFullYear(),
+						new Date().getMonth(),
+						new Date().getDate(),
+					).getTime() / 1000,
+				);
+				console.log(event.title, eventDateUnix, todayUnix);
+				return eventDateUnix < todayUnix;
 			}
 			return false;
 		});

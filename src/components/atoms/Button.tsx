@@ -7,9 +7,10 @@ import Link from "next/link";
 import { AnimatedArrow } from "@/components/atoms/AnimatedArrow";
 
 const variants = {
-	primary: "bg-transparent border border-gray-900 text-gray-500 hover:border-gray-700",
+	primary:
+		"bg-transparent border border-gray-900 text-gray-500 hover:border-gray-700 font-montserrat",
 	secondary:
-		"text-white bg-gray-900 border border-gray-900 hover:border-gray-700 hover:bg-gray-700 ",
+		"text-white bg-gray-900 border border-gray-900 hover:border-gray-700 hover:bg-gray-700 font-sometype-mono",
 };
 
 type Props = {
@@ -44,7 +45,7 @@ export const Button = ({
 }: Props) => {
 	const styles = useMemo(() => {
 		return twMerge(
-			`flex items-center justify-center pl-5 gap-3 py-1 ${hasArrow ? "pr-1" : "pr-5"} text-base uppercase font-montserrat group transition-colors rounded-3xl disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed`,
+			`flex items-center justify-center pl-5 gap-3 py-1 ${hasArrow ? "pr-1" : "pr-5"} text-base uppercase group transition-colors rounded-3xl disabled:opacity-50 disabled:text-gray-500 disabled:cursor-not-allowed`,
 			variants[variant],
 			disabled && "opacity-50 cursor-not-allowed text-gray-500 hover:text-gray-500",
 			className,

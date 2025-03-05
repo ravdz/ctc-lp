@@ -53,7 +53,10 @@ export const EventTile = ({ event }: Props) => {
 						</Text>
 					)}
 					<div className="relative w-full">
-						<Heading is="h3" className={`text-3xl ${event ? "text-gray-900" : "text-gray-400"}`}>
+						<Heading
+							is="h3"
+							className={`pr-5 text-3xl md:pr-8 ${event ? "text-gray-900" : "text-gray-400"}`}
+						>
 							{event?.title || (
 								<>
 									To be <br></br>announced...

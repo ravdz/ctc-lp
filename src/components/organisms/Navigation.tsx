@@ -28,9 +28,9 @@ const links = [
 
 export const Navigation = () => {
 	return (
-		<header className="relative z-40 h-24 lg:h-30">
-			<div className="fixed flex h-24 w-full items-center justify-between bg-gray-100/80 px-6 lg:h-30 lg:px-8">
-				<Text className="text-base/5 font-medium tracking-3">
+		<header className="lg:h-30 relative z-40 h-24">
+			<div className="lg:h-30 fixed flex h-24 w-full items-center justify-between bg-gray-100/80 px-6 lg:px-8">
+				<Text className="text-2xs font-medium tracking-3">
 					<Link className="text-brown-600 transition-colors hover:text-gray-900" href="/">
 						Climate<br></br>Tech<br></br>Connect
 					</Link>
@@ -39,7 +39,7 @@ export const Navigation = () => {
 					<LogoIcon className="w-12 fill-gray-500" />
 				</Link>
 				<Menu>
-					<MenuButton className="rounded-3xl border border-gray-900 bg-gray-900 px-4 pb-0.5 pt-1 font-montserrat text-md uppercase text-white transition-colors hover:bg-gray-700">
+					<MenuButton className="rounded-3xl border border-gray-900 bg-gray-900 px-4 pb-0.5 pt-1 text-md uppercase text-white transition-colors hover:bg-gray-700">
 						Menu
 					</MenuButton>
 					<MenuItems

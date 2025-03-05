@@ -11,7 +11,6 @@ export default {
 		extend: {
 			fontFamily: {
 				montserrat: ["var(--font-montserrat)"],
-				"abhaya-libre": ["var(--font-abhaya-libre)"],
 				"sometype-mono": ["var(--font-sometype-mono)"],
 			},
 			animation: {
