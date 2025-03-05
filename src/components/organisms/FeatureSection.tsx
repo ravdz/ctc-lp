@@ -78,7 +78,7 @@ export const FeatureSection = () => {
 							))}
 						</ul>
 						<PinkGradient className="absolute left-1/2 top-1/2 z-0 w-[150%] -translate-x-1/2 -translate-y-1/2" />
-						<AnimatedCircle className="md:w-76 absolute left-1/2 top-full z-10 w-64 -translate-x-1/2 -translate-y-1/2 rotate-12" />
+						<AnimatedCircle className="absolute left-1/2 top-full z-10 w-64 -translate-x-1/2 -translate-y-1/2 rotate-12 md:w-76" />
 					</div>
 				</div>
 			</Container>

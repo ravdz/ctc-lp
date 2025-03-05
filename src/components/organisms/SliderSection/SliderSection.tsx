@@ -16,7 +16,7 @@ type Props = {
 export const SliderSection = ({ slides }: Props) => {
 	return (
 		<section>
-			<div className="images-slider max-w-8xl mx-auto py-10">
+			<div className="images-slider mx-auto max-w-8xl py-10">
 				<div className="relative">
 					<div className="absolute left-0 top-0 z-10 h-full w-5 bg-gradient-to-r from-gray-100 to-transparent"></div>
 					<Swiper

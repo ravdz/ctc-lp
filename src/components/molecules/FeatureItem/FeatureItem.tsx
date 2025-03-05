@@ -1,10 +1,10 @@
 "use client";
 
+import { useAnimationFrame } from "motion/react";
+import { useRef } from "react";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Button } from "@/components/atoms/Button";
-import { useAnimationFrame } from "motion/react";
-import { useRef } from "react";
 
 type Props = {
 	title: string;
@@ -17,10 +17,10 @@ const Item = ({ id, label }: { id: number; label: string }) => {
 	return (
 		<li key={id} className="mr-2">
 			<Text
-				className={`text-3xs flex items-center justify-start gap-2 text-nowrap font-sometype-mono lowercase text-gray-500`}
+				className={`flex items-center justify-start gap-2 text-nowrap font-sometype-mono text-3xs lowercase text-gray-500`}
 			>
 				{label}
-				<span className={`text-3xs inline-blocl text-gray-500`}>✺</span>
+				<span className={`inline-blocl text-3xs text-gray-500`}>✺</span>
 			</Text>
 		</li>
 	);
@@ -58,7 +58,6 @@ export const FeatureItem = ({ title, description, items, url }: Props) => {
 					{description}
 				</Text>
 			</header>
-
 			<div className="relative mb-2.5 flex w-full items-center justify-start overflow-hidden">
 				<ul ref={firstListRef} className="relative flex items-center justify-start">
 					{items.map(({ id, label }) => (
@@ -76,7 +75,6 @@ export const FeatureItem = ({ title, description, items, url }: Props) => {
 					))}
 				</ul>
 			</div>
-
 			<Button className="ml-auto lowercase" href={url} hasArrow>
 				Read more
 			</Button>
