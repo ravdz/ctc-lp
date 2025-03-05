@@ -18,6 +18,10 @@ const sometypeMono = Sometype_Mono({
 
 export const metadata: Metadata = {
 	title: "Climate Tech Connect",
+	robots: {
+		index: true,
+		follow: true,
+	},
 };
 
 export default function RootLayout({
@@ -27,9 +31,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<head>
-				<meta name="robots" content="index,follow" />
-			</head>
 			<body className={`${montserrat.variable} ${sometypeMono.variable}`}>
 				<Navigation />
 				<main>{children}</main>
