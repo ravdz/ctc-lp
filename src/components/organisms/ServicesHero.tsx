@@ -19,7 +19,7 @@ export const ServicesHero = () => {
 								Services
 							</Heading>
 						</div>
-						<div className="relative z-10 flex flex-col gap-9 border-t border-green-800 pt-12 md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-2 md:mb-6 md:pt-10">
+						<div className="relative z-10 flex flex-col gap-9 border-t border-green-800 pt-12 md:col-span-2 md:col-start-2 md:row-span-1 md:row-start-2 md:mb-16 md:pt-10">
 							<Star className="absolute left-0 top-3 w-5 fill-green-400 md:-left-10 md:top-5" />
 							<Text is="p" className="block text-sm sm:text-base/6">
 								Beyond our membership and sponsorship options, we offer a range of{" "}
@@ -85,7 +85,7 @@ export const ServicesHero = () => {
 								<Text className="absolute bottom-8 left-0 z-10 flex px-5 text-lg md:text-xl lg:text-lg xl:text-xl">
 									Events annualy
 								</Text>
-								<WhiteGradient className="absolute right-0 top-0 z-0 w-full rotate-180" />
+								<WhiteGradient className="absolute -top-1 right-0 z-0 w-full rotate-180" />
 								<AnimatedCircle
 									orbitDirection="counterclockwise"
 									className="absolute right-0 top-0 z-0 w-[150%] translate-x-[45%] rotate-[78deg]"

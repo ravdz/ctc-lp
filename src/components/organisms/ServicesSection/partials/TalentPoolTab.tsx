@@ -27,7 +27,7 @@ const FeatureItem = ({ item }: { item: Item }) => {
 					</Heading>
 					<div className="absolute bottom-1/2 right-0 flex h-20 w-20 items-center justify-center">
 						<Badge className="absolute left-0 top-0 h-full" />
-						<Text className="relative z-10 w-3/4 text-center font-sometype-mono text-3xs text-white">
+						<Text className="relative z-10 mt-0.5 w-3/4 text-center font-sometype-mono text-3xs text-white">
 							{badge}
 						</Text>
 					</div>
@@ -40,7 +40,7 @@ const FeatureItem = ({ item }: { item: Item }) => {
 								<div className="absolute left-3 top-3 h-full w-[1px] bg-green-500" />
 							)}
 
-							<Star className="w-6 shrink-0 -rotate-6 fill-green-500" />
+							<Star className="w-6 shrink-0 fill-green-500" />
 							<Text className="pl-4 text-base text-gray-900">{step}</Text>
 						</li>
 					))}
@@ -71,7 +71,7 @@ const items: Item[] = [
 		],
 		link: {
 			label: "Fill out form",
-			url: "/",
+			url: "/join-us",
 		},
 	},
 	{

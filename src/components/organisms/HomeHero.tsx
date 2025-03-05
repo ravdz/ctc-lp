@@ -58,7 +58,7 @@ export const HomeHero = () => {
 									<AnimatedCircle
 										orbitSpeed={2500}
 										className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 -rotate-[30deg]"
-										orbitingObject={<Star className="h-4 w-4 text-brown-600" />}
+										orbitingObject={<Star className="h-4 w-4 rotate-6 text-brown-600" />}
 									/>
 									<AnimatedCircle
 										className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2"

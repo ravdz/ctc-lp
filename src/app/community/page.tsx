@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Container } from "@/components/atoms/Container";
@@ -13,7 +14,6 @@ export const metadata: Metadata = {
 	description:
 		"Discover the vibrant community at Climate Tech Connect. Connect with like-minded individuals, participate in events, and join our mission to innovate in climate technology.",
 };
-
 const slides = [
 	{
 		id: 1,
@@ -136,7 +136,14 @@ const faq = [
 		answer: (
 			<div>
 				<Text is="p" className="mb-2 text-base text-gray-900">
-					We offer three membership tiers (for more information, check <b>Membership options</b>):
+					We offer three membership tiers (for more information, check{" "}
+					<Link
+						href="/community#membership"
+						className="font-bold transition-colors hover:text-green-600"
+					>
+						Membership options
+					</Link>
+					):
 				</Text>
 				<ul className="flex flex-col gap-1">
 					<li>
@@ -221,7 +228,7 @@ const JoinUs = () => {
 									world.
 								</Text>
 								<Text is="p">
-									Science shows that
+									Science shows that{" "}
 									<b>
 										community and a sense of belonging can boost our cognitive functions & emotional
 										intelligence, and shape us into more empathetic beings

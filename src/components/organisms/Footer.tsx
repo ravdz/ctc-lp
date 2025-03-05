@@ -5,6 +5,7 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { MultipleCircles } from "@/svg/MultipleCircles";
 import { SmileyFace } from "@/svg/SmileyFace";
+import { GreenGradient } from "@/svg/GreenGradient";
 export const Footer = () => {
 	const navigation = [
 		{
@@ -14,12 +15,12 @@ export const Footer = () => {
 				{
 					id: 1,
 					label: "Our mission",
-					url: "/",
+					url: "/about-us#our-mission",
 				},
 				{
 					id: 2,
 					label: "The team",
-					url: "/",
+					url: "/about-us#team",
 				},
 			],
 		},
@@ -30,17 +31,17 @@ export const Footer = () => {
 				{
 					id: 1,
 					label: "Investor ready",
-					url: "/",
+					url: "/services?service=investors",
 				},
 				{
 					id: 2,
 					label: "Consortia",
-					url: "/",
+					url: "/services?service=consortia",
 				},
 				{
 					id: 3,
 					label: "Talent pool",
-					url: "/",
+					url: "/services?service=talent-pool",
 				},
 			],
 		},
@@ -51,7 +52,7 @@ export const Footer = () => {
 				{
 					id: 1,
 					label: "Events",
-					url: "/",
+					url: "/#events",
 				},
 				{
 					id: 2,
@@ -72,9 +73,12 @@ export const Footer = () => {
 		},
 	];
 	return (
-		<footer>
-			<Container>
-				<MultipleCircles className="h-32 md:h-auto" />
+		<footer className="relative">
+			<Container className="relative">
+				<MultipleCircles className="relative z-10 h-32 md:h-auto" />
+			</Container>
+			<Container className="absolute left-0 top-0 -z-10 h-full w-full">
+				<GreenGradient className="z-0 ml-auto hidden w-2/3 md:block lg:-translate-y-[10%]" />
 			</Container>
 			<div className="relative z-10 bg-blue-400 pb-20 pt-24 md:pb-28 md:pt-36">
 				<Container>

@@ -33,7 +33,7 @@ export const StepsSection = ({ steps, heading, className = "", boldedHeadings = 
 								<div className="absolute left-2.5 top-3 h-full w-[1px] bg-green-500"></div>
 							)}
 							<div className="relative pl-10">
-								<Star className="absolute left-0 top-1 w-5 -rotate-6 fill-green-500" />
+								<Star className="absolute left-0 top-1 w-5 fill-green-500" />
 								<Heading
 									className={`block text-base md:text-xl ${boldedHeadings ? "font-bold" : "font-normal"} text-gray-500`}
 									is="h3"

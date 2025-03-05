@@ -41,7 +41,10 @@ export const FaqSection = ({ heading, items, className = "" }: Props) => {
 									<Heading is="h3" className="mb-3 text-xl font-normal md:text-2xl">
 										{question}
 									</Heading>
-									<BigArrow className={`w-16 ${openIndex === index ? "rotate-180" : ""}`} />
+									<BigArrow
+										strokeWidth={9}
+										className={`w-16 ${openIndex === index ? "rotate-180" : ""}`}
+									/>
 								</dt>
 								<AnimatePresence initial={false}>
 									{openIndex === index && (

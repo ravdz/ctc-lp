@@ -18,26 +18,26 @@ export const AboutUsHero = () => {
 						>
 							Establishing Benelux as the Europe&rsquo;s climate tech leader
 						</Heading>
-						<div className="flex flex-col items-start justify-between gap-6 lg:pt-5">
+						<div className="flex flex-col items-start justify-between gap-6 lg:mt-1 lg:pt-5 xl:mt-4">
 							<div className="flex flex-col items-start justify-start gap-4">
 								<Text is="p" className="text-gray-500">
 									Our collective efforts in the next decades will determine the fate of a large
 									portion of the planet — it&rsquo;s about time we shift our role from nature takers
-									to stewards.
+									to nature stewards.
 								</Text>
 								<Text is="p" className="text-gray-500">
 									Our environment shapes us probably more thank we think. That&rsquo;s why we
-									created CTC —
+									created CTC —{" "}
 									<b>
 										we believe the real-world, transformative movement can be created through high
 										quality social ties & relationships.
-									</b>
+									</b>{" "}
 									Everyday we are immersed in different networks, that can have both negative and
 									positive impact on us.
 								</Text>
 								<Text is="p" className="text-gray-500">
 									In a sustainability context, community is not only for solving the basic human
-									need of connection - it&rsquo;s about education, storytelling, contirbuting to the
+									need of connection — it&rsquo;s about education, storytelling, contributing to the
 									solutions of different systemic issues.
 								</Text>
 							</div>
@@ -45,11 +45,11 @@ export const AboutUsHero = () => {
 							<div>
 								<Text is="p" className="relative w-fit font-bold text-gray-500">
 									Sharpen your impact with CTC.
-									<Star className="absolute bottom-full left-full w-5 -rotate-6 fill-green-600" />
+									<Star className="absolute bottom-full left-full w-5 fill-green-600" />
 								</Text>
 								<Button
 									variant="secondary"
-									className="mt-4 text-base lg:text-xl xl:text-2xl"
+									className="mt-4 text-base lg:-ml-4 lg:text-xl xl:text-2xl"
 									href="/community"
 									hasArrow
 								>

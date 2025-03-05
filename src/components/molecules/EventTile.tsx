@@ -112,7 +112,7 @@ export const EventTile = ({ event }: Props) => {
 					)}
 				</div>
 			</article>
-			<Button className="self-end lowercase" hasArrow disabled={!event}>
+			<Button className="self-end lowercase" hasArrow disabled>
 				{event?.link.label || "request a membership invite"}
 			</Button>
 		</li>

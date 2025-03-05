@@ -15,7 +15,7 @@ type Props = {
 
 export const AnimatedCircle = ({
 	className = "",
-	orbitingObject = <Star className="w-5" />,
+	orbitingObject = <Star className="w-5 rotate-6" />,
 	orbitDirection = "clockwise",
 	orbitSpeed = 1500,
 }: Props) => {

@@ -1,11 +1,11 @@
 "use client";
 import { useState, useMemo } from "react";
-import { AnimatedArrowDown } from "../atoms/AnimatedArrowDown";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { EventTile } from "@/components/molecules/EventTile";
 import { Button } from "@/components/atoms/Button";
 import { Text } from "@/components/atoms/Text";
+import { ArrowDown } from "@/svg/ArrowDown";
 
 const events = [
 	{
@@ -108,7 +108,7 @@ export const UpcomingEventsFeed = () => {
 		<section id="events">
 			<Container className="md:py-22 overflow-hidden py-16 pt-24 md:pt-32">
 				<div className="relative">
-					<AnimatedArrowDown className="absolute bottom-full left-0 -translate-y-6" />
+					<ArrowDown className="absolute bottom-full left-0 w-8 -translate-y-6 stroke-green-600 md:w-10 lg:w-14" />
 					<Heading is="h2" className="mb-7">
 						Upcoming events
 					</Heading>

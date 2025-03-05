@@ -22,7 +22,7 @@ const ctcOffers = [
 		title: "Talent pool",
 		description: "Are you looking for climate tech talent/job opportunity? Join our talent pool.",
 		link: {
-			url: "/services#services",
+			url: "/services?service=talent-pool",
 			label: "read more",
 		},
 	},
@@ -33,7 +33,7 @@ const ctcOffers = [
 		description:
 			"Are you interested in becoming a CTC annual or event sponsor? Read more about our sponsorship options & fill in a simple form.",
 		link: {
-			url: "/community#membership",
+			url: "/community?membership=sponsors",
 			label: "read more",
 		},
 	},
@@ -41,7 +41,7 @@ const ctcOffers = [
 
 export const JoinUsSection = () => {
 	return (
-		<section className="overflow-hidden">
+		<section id="join-us" className="overflow-hidden">
 			<Container className="py-16 md:py-20">
 				<div className="grid w-full gap-20 lg:grid-cols-5 xl:gap-28">
 					<header className="flex flex-col items-start justify-start lg:col-span-2">

@@ -21,6 +21,7 @@ export const ScheduleCallSection = ({ children }: Props) => {
 							variant="secondary"
 							href="/"
 							hasArrow
+							disabled
 							className="self-end text-base md:text-2xl"
 						>
 							Schedule a call

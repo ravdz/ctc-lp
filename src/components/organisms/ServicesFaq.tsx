@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaqSection } from "@/components/organisms/FaqSection";
 import { Text } from "@/components/atoms/Text";
 import { SmileyFace } from "@/svg/SmileyFace";
@@ -20,9 +21,16 @@ const faq = [
 			<Text is="p" className="text-base text-gray-900">
 				No, our services are paid separately from the membership, however, paid membership (annual,
 				late-stage or sponsor) come with custom discounted fees or “no cure no pay” terms (please
-				check Membership options). Generally, membership provides access to events, networking &
-				member content (knowledge) but services like matchmaking, pitch deck creation, deal closing,
-				and consortia support are offered individually.
+				check{" "}
+				<Link
+					href="/community#membership"
+					className="font-bold transition-colors hover:text-green-600"
+				>
+					Membership options
+				</Link>
+				). Generally, membership provides access to events, networking & member content (knowledge)
+				but services like matchmaking, pitch deck creation, deal closing, and consortia support are
+				offered individually.
 			</Text>
 		),
 	},

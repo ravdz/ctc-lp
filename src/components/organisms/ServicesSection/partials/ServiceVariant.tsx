@@ -21,7 +21,7 @@ export const ServiceVariant = ({ title, description, items, link, badge }: Props
 				<Heading is="h3">{title}</Heading>
 				<div className="relative flex h-14 items-center justify-center">
 					<Badge className="absolute left-1/2 top-1/2 z-0 h-full -translate-x-1/2 -translate-y-1/2" />
-					<Text className="z-10 w-3/4 text-center font-sometype-mono text-3xs/3 text-white">
+					<Text className="z-10 mt-0.5 w-3/4 text-center font-sometype-mono text-3xs/3 text-white">
 						{badge}
 					</Text>
 				</div>

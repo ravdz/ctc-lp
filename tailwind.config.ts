@@ -9,6 +9,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			screens: {
+				"3xl": "120rem",
+			},
 			fontFamily: {
 				montserrat: ["var(--font-montserrat)"],
 				"sometype-mono": ["var(--font-sometype-mono)"],

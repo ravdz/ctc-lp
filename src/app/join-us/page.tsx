@@ -22,16 +22,6 @@ const JoinUs = () => {
 			<section>
 				<Container>
 					<div className="flex items-start justify-center">
-						{/* <iframe
-							src="https://docs.google.com/forms/d/e/1FAIpQLSdFZijRjDUulFbquGoWgwjk8OM2j9LYDOr3p8hDdLLDRe0Ysg/viewform?embedded=true"
-							width="640"
-							height="1080"
-							frameBorder={0}
-							marginHeight={0}
-							marginWidth={0}
-						>
-							Loading…
-						</iframe> */}
 						<Text className="block py-72 text-center text-gray-400">Soon</Text>
 					</div>
 				</Container>

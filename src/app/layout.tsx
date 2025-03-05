@@ -28,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<meta name="robots" content="noindex,nofollow" />
+				<meta name="robots" content="index,follow" />
 			</head>
 			<body className={`${montserrat.variable} ${sometypeMono.variable}`}>
 				<Navigation />

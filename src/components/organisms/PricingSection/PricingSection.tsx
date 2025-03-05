@@ -1,28 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Button } from "@/components/atoms/Button";
 import { FoundersAndInvestorsTab } from "@/components/organisms/PricingSection/partials/FoundersAndInvestorsTab";
 import { SponsorsTab } from "@/components/organisms/PricingSection/partials/SponsorsTab";
-import { Balls } from "@/svg/Balls";
+import { FallingCircle } from "@/svg/FallingCircle";
 
 const tabs = [
 	{
 		id: 1,
+		query: "investors",
 		label: "For founders & investors",
 	},
 	{
 		id: 2,
+		query: "sponsors",
 		label: "For sponsors",
 	},
 ];
 
 export const PricingSection = () => {
+	const searchParams = useSearchParams();
+	const membership = searchParams.get("membership");
+	const pricingSectionRef = useRef<HTMLElement>(null);
 	const [activeTab, setActiveTab] = useState<number>(1);
+	useEffect(() => {
+		const tab = tabs.find((tab) => tab.query === membership);
+		if (tab) {
+			setActiveTab(tab.id);
+			pricingSectionRef.current?.scrollIntoView({ behavior: "instant" });
+		}
+	}, [membership]);
 	return (
-		<section id="membership">
+		<section id="membership" ref={pricingSectionRef}>
 			<Container className="py-10">
 				<div>
 					<div className="mb-7 flex flex-col-reverse items-start justify-between gap-7 md:flex-row md:items-end md:gap-4">
@@ -44,7 +57,7 @@ export const PricingSection = () => {
 							</div>
 						</div>
 						<div className="self-end md:self-auto">
-							<Balls className="w-36 md:w-52" />
+							<FallingCircle className="w-36 md:w-44 lg:w-52" />
 						</div>
 					</div>
 					{activeTab === 1 ? <FoundersAndInvestorsTab /> : <SponsorsTab />}

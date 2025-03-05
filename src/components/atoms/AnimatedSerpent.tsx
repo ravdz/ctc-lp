@@ -50,7 +50,7 @@ export const AnimatedSerpent = ({ className = "" }: Props) => {
 					offsetPath: `path("${offsetPath}")`,
 				}}
 			>
-				<Star className="w-5" />
+				<Star className="w-5 rotate-6" />
 			</motion.div>
 		</motion.div>
 	);

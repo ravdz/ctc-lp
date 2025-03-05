@@ -11,7 +11,7 @@ import { GreenGradient } from "@/svg/GreenGradient";
 
 export const AboutUsContentSection = () => {
 	return (
-		<section>
+		<section id="our-mission">
 			<Container className="relative overflow-hidden pb-14 pt-4 md:pb-24 md:pt-6">
 				<header>
 					<div className="relative z-10 mb-14 grid grid-cols-1 gap-4 md:mb-24 lg:grid-cols-7">
@@ -82,7 +82,7 @@ export const AboutUsContentSection = () => {
 							</Heading>
 							<div className="flex grow flex-col items-start justify-start gap-4">
 								<Text is="p">
-									A non-profit foundation, Benelux-based; our community consists of climate tech
+									A non-profit foundation, Benelux-focused; our community consists of climate tech
 									founders, investors, and talent. We actively seek ways to help foster connections
 									& unlock opportunities.
 								</Text>
@@ -100,7 +100,7 @@ export const AboutUsContentSection = () => {
 								</Text>
 								<Text is="p">
 									CTC&apos;s part is acting
-									<b>as a missing link—an overlooked role of connector and facilitator</b>; having
+									<b>as a missing link - an overlooked role of connector and facilitator</b>; having
 									strong connections & direct access to key climate-tech stakeholders, we make it
 									easier for the right people to meet and create opportunities.
 								</Text>
@@ -109,7 +109,7 @@ export const AboutUsContentSection = () => {
 									strive towards building a more regenerative lifestyle & a better world for all.
 								</Text>
 								<Text is="p">
-									Science shows that
+									Science shows that{" "}
 									<b>
 										community and a sense of belonging can boost our cognitive functions & emotional
 										intelligence, and shape us into more empathetic beings
@@ -119,7 +119,7 @@ export const AboutUsContentSection = () => {
 								</Text>
 							</div>
 						</div>
-						<FallingCircle className="absolute bottom-0 z-0 hidden w-36 md:left-0 md:block lg:-right-8 lg:left-auto lg:w-48 lg:translate-x-full" />
+						<FallingCircle className="absolute bottom-0 z-0 hidden w-36 md:left-0 md:block 3xl:-right-8 3xl:left-auto 3xl:w-48 3xl:translate-x-full" />
 					</div>
 					<GreenGradient className="absolute right-0 top-3/4 z-0 w-[200%] -translate-y-1/2 translate-x-1/2 opacity-70 lg:top-1/2 lg:w-full" />
 				</header>

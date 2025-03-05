@@ -42,7 +42,7 @@ export const Cards = (props: Props) => {
 	}, []);
 
 	return (
-		<div className="flex items-stretch justify-start gap-5" ref={containerRef}>
+		<div className="flex flex-col items-stretch justify-start gap-5 lg:flex-row" ref={containerRef}>
 			{cards.map((card, index) => (
 				<Card
 					key={card.id}

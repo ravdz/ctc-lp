@@ -37,7 +37,7 @@ const teamMembers = [
 
 export const OurTeamSection = () => {
 	return (
-		<section>
+		<section id="team">
 			<Container className="py-12 md:py-16">
 				<div>
 					<Heading is="h2" className="mb-12">
