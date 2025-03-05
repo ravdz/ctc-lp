@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
 
 import { useSearchParams } from "next/navigation";
 import { InvestorTab } from "./partials/InvestorTab";
@@ -8,7 +8,7 @@ import { ConsortiaTab } from "./partials/ConsortiaTab";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Button } from "@/components/atoms/Button";
-
+import Loading from "@/app/loading";
 const tabs = [
 	{
 		id: 1,
@@ -40,35 +40,37 @@ export const ServicesSection = () => {
 		}
 	}, [service]);
 	return (
-		<section ref={servicesSectionRef} id="services">
-			<Container className="py-10">
-				<div>
-					<div className="mb-10">
-						<Heading is="h2" className="mb-7">
-							Services
-						</Heading>
-						<div className="flex items-center justify-start gap-3">
-							{tabs.map((tab) => (
-								<Button
-									className="text-sm sm:text-base"
-									onClick={() => setActiveTab(tab.id)}
-									key={tab.id}
-									variant={activeTab === tab.id ? "secondary" : "primary"}
-								>
-									{tab.label}
-								</Button>
-							))}
+		<Suspense fallback={<Loading />}>
+			<section ref={servicesSectionRef} id="services">
+				<Container className="py-10">
+					<div>
+						<div className="mb-10">
+							<Heading is="h2" className="mb-7">
+								Services
+							</Heading>
+							<div className="flex items-center justify-start gap-3">
+								{tabs.map((tab) => (
+									<Button
+										className="text-sm sm:text-base"
+										onClick={() => setActiveTab(tab.id)}
+										key={tab.id}
+										variant={activeTab === tab.id ? "secondary" : "primary"}
+									>
+										{tab.label}
+									</Button>
+								))}
+							</div>
 						</div>
+						{activeTab === 1 ? (
+							<InvestorTab />
+						) : activeTab === 2 ? (
+							<TalentPoolTab />
+						) : (
+							<ConsortiaTab />
+						)}
 					</div>
-					{activeTab === 1 ? (
-						<InvestorTab />
-					) : activeTab === 2 ? (
-						<TalentPoolTab />
-					) : (
-						<ConsortiaTab />
-					)}
-				</div>
-			</Container>
-		</section>
+				</Container>
+			</section>
+		</Suspense>
 	);
 };
