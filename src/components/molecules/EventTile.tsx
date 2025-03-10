@@ -33,7 +33,7 @@ export const EventTile = ({ event }: Props) => {
 	return (
 		<li className="flex flex-col justify-start gap-4">
 			<article
-				className={`flex h-full w-full flex-col items-stretch justify-between gap-2 rounded-xl p-5 ${event?.color || "bg-gray-50"}`}
+				className={`relative flex h-full w-full flex-col items-stretch justify-between gap-2 rounded-xl p-5 ${event?.color || "bg-gray-50"}`}
 			>
 				<div className="mb-3 flex flex-wrap items-start justify-start gap-2">
 					{event ? (
@@ -45,17 +45,26 @@ export const EventTile = ({ event }: Props) => {
 						</>
 					)}
 				</div>
-
+				{event?.isFlagship && (
+					<div className="absolute left-full top-14 flex h-20 w-20 -translate-x-3/4 -rotate-[25deg] items-center justify-center lg:h-24 lg:w-24 lg:-translate-x-1/2">
+						<FlagshipBadge className="absolute left-0 top-0 w-full" />
+						<Text className="relative z-10 text-center font-sometype-mono text-2xs lowercase text-white lg:text-sm">
+							Flagship
+							<br />
+							event
+						</Text>
+					</div>
+				)}
 				<header className="flex flex-col items-start justify-start gap-2">
 					{event && (
 						<Text className="text-md text-gray-900" is="p">
 							{event.prefix}
 						</Text>
 					)}
-					<div className="relative w-full">
+					<div className="w-full">
 						<Heading
 							is="h3"
-							className={`pr-5 text-3xl md:pr-8 ${event ? "text-gray-900" : "text-gray-400"}`}
+							className={`pr-10 text-3xl ${event ? "text-gray-900" : "text-gray-400"}`}
 						>
 							{event?.title || (
 								<>
@@ -63,16 +72,6 @@ export const EventTile = ({ event }: Props) => {
 								</>
 							)}
 						</Heading>
-						{event?.isFlagship && (
-							<div className="absolute left-full top-0 flex h-20 w-20 -translate-x-1/4 -translate-y-1/2 -rotate-[27deg] items-center justify-center md:h-28 md:w-28">
-								<FlagshipBadge className="absolute left-0 top-0 w-full" />
-								<Text className="relative z-10 text-center font-sometype-mono text-sm lowercase text-white md:text-md">
-									Flagship
-									<br />
-									event
-								</Text>
-							</div>
-						)}
 					</div>
 					{event && (
 						<Text className="text-md text-gray-900" is="p">

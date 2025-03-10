@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build": "next build",
+		"build": "next build && npm run copy-htaccess",
+		"copy-htaccess": "cp .htaccess out/.htaccess",
 		"start": "next start",
 		"lint": "next lint --fix --dir src",
 		"format": "prettier --write ."

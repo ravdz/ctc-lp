@@ -7,7 +7,7 @@ const teamMembers = [
 		id: 1,
 		name: "Leopold van Oosten",
 		position: "Director",
-		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
+		linkedin: "https://www.linkedin.com/in/leopoldvanoosten/",
 		image: {
 			src: "/img/team/leopold.png",
 			alt: "Leopold van Oosten",
@@ -17,7 +17,7 @@ const teamMembers = [
 		id: 2,
 		name: "Paulina Markowska",
 		position: "Operations Manager",
-		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
+		linkedin: "https://www.linkedin.com/in/paulina-markowska/",
 		image: {
 			src: "/img/team/paulina.png",
 			alt: "Paulina Markowska",
@@ -27,7 +27,7 @@ const teamMembers = [
 		id: 3,
 		name: "Gideon van Kleij",
 		position: "Board Member",
-		linkedin: "https://www.linkedin.com/in/leopold-van-oosten-0000000000/",
+		linkedin: "https://www.linkedin.com/in/gideonvankleij/",
 		image: {
 			src: "/img/team/gideon.png",
 			alt: "Gideon van Kleij",

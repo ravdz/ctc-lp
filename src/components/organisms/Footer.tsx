@@ -116,10 +116,11 @@ export const Footer = () => {
 											{id === 4 && (
 												<li>
 													<Link
-														href="/"
-														className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600"
+														target="_blank"
+														href="https://www.linkedin.com/company/ctsbenelux/"
+														className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 font-montserrat text-md text-white transition-colors hover:bg-gray-900"
 													>
-														<Text className="text-md text-white">Li</Text>
+														Li
 													</Link>
 												</li>
 											)}

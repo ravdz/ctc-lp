@@ -86,18 +86,14 @@ export const UpcomingEventsFeed = () => {
 
 	const filteredEvents = useMemo(() => {
 		return events.filter((event) => {
+			const eventDateUnix = Math.floor(event.date.getTime() / 1000);
+			const todayUnix = Math.floor(
+				new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()).getTime() /
+					1000,
+			);
 			if (activeTab === 1) {
-				return event.date.getFullYear() === 2025;
+				return event.date.getFullYear() === 2025 && eventDateUnix > todayUnix;
 			} else if (activeTab === 2) {
-				const eventDateUnix = Math.floor(event.date.getTime() / 1000);
-				const todayUnix = Math.floor(
-					new Date(
-						new Date().getFullYear(),
-						new Date().getMonth(),
-						new Date().getDate(),
-					).getTime() / 1000,
-				);
-				console.log(event.title, eventDateUnix, todayUnix);
 				return eventDateUnix < todayUnix;
 			}
 			return false;

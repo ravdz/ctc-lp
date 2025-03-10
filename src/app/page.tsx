@@ -6,7 +6,7 @@ import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
 
 export const metadata: Metadata = {
-	title: "Home | Climate Tech Connect",
+	title: "Climate tech community, events & resources | Climate Tech Connect Benelux",
 	description:
 		"Welcome to Climate Tech Connect. Explore our initiatives, upcoming events, and how we are fostering innovation in climate technology.",
 };
