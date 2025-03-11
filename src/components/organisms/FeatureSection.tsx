@@ -66,7 +66,7 @@ export const FeatureSection = () => {
 						</div>
 					</div>
 					<div className="relative flex flex-col justify-end">
-						<ul className="relative z-20 mb-10 flex flex-col items-stretch justify-start gap-7 sm:grid sm:grid-cols-2 lg:flex">
+						<ul className="relative z-20 mb-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:flex">
 							{features.map(({ id, title, description, items, url }) => (
 								<FeatureItem
 									key={id}
@@ -77,7 +77,7 @@ export const FeatureSection = () => {
 								/>
 							))}
 						</ul>
-						<PinkGradient className="absolute left-1/2 top-1/2 z-0 w-[150%] -translate-x-1/2 -translate-y-1/2" />
+						<PinkGradient className="absolute left-1/2 top-1/2 -z-10 w-[150%] -translate-x-1/2 -translate-y-1/2" />
 						<AnimatedCircle className="absolute left-1/2 top-full z-10 w-64 -translate-x-1/2 -translate-y-1/2 rotate-12 md:w-76" />
 					</div>
 				</div>

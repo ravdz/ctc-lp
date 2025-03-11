@@ -3,7 +3,7 @@ import { Container } from "@/components/atoms/Container";
 import { LogoIcon } from "@/svg/LogoIcon";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
-import { MultipleCircles } from "@/svg/MultipleCircles";
+import { AnimatedMultipleCircles } from "@/components/atoms/AnimatedMultipleCircles";
 import { SmileyFace } from "@/svg/SmileyFace";
 import { GreenGradient } from "@/svg/GreenGradient";
 export const Footer = () => {
@@ -75,7 +75,7 @@ export const Footer = () => {
 	return (
 		<footer className="relative">
 			<Container className="relative">
-				<MultipleCircles className="relative z-10 h-32 md:h-auto" />
+				<AnimatedMultipleCircles className="relative z-10 h-32 md:h-48" />
 			</Container>
 			<Container className="absolute left-0 top-0 -z-10 h-full w-full">
 				<GreenGradient className="z-0 ml-auto hidden w-2/3 md:block lg:-translate-y-[10%]" />
