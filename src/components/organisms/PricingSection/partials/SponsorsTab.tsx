@@ -1,45 +1,30 @@
 import { SponsorsVariant } from "@/components/organisms/PricingSection/partials/SponsorsVariant";
 import { Cards } from "@/components/organisms/Cards";
+import community from "@/data/community.json";
 
 const cards = [
 	{
 		id: 1,
-		title: "Annual CTC sponsorship",
+		title: community.pricing.for_sponsors_tab.card1.card_title,
 		content: (
 			<SponsorsVariant
-				title="Annual CTC sponsorship"
-				subtitle="one year commitment"
-				price="€ 25-100K"
-				benefits={[
-					"Council invitation, every 6 months",
-					"Access to network & community database",
-					"Speaker delegation to the events",
-					"Visibility on the events",
-					"Visibility on the website",
-					"Complimentary tickets to all of our events",
-					"No active involvement required",
-				]}
+				title={community.pricing.for_sponsors_tab.card1.card_title}
+				subtitle={community.pricing.for_sponsors_tab.card1.content.subtitle}
+				price={community.pricing.for_sponsors_tab.card1.content.price}
+				benefits={community.pricing.for_sponsors_tab.card1.content.benefits}
 			/>
 		),
 	},
 	{
 		id: 2,
-		title: "Per event sponsorship",
+		title: community.pricing.for_sponsors_tab.card2.card_title,
 		content: (
 			<SponsorsVariant
-				title="Per event sponsorship"
-				subtitle="depending on the event type"
-				price="€ 4-40K"
-				additionalInfo="*conditions vary per event; schedule a call with us to access complete benefits list per event."
-				benefits={[
-					"Council invitation, every 6 months",
-					"Access to network & community database",
-					"Speaker delegation to the events",
-					"Visibility on the events",
-					"Visibility on the website",
-					"Complimentary tickets to all of our events",
-					"No active involvement required",
-				]}
+				title={community.pricing.for_sponsors_tab.card2.card_title}
+				subtitle={community.pricing.for_sponsors_tab.card2.content.subtitle}
+				price={community.pricing.for_sponsors_tab.card2.content.price}
+				additionalInfo={community.pricing.for_sponsors_tab.card2.content.additional_info}
+				benefits={community.pricing.for_sponsors_tab.card2.content.benefits}
 			/>
 		),
 	},

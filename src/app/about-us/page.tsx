@@ -4,11 +4,11 @@ import { OurTeamSection } from "@/components/organisms/OurTeamSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { AboutUsHero } from "@/components/organisms/AboutUsHero";
+import aboutUs from "@/data/about-us.json";
 
 export const metadata: Metadata = {
-	title: "About Us | Climate Tech Connect",
-	description:
-		"Learn more about Climate Tech Connect, our mission, our team, and how we are driving innovation in climate technology. Join us in making a difference.",
+	title: aboutUs.meta_title,
+	description: aboutUs.meta_description,
 };
 
 const partnersLogos = [
@@ -30,7 +30,7 @@ const AboutUs = () => {
 		<div>
 			<AboutUsHero />
 			<AboutUsContentSection />
-			<LogosSection heading="Our partners" logos={partnersLogos} />
+			<LogosSection heading={aboutUs.logos.title} logos={partnersLogos} />
 			<OurTeamSection />
 			<JoinUsSection />
 		</div>

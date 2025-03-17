@@ -1,39 +1,7 @@
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { TeamMemberTile } from "@/components/molecules/TeamMemberTile";
-
-const teamMembers = [
-	{
-		id: 1,
-		name: "Leopold van Oosten",
-		position: "Director",
-		linkedin: "https://www.linkedin.com/in/leopoldvanoosten/",
-		image: {
-			src: "/img/team/leopold.png",
-			alt: "Leopold van Oosten",
-		},
-	},
-	{
-		id: 2,
-		name: "Paulina Markowska",
-		position: "Operations Manager",
-		linkedin: "https://www.linkedin.com/in/paulina-markowska/",
-		image: {
-			src: "/img/team/paulina.png",
-			alt: "Paulina Markowska",
-		},
-	},
-	{
-		id: 3,
-		name: "Gideon van Kleij",
-		position: "Board Member",
-		linkedin: "https://www.linkedin.com/in/gideonvankleij/",
-		image: {
-			src: "/img/team/gideon.png",
-			alt: "Gideon van Kleij",
-		},
-	},
-];
+import aboutUs from "@/data/about-us.json";
 
 export const OurTeamSection = () => {
 	return (
@@ -44,9 +12,9 @@ export const OurTeamSection = () => {
 						Our team
 					</Heading>
 					<ul className="flex flex-col flex-wrap items-center justify-start gap-5 md:flex-row md:items-center md:justify-around">
-						{teamMembers.map(({ id, name, position, linkedin, image }) => (
+						{aboutUs.team.members.map(({ name, position, linkedin, image }, index) => (
 							<TeamMemberTile
-								key={id}
+								key={index}
 								name={name}
 								position={position}
 								linkedin={linkedin}

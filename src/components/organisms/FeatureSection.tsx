@@ -5,36 +5,7 @@ import { FeatureItem } from "@/components/molecules/FeatureItem";
 import { Galaxy } from "@/svg/AnimatedGalaxy";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 import { PinkGradient } from "@/svg/PinkGradient";
-
-const features = [
-	{
-		id: 1,
-		title: "Community",
-		description:
-			"Forge powerful partnerships within a community of top +150 climate minds of the Benelux",
-		items: [
-			{ id: 1, label: "climate tech summit" },
-			{ id: 2, label: "events" },
-			{ id: 3, label: "community" },
-			{ id: 4, label: "knowledge-sharing" },
-			{ id: 5, label: "resources" },
-			{ id: 6, label: "advisory" },
-		],
-		url: "/community",
-	},
-	{
-		id: 2,
-		title: "Services",
-		description:
-			"Find the best climate-tech talents & propel your company's growth leveraging on the knowledge capital of the community",
-		items: [
-			{ id: 1, label: "quality, manual founder-investor matchmaking" },
-			{ id: 2, label: "access to talent pool" },
-			{ id: 3, label: "consortia" },
-		],
-		url: "/services",
-	},
-];
+import homepage from "@/data/homepage.json";
 
 export const FeatureSection = () => {
 	return (
@@ -43,37 +14,25 @@ export const FeatureSection = () => {
 				<div className="grid w-full gap-20 lg:grid-cols-2 xl:gap-28">
 					<div>
 						<header className="relative mb-12">
-							<Heading is="h2">A place where your ideas will be shaped to their best</Heading>
+							<Heading is="h2">{homepage.features.title}</Heading>
 							<Galaxy className="absolute -right-4 -top-16 z-10 lg:-right-10" />
 						</header>
 
 						<div className="flex flex-col items-stretch justify-start gap-6">
-							<Text is="p">
-								<b>CTC is a community</b> of innovators, founders, change-makers, stakeholders &
-								impact investors, all within climate tech industry in the Benelux region.
-							</Text>
 							<Text is="p" className="font-montserrat text-base">
-								<b>How CTC can help you?</b> We organize community get-togethers & knowledge sharing
-								activities; we host events ranging from intimate, exclusive meetups to large-scale
-								conferences. Our services includes
-								<b>AI-powered and manual investor-founder matchmaking</b>, access to a curated
-								talent pool & consortia creation.
-							</Text>
-							<Text is="p" className="font-montserrat text-base">
-								Against a backdrop of digital & AI age, a community with a sense of connection is
-								poised to spread new ideas & drive real-world change.
+								<span dangerouslySetInnerHTML={{ __html: homepage.features.description }} />
 							</Text>
 						</div>
 					</div>
 					<div className="relative flex flex-col justify-end">
 						<ul className="relative z-20 mb-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-1">
-							{features.map(({ id, title, description, items, url }) => (
+							{homepage.features.tiles.map(({ title, description, items, button }, index) => (
 								<FeatureItem
-									key={id}
+									key={index}
 									title={title}
 									description={description}
 									items={items}
-									url={url}
+									button={button}
 								/>
 							))}
 						</ul>

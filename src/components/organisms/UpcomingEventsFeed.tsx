@@ -6,69 +6,7 @@ import { EventTile } from "@/components/molecules/EventTile";
 import { Button } from "@/components/atoms/Button";
 import { Text } from "@/components/atoms/Text";
 import { ArrowDown } from "@/svg/ArrowDown";
-
-const events = [
-	{
-		id: 1,
-		badges: ["founders", "scale-ups", "A/B stage"],
-		isFlagship: false,
-		color: "bg-green-500",
-		prefix: "CTS exclusive deepdive:",
-		title: "War stories from the Dealroom",
-		description: "with Philip de Roos (founder De Roos)",
-		image: "/img/16.jpeg",
-		date: new Date(Date.UTC(2025, 2, 4)),
-		location: {
-			place: "De Roos office",
-			city: "Amsterdam",
-			country: "Netherlands",
-		},
-		link: {
-			url: "/",
-			label: "read more",
-		},
-	},
-	{
-		id: 2,
-		badges: ["founders", "investors"],
-		isFlagship: true,
-		color: "bg-green-600",
-		prefix: "Flagship event:",
-		title: "Climate Tech Summit 2025",
-		description: "Ghent (Belgium)",
-		image: "/img/1.png",
-		date: new Date(Date.UTC(2025, 9, 9)),
-		location: {
-			place: "Wintercircus",
-			city: "Ghent",
-			country: "Belgium",
-		},
-		link: {
-			url: "/",
-			label: "read more",
-		},
-	},
-	{
-		id: 3,
-		badges: ["founders", "investors"],
-		isFlagship: true,
-		color: "bg-blue-400",
-		prefix: "Flagship event:",
-		title: "CLIMATE TECH SUMMIT 2024",
-		description: "Amsterdam (the Netherlands)",
-		image: "/img/26.png",
-		date: new Date(Date.UTC(2022, 9, 22)),
-		location: {
-			place: "POSTHOORNKERK",
-			city: "Amsterdam",
-			country: "Netherlands",
-		},
-		link: {
-			url: "/",
-			label: "read more",
-		},
-	},
-];
+import homepage from "@/data/homepage.json";
 
 const tabs = [
 	{
@@ -85,14 +23,15 @@ export const UpcomingEventsFeed = () => {
 	const [activeTab, setActiveTab] = useState<number>(1);
 
 	const filteredEvents = useMemo(() => {
-		return events.filter((event) => {
-			const eventDateUnix = Math.floor(event.date.getTime() / 1000);
+		return homepage.events.event_tiles.filter((event) => {
+			const date = new Date(Date.UTC(event.date.year, event.date.month - 1, event.date.day));
+			const eventDateUnix = Math.floor(date.getTime() / 1000);
 			const todayUnix = Math.floor(
 				new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()).getTime() /
 					1000,
 			);
 			if (activeTab === 1) {
-				return event.date.getFullYear() === 2025 && eventDateUnix > todayUnix;
+				return date.getFullYear() === 2025 && eventDateUnix > todayUnix;
 			} else if (activeTab === 2) {
 				return eventDateUnix < todayUnix;
 			}
@@ -121,8 +60,8 @@ export const UpcomingEventsFeed = () => {
 					</div>
 					{filteredEvents.length ? (
 						<ul className="grid grid-cols-1 items-stretch gap-7 md:grid-cols-2 xl:grid-cols-3">
-							{filteredEvents.map((event) => (
-								<EventTile key={event.id} event={event} />
+							{filteredEvents.map((event, index) => (
+								<EventTile key={index} event={event} />
 							))}
 						</ul>
 					) : (

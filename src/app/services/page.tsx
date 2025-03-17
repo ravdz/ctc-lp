@@ -4,11 +4,11 @@ import { ServicesSection } from "@/components/organisms/ServicesSection";
 import { ScheduleCallSection } from "@/components/organisms/ScheduleCallSection";
 import { ServicesFaq } from "@/components/organisms/ServicesFaq";
 import { Text } from "@/components/atoms/Text";
+import services from "@/data/services.json";
 
 export const metadata: Metadata = {
-	title: "Our Services | Climate Tech Connect",
-	description:
-		"Explore the range of services offered by Climate Tech Connect. From consortia creation to deal closing, we support your climate technology initiatives.",
+	title: services.meta_title,
+	description: services.meta_description,
 };
 
 const Services = () => {

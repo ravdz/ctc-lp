@@ -1,0 +1,58 @@
+{
+	"meta_title": "About Us | Climate Tech Connect",
+	"meta_description": "Learn more about Climate Tech Connect, our mission, our team, and how we are driving innovation in climate technology. Join us in making a difference.",
+	"hero": {
+		"title": "Establishing Benelux as the Europe's climate tech leader",
+		"description": "Our collective efforts in the next decades will determine the fate of a large portion of the planet — it's about time we shift our role from nature takers to nature stewards.<br/><br/>Our environment shapes us probably more thank we think. That's why we created CTC — <b>we believe the real-world, transformative movement can be created through high quality social ties & relationships.</b> Everyday we are immersed in different networks, that can have both negative and positive impact on us.<br/><br/>In a sustainability context, community is not only for solving the basic human need of connection — it's about education, storytelling, contributing to the solutions of different systemic issues.",
+		"info": "Sharpen your impact with CTC.",
+		"button": {
+			"label": "Become a member",
+			"url": "/community"
+		}
+	},
+	"content": {
+		"block1": {
+			"title": "Who we are",
+			"description": "We believe the real world value can be created through high quality social ties & relationships."
+		},
+		"block2": {
+			"title": "Why we do it",
+			"description": "Using our <b>network and strategic support</b>, we want to propel growth of the most innovative climate tech Benelux companies, help them secure consistent, sustainable capital, access community  & knowledge.</br></br> We see <b>sustainability as a call to action</b> & want to make it easier for those who actively strive towards building a more regenerative lifestyle, a better world.</br></br>Science shows that <b>community and a sense of belonging can boost our cognitive functions & emotional intelligence, and shape us into more empathetic beings</b>; we can use this human programming to collectively expand our knowledge and awaraness, and ultimately - drive real world change."
+		}
+	},
+	"logos": {
+		"title": "Our partners"
+	},
+	"team": {
+		"title": "Our team",
+		"members": [
+			{
+				"name": "Leopold van Oosten",
+				"position": "Director",
+				"linkedin": "https://www.linkedin.com/in/leopoldvanoosten/",
+				"image": {
+					"src": "/img/team/leopold.png",
+					"alt": "Leopold van Oosten"
+				}
+			},
+			{
+				"name": "Paulina Markowska",
+				"position": "Operations Manager",
+				"linkedin": "https://www.linkedin.com/in/paulina-markowska/",
+				"image": {
+					"src": "/img/team/paulina.png",
+					"alt": "Paulina Markowska"
+				}
+			},
+			{
+				"name": "Gideon van Kleij",
+				"position": "Board Member",
+				"linkedin": "https://www.linkedin.com/in/gideonvankleij/",
+				"image": {
+					"src": "/img/team/gideon.png",
+					"alt": "Gideon van Kleij"
+				}
+			}
+		]
+	}
+}

@@ -8,12 +8,13 @@ import { SliderSection } from "@/components/organisms/SliderSection";
 import { StepsSection } from "@/components/organisms/StepsSection";
 import { PricingSection } from "@/components/organisms/PricingSection";
 import { FaqSection } from "@/components/organisms/FaqSection";
+import community from "@/data/community.json";
 
 export const metadata: Metadata = {
-	title: "Community | Climate Tech Connect",
-	description:
-		"Discover the vibrant community at Climate Tech Connect. Connect with like-minded individuals, participate in events, and join our mission to innovate in climate technology.",
+	title: community.meta_title,
+	description: community.meta_description,
 };
+
 const slides = [
 	{
 		id: 1,
@@ -69,21 +70,6 @@ const slides = [
 		id: 11,
 		image: "/img/9.png",
 		title: "Slide 9",
-	},
-];
-
-const steps = [
-	{
-		id: 1,
-		label: "Fill in a simple form & choose membership",
-	},
-	{
-		id: 2,
-		label: "We evaluate your inquiry & confirm via email",
-	},
-	{
-		id: 3,
-		label: "You're in the database & can now receive access to events",
 	},
 ];
 
@@ -203,38 +189,21 @@ const JoinUs = () => {
 					<div className="relative z-10 flex flex-col items-stretch justify-start gap-14">
 						<div className="flex flex-col items-start justify-start gap-10 md:flex-row md:gap-5 xl:gap-20">
 							<Heading is="h2" className="shrink-0 md:basis-1/3 lg:basis-1/5">
-								Why join?
+								{community.content.block1.title}
 							</Heading>
 							<div className="flex grow flex-col items-start justify-start gap-4">
-								<Text is="p">
-									We believe the real world value can be created through high quality social ties &
-									relationships.
+								<Text is="span">
+									<p dangerouslySetInnerHTML={{ __html: community.content.block1.description }} />
 								</Text>
 							</div>
 						</div>
 						<div className="flex flex-col items-start justify-start gap-10 md:flex-row md:gap-5 xl:gap-20">
 							<Heading is="h2" className="shrink-0 md:basis-1/3 lg:basis-1/5">
-								Why we do it
+								{community.content.block2.title}
 							</Heading>
 							<div className="flex grow flex-col items-start justify-start gap-4">
-								<Text is="p">
-									Using our <b>network and strategic support</b>, we want to propel growth of the
-									most innovative climate tech Benelux companies, help them secure consistent,
-									sustainable capital, access community & knowledge.
-								</Text>
-								<Text is="p">
-									We see <b>sustainability as a call to action</b> & want to make it easier for
-									those who actively strive towards building a more regenerative lifestyle, a better
-									world.
-								</Text>
-								<Text is="p">
-									Science shows that{" "}
-									<b>
-										community and a sense of belonging can boost our cognitive functions & emotional
-										intelligence, and shape us into more empathetic beings
-									</b>
-									; we can use this human programming to collectively expand our knowledge and
-									awaraness, and ultimately - drive real world change.
+								<Text is="span">
+									<p dangerouslySetInnerHTML={{ __html: community.content.block2.description }} />
 								</Text>
 							</div>
 						</div>
@@ -242,7 +211,11 @@ const JoinUs = () => {
 				</Container>
 			</section>
 			<SliderSection slides={slides} />
-			<StepsSection heading="How to join the community" steps={steps} boldedHeadings={false} />
+			<StepsSection
+				heading={community.steps.title}
+				steps={community.steps.steps}
+				boldedHeadings={false}
+			/>
 			<PricingSection />
 			<FaqSection heading="Membership FAQ" className="pb-40 pt-20" items={faq} />
 		</div>

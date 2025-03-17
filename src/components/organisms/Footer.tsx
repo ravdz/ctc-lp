@@ -6,75 +6,12 @@ import { Text } from "@/components/atoms/Text";
 import { AnimatedMultipleCircles } from "@/components/atoms/AnimatedMultipleCircles";
 import { SmileyFace } from "@/svg/SmileyFace";
 import { GreenGradient } from "@/svg/GreenGradient";
+import common from "@/data/common.json";
+
 export const Footer = () => {
-	const navigation = [
-		{
-			id: 1,
-			label: "About us",
-			links: [
-				{
-					id: 1,
-					label: "Our mission",
-					url: "/about-us#our-mission",
-				},
-				{
-					id: 2,
-					label: "The team",
-					url: "/about-us#team",
-				},
-			],
-		},
-		{
-			id: 2,
-			label: "Services",
-			links: [
-				{
-					id: 1,
-					label: "Investor ready",
-					url: "/services?service=investors",
-				},
-				{
-					id: 2,
-					label: "Consortia",
-					url: "/services?service=consortia",
-				},
-				{
-					id: 3,
-					label: "Talent pool",
-					url: "/services?service=talent-pool",
-				},
-			],
-		},
-		{
-			id: 3,
-			label: "Community",
-			links: [
-				{
-					id: 1,
-					label: "Events",
-					url: "/#events",
-				},
-				{
-					id: 2,
-					label: "Advisory",
-					url: "/",
-				},
-				{
-					id: 3,
-					label: "Join us",
-					url: "/join-us",
-				},
-			],
-		},
-		{
-			id: 4,
-			label: "Connect",
-			links: [],
-		},
-	];
 	return (
 		<footer className="relative">
-			<Container className="relative">
+			<Container className="relative z-20">
 				<AnimatedMultipleCircles className="relative z-10 h-32 md:h-48" />
 			</Container>
 			<Container className="absolute left-0 top-0 -z-10 h-full w-full">
@@ -96,14 +33,14 @@ export const Footer = () => {
 						</div>
 						<nav className="mt-12 md:col-span-1 md:mt-0 lg:col-span-2">
 							<ul className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-0">
-								{navigation.map(({ id, label, links }) => (
-									<li key={id}>
+								{common.footer.navigation.map(({ label, links }, index) => (
+									<li key={index}>
 										<Heading is="h3" className="mb-5 text-xl font-semibold text-gray-900 lg:mb-9">
 											{label}
 										</Heading>
 										<ul className="flex flex-col items-start justify-start gap-5">
-											{links.map((link) => (
-												<li key={link.id}>
+											{links.map((link, linkIndex) => (
+												<li key={linkIndex}>
 													<Link href={link.url}>
 														<Text
 															className={`font-sometype-mono text-md transition-colors ${link.url === "/community" ? "text-green-400" : "text-gray-500 hover:text-gray-500/70"}`}
@@ -113,20 +50,25 @@ export const Footer = () => {
 													</Link>
 												</li>
 											))}
-											{id === 4 && (
-												<li>
-													<Link
-														target="_blank"
-														href="https://www.linkedin.com/company/ctsbenelux/"
-														className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 font-montserrat text-md text-white transition-colors hover:bg-gray-900"
-													>
-														Li
-													</Link>
-												</li>
-											)}
 										</ul>
 									</li>
 								))}
+								<li>
+									<Heading is="h3" className="mb-5 text-xl font-semibold text-gray-900 lg:mb-9">
+										Connect
+									</Heading>
+									<ul className="flex flex-col items-start justify-start gap-5">
+										<li>
+											<Link
+												target="_blank"
+												href="https://www.linkedin.com/company/ctsbenelux/"
+												className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 font-montserrat text-md text-white transition-colors hover:bg-gray-900"
+											>
+												Li
+											</Link>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</nav>
 						<div className="mt-12 md:mt-14">

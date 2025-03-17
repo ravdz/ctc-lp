@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - "data/*.json"
+      - "src/data/*.json"
 
 jobs:
   build:

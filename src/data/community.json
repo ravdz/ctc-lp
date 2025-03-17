@@ -1,0 +1,71 @@
+{
+	"meta_title": "Community | Climate Tech Connect",
+	"meta_description": "Discover the vibrant community at Climate Tech Connect. Connect with like-minded individuals, participate in events, and join our mission to innovate in climate technology.",
+	"hero": {
+		"title": "The power of niche appeal"
+	},
+	"content": {
+		"block1": {
+			"title": "Why join?",
+			"description": "We believe the real world value can be created through high quality social ties & relationships."
+		},
+		"block2": {
+			"title": "Why we do it",
+			"description": "Using our <b>network and strategic support</b>, we want to propel growth of the most innovative climate tech Benelux companies, help them secure consistent, sustainable capital, access community  & knowledge.</br></br> We see <b>sustainability as a call to action</b> & want to make it easier for those who actively strive towards building a more regenerative lifestyle, a better world.</br></br> Science shows that <b>community and a sense of belonging can boost our cognitive functions & emotional intelligence, and shape us into more empathetic beings</b>; we can use this human programming to collectively expand our knowledge and awaraness, and ultimately - drive real world change."
+		}
+	},
+	"steps": {
+		"title": "How to join the community",
+		"steps": [
+			{
+				"label": "Fill in a simple form & choose membership"
+			},
+			{
+				"label": "We evaluate your inquiry & confirm via email"
+			},
+			{
+				"label": "You're in the database & can now receive access to events"
+			}
+		]
+	},
+	"pricing": {
+		"title": "Membership options",
+		"for_sponsors_tab": {
+			"card1": {
+				"card_title": "Annual CTC sponsorship",
+				"content": {
+					"title": "Annual CTC sponsorship",
+					"subtitle": "one year commitment",
+					"price": "€ 25-100K",
+					"benefits": [
+						"Council invitation, every 6 months",
+						"Access to network & community database",
+						"Speaker delegation to the events",
+						"Visibility on the events",
+						"Visibility on the website",
+						"Complimentary tickets to all of our events",
+						"No active involvement required"
+					]
+				}
+			},
+			"card2": {
+				"card_title": "Per event sponsorship",
+				"content": {
+					"title": "Per event sponsorship",
+					"subtitle": "depending on the event type",
+					"price": "€ 4-40K",
+					"additional_info": "*conditions vary per event; schedule a call with us to access complete benefits list per event.",
+					"benefits": [
+						"Council invitation, every 6 months",
+						"Access to network & community database",
+						"Speaker delegation to the events",
+						"Visibility on the events",
+						"Visibility on the website",
+						"Complimentary tickets to all of our events",
+						"No active involvement required"
+					]
+				}
+			}
+		}
+	}
+}

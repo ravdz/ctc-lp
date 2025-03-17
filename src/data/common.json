@@ -1,0 +1,94 @@
+{
+	"join_us": {
+		"title": "How to join the community",
+		"steps": [
+			"Fill in a simple form & choose membership",
+			"We evaluate your inquiry & confirm via email & schedule an intake call",
+			"You're in the database can now receive access to events"
+		],
+		"button": {
+			"label": "Become a member",
+			"url": "/community#membership"
+		},
+		"tiles": [
+			{
+				"prefix": "CTC for",
+				"title": "Members",
+				"description": "Are you a climate tech founder, investor or stakeholder? Read more about the benefits of joining.",
+				"button": {
+					"url": "/community#membership",
+					"label": "read more"
+				}
+			},
+			{
+				"prefix": "CTC",
+				"title": "Talent pool",
+				"description": "Are you looking for climate tech talent/job opportunity? Join our talent pool.",
+				"button": {
+					"url": "/services?service=talent-pool",
+					"label": "read more"
+				}
+			},
+			{
+				"prefix": "CTC for",
+				"title": "Sponsors",
+				"description": "Are you interested in becoming a CTC annual or event sponsor? Read more about our sponsorship options & fill in a simple form.",
+				"button": {
+					"url": "/community?membership=sponsors",
+					"label": "read more"
+				}
+			}
+		]
+	},
+	"footer": {
+		"navigation": [
+			{
+				"label": "About us",
+				"links": [
+					{
+						"label": "Our mission",
+						"url": "/about-us#our-mission"
+					},
+					{
+						"label": "The team",
+						"url": "/about-us#team"
+					}
+				]
+			},
+			{
+				"label": "Services",
+				"links": [
+					{
+						"label": "Investor ready",
+						"url": "/services?service=investors"
+					},
+					{
+						"label": "Consortia",
+						"url": "/services?service=consortia"
+					},
+					{
+						"label": "Talent pool",
+						"url": "/services?service=talent-pool"
+					}
+				]
+			},
+			{
+				"label": "Community",
+				"links": [
+					{
+						"label": "Events",
+						"url": "/#events"
+					},
+					{
+						"label": "Advisory",
+						"url": "/"
+					},
+					{
+						"label": "Join us",
+						"url": "/join-us"
+					}
+				]
+			}
+		]
+	}
+}

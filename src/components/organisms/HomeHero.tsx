@@ -7,6 +7,7 @@ import { Button } from "@/components/atoms/Button";
 import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
 import { Star } from "@/svg/Star";
 import { GreenGradient } from "@/svg/GreenGradient";
+import homepage from "@/data/homepage.json";
 
 export const HomeHero = () => {
 	return (
@@ -16,21 +17,21 @@ export const HomeHero = () => {
 					<header className="flex flex-col items-start justify-between gap-8 md:col-span-3">
 						<div>
 							<Heading className="mb-8 text-3xl font-extralight tracking-3 lg:text-4xl xl:text-6xl/[4.5rem]">
-								Climate tech community, events & resources
+								{homepage.hero.title}
 							</Heading>
-							<Text is="p">We are a Benelux based climate tech community.</Text>
+							<Text is="p">{homepage.hero.description}</Text>
 						</div>
 						<div className="flex flex-col items-start justify-start gap-4">
 							<Text is="p" className="font-sometype-mono text-2xs">
-								Connect with +150 visionaires working on climate in Benelux
+								{homepage.hero.info}
 							</Text>
 							<Button
 								variant="secondary"
 								className="text-base lg:text-xl xl:text-2xl"
-								href="/community"
+								href={homepage.hero.button.url}
 								hasArrow
 							>
-								Become a member
+								{homepage.hero.button.label}
 							</Button>
 						</div>
 					</header>
@@ -42,10 +43,9 @@ export const HomeHero = () => {
 									Climate tech summit
 								</Text>
 							</div>
-							<div className="row-span-2 w-full rounded-2xl bg-green-500 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
+							<div className="row-span-2 flex w-full items-end justify-start rounded-2xl bg-green-500 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
 								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
-									Investor <span className="text-green-600"> / </span> founder<br></br>
-									matchmaking
+									Be matched with a strategic partner from the ecosystem
 								</Text>
 							</div>
 						</div>

@@ -9,8 +9,11 @@ import { Button } from "@/components/atoms/Button";
 type Props = {
 	title: string;
 	description: string;
-	items: { id: number; label: string }[];
-	url: string;
+	items: string[];
+	button: {
+		label: string;
+		url: string;
+	};
 };
 
 const Item = ({ id, label }: { id: number; label: string }) => {
@@ -26,7 +29,7 @@ const Item = ({ id, label }: { id: number; label: string }) => {
 	);
 };
 
-export const FeatureItem = ({ title, description, items, url }: Props) => {
+export const FeatureItem = ({ title, description, items, button }: Props) => {
 	const firstListRef = useRef<HTMLUListElement>(null);
 	const secondListRef = useRef<HTMLUListElement>(null);
 	const thirdListRef = useRef<HTMLUListElement>(null);
@@ -60,23 +63,23 @@ export const FeatureItem = ({ title, description, items, url }: Props) => {
 			</header>
 			<div className="relative mb-2.5 flex w-full items-center justify-start overflow-hidden">
 				<ul ref={firstListRef} className="relative flex items-center justify-start">
-					{items.map(({ id, label }) => (
-						<Item key={id} id={id} label={label} />
+					{items.map((label, index) => (
+						<Item key={index} id={index} label={label} />
 					))}
 				</ul>
 				<ul ref={secondListRef} className="realtive flex items-center justify-start">
-					{items.map(({ id, label }) => (
-						<Item key={id} id={id} label={label} />
+					{items.map((label, index) => (
+						<Item key={index} id={index} label={label} />
 					))}
 				</ul>
 				<ul ref={thirdListRef} className="realtive flex items-center justify-start">
-					{items.map(({ id, label }) => (
-						<Item key={id} id={id} label={label} />
+					{items.map((label, index) => (
+						<Item key={index} id={index} label={label} />
 					))}
 				</ul>
 			</div>
-			<Button className="ml-auto lowercase" href={url} hasArrow>
-				Read more
+			<Button className="ml-auto lowercase" href={button.url} hasArrow>
+				{button.label}
 			</Button>
 		</li>
 	);

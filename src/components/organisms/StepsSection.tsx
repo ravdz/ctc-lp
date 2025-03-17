@@ -9,7 +9,6 @@ type Props = {
 	heading: string;
 	boldedHeadings?: boolean;
 	steps: {
-		id: number;
 		label: string;
 		description?: string;
 		list?: string[];
@@ -24,9 +23,9 @@ export const StepsSection = ({ steps, heading, className = "", boldedHeadings = 
 					{heading}
 				</Heading>
 				<ul className="flex flex-col items-start justify-start">
-					{steps.map(({ id, label, description, list }, index) => (
+					{steps.map(({ label, description, list }, index) => (
 						<li
-							key={id}
+							key={index}
 							className="relative flex flex-col items-start justify-start pb-20 last:pb-0"
 						>
 							{steps.length !== index + 1 && (

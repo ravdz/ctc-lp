@@ -4,11 +4,11 @@ import { FeatureSection } from "@/components/organisms/FeatureSection";
 import { UpcomingEventsFeed } from "@/components/organisms/UpcomingEventsFeed";
 import { JoinUsSection } from "@/components/organisms/JoinUsSection";
 import { LogosSection } from "@/components/organisms/LogosSection";
+import homepage from "@/data/homepage.json";
 
 export const metadata: Metadata = {
-	title: "Climate tech community, events & resources | Climate Tech Connect Benelux",
-	description:
-		"Welcome to Climate Tech Connect. Explore our initiatives, upcoming events, and how we are fostering innovation in climate technology.",
+	title: homepage.meta_title,
+	description: homepage.meta_description,
 };
 
 const partnersLogos = [
@@ -29,7 +29,7 @@ const Home = () => {
 	return (
 		<div>
 			<HomeHero />
-			<LogosSection heading="Our partners" logos={partnersLogos} />
+			<LogosSection heading={homepage.logos.title} logos={partnersLogos} />
 			<FeatureSection />
 			<UpcomingEventsFeed />
 			<JoinUsSection />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/atoms/Button";
+import { useMemo } from "react";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Badge } from "@/components/atoms/Badge";
@@ -8,21 +8,24 @@ import { Badge as FlagshipBadge } from "@/svg/Badge";
 
 type Props = {
 	event?: {
-		id: number;
 		color: string;
 		isFlagship: boolean;
-		badges: string[];
+		tags: string[];
 		prefix: string;
 		title: string;
 		description: string;
 		image: string;
-		date: Date;
+		date: {
+			year: number;
+			month: number;
+			day: number;
+		};
 		location: {
 			place: string;
 			city: string;
 			country: string;
 		};
-		link: {
+		button: {
 			url: string;
 			label: string;
 		};
@@ -30,6 +33,11 @@ type Props = {
 };
 
 export const EventTile = ({ event }: Props) => {
+	const eventDate = useMemo(() => {
+		if (!event) return null;
+		return new Date(Date.UTC(event.date.year, event.date.month - 1, event.date.day));
+	}, [event]);
+
 	return (
 		<li className="flex flex-col justify-start gap-4">
 			<article
@@ -37,7 +45,7 @@ export const EventTile = ({ event }: Props) => {
 			>
 				<div className="mb-3 flex flex-wrap items-start justify-start gap-2">
 					{event ? (
-						event.badges.map((badge, index) => <Badge key={index}>{badge}</Badge>)
+						event.tags.map((tag, index) => <Badge key={index}>{tag}</Badge>)
 					) : (
 						<>
 							<Badge className="h-7.5 w-28 bg-gray-400" />
@@ -91,9 +99,9 @@ export const EventTile = ({ event }: Props) => {
 					>
 						Invite only
 					</Text>
-					{event && (
+					{eventDate && (
 						<Text className="text-3xl uppercase text-gray-900">
-							{event.date.toLocaleDateString("en-US", {
+							{eventDate.toLocaleDateString("en-US", {
 								day: "numeric",
 								month: "long",
 								year: "numeric",
@@ -111,9 +119,6 @@ export const EventTile = ({ event }: Props) => {
 					)}
 				</div>
 			</article>
-			<Button className="self-end lowercase" hasArrow disabled>
-				{event?.link.label || "request a membership invite"}
-			</Button>
 		</li>
 	);
 };

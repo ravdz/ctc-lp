@@ -8,6 +8,7 @@ import { WhiteGradient } from "@/svg/WhiteGradient";
 import { Heading } from "@/components/atoms/Heading";
 import { FallingCircle } from "@/svg/FallingCircle";
 import { GreenGradient } from "@/svg/GreenGradient";
+import aboutUs from "@/data/about-us.json";
 
 export const AboutUsContentSection = () => {
 	return (
@@ -78,44 +79,21 @@ export const AboutUsContentSection = () => {
 					<div className="relative z-10 flex flex-col items-stretch justify-start gap-14">
 						<div className="flex flex-col items-start justify-start gap-10 md:flex-row md:gap-5 xl:gap-20">
 							<Heading is="h2" className="shrink-0 md:basis-1/3 lg:basis-1/5">
-								Who we are
+								{aboutUs.content.block1.title}
 							</Heading>
 							<div className="flex grow flex-col items-start justify-start gap-4">
-								<Text is="p">
-									A non-profit foundation, Benelux-focused; our community consists of climate tech
-									founders, investors, and talent. We actively seek ways to help foster connections
-									& unlock opportunities.
+								<Text is="span">
+									<p dangerouslySetInnerHTML={{ __html: aboutUs.content.block1.description }} />
 								</Text>
 							</div>
 						</div>
 						<div className="flex flex-col items-start justify-start gap-10 md:flex-row md:gap-5 xl:gap-20">
 							<Heading is="h2" className="shrink-0 md:basis-1/3 lg:basis-1/5">
-								Why we do it
+								{aboutUs.content.block2.title}
 							</Heading>
 							<div className="flex grow flex-col items-start justify-start gap-4">
-								<Text is="p">
-									Using our <b>network and strategic support</b>, we want to propel growth of the
-									most innovative climate tech Benelux companies, help them secure consistent,
-									sustainable capital, access community & knowledge.
-								</Text>
-								<Text is="p">
-									CTC&apos;s part is acting
-									<b>as a missing link - an overlooked role of connector and facilitator</b>; having
-									strong connections & direct access to key climate-tech stakeholders, we make it
-									easier for the right people to meet and create opportunities.
-								</Text>
-								<Text is="p">
-									We see sustainability as a call to action; we want to help those who actively
-									strive towards building a more regenerative lifestyle & a better world for all.
-								</Text>
-								<Text is="p">
-									Science shows that{" "}
-									<b>
-										community and a sense of belonging can boost our cognitive functions & emotional
-										intelligence, and shape us into more empathetic beings
-									</b>
-									; we can use this human programming to collectively expand our knowledge and
-									awareness, and ultimately - drive real world change.
+								<Text is="span">
+									<p dangerouslySetInnerHTML={{ __html: aboutUs.content.block2.description }} />
 								</Text>
 							</div>
 						</div>
