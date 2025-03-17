@@ -1,7 +1,7 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { useMemo, useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Text } from "@/components/atoms/Text";
 import { BigArrow } from "@/svg/BigArrow";
 export interface ICard {
@@ -17,9 +17,20 @@ type Props = {
 	className?: string;
 	openWidth: number;
 	closedWidth: number;
+	onMouseEnter: () => void;
+	onMouseLeave: () => void;
 };
 
-export const Card = ({ card, open, onOpen, className = "", openWidth, closedWidth }: Props) => {
+export const Card = ({
+	card,
+	open,
+	onOpen,
+	className = "",
+	openWidth,
+	closedWidth,
+	onMouseEnter,
+	onMouseLeave,
+}: Props) => {
 	const cardWidth = useMemo(() => {
 		return open ? `${openWidth}px` : `${closedWidth}px`;
 	}, [open, openWidth, closedWidth]);
@@ -37,6 +48,8 @@ export const Card = ({ card, open, onOpen, className = "", openWidth, closedWidt
 	}, []);
 	return (
 		<div
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
 			className={twMerge(
 				`relative overflow-hidden rounded-lg transition-all duration-500`,
 				className,

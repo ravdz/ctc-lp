@@ -15,7 +15,7 @@ type Props = {
 
 const Item = ({ id, label }: { id: number; label: string }) => {
 	return (
-		<li key={id} className="mr-2">
+		<li key={id} className="mr-2 w-full">
 			<Text
 				className={`flex items-center justify-start gap-2 text-nowrap font-sometype-mono text-3xs lowercase text-gray-500`}
 			>

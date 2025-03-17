@@ -66,7 +66,7 @@ export const FeatureSection = () => {
 						</div>
 					</div>
 					<div className="relative flex flex-col justify-end">
-						<ul className="relative z-20 mb-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:flex">
+						<ul className="relative z-20 mb-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-1">
 							{features.map(({ id, title, description, items, url }) => (
 								<FeatureItem
 									key={id}

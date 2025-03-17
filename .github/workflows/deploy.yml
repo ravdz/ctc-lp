@@ -1,0 +1,34 @@
+# .github/workflows/deploy.yml
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/*.json"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Compress files
+        run: tar -czf out.tar.gz -C out .
+
+      - name: Deploy to external hosting
+        env:
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_TARGET_DIR: ${{ secrets.SSH_TARGET_DIR }}
+        run: |
+          echo "$SSH_PASSWORD" | sshpass ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "mkdir -p $SSH_TARGET_DIR"
+          echo "$SSH_PASSWORD" | sshpass scp -o StrictHostKeyChecking=no out.tar.gz $SSH_USERNAME@$SSH_HOST:$SSH_TARGET_DIR
+          echo "$SSH_PASSWORD" | sshpass ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$SSH_HOST "tar -xzf $SSH_TARGET_DIR/out.tar.gz -C $SSH_TARGET_DIR"
