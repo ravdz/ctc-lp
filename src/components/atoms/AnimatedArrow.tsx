@@ -6,6 +6,10 @@ const variants = {
 		container: "h-6 w-8",
 		arrow: "[&>svg]:w-3 translate-x-1.5 gap-6 group-hover:translate-x-[calc(100%-6px)]",
 	},
+	"primary-reverse": {
+		container: "h-6 w-8",
+		arrow: "[&>svg]:w-3 translate-x-1.5 gap-6 group-hover:translate-x-[calc(100%-6px)]",
+	},
 	secondary: {
 		container: "w-10 h-8 group-hover:bg-gray-700",
 		arrow: "[&>svg]:w-4 translate-x-2 gap-8 group-hover:translate-x-[calc(100%-8px)]",

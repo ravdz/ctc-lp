@@ -3,7 +3,7 @@
 	"meta_description": "Welcome to Climate Tech Connect. Explore our initiatives, upcoming events, and how we are fostering innovation in climate technology.",
 	"hero": {
 		"title": "Climate tech community, events & resources",
-		"description": "We are a Benelux based climate tech community.",
+		"description": "We are the Benelux climate tech community",
 		"info": "Connect with +150 visionaires working on climate in Benelux",
 		"button": {
 			"label": "Become a member",
@@ -14,8 +14,8 @@
 		"title": "Our partners"
 	},
 	"features": {
-		"title": "A place where your ideas will be shaped to their best",
-		"description": "<b>CTC is a community</b> of innovators, founders, change-makers, stakeholders & impact investors, all within climate tech industry in the Benelux region.<br><br/><b>How CTC can help you?</b> We organize community get-togethers & knowledge sharing activities; we host events ranging from intimate, exclusive meetups to large-scale conferences. Our services includes <b>AI-powered and manual investor-founder matchmaking</b>, access to a curated talent pool & consortia creation.<br><br/>Against a backdrop of digital & AI age, a community with a sense of connection is poised to spread new ideas & drive real-world change.",
+		"title": "What we do",
+		"description": "<b>CTC is a community</b> of climate tech innovators, founders, change-makers, stakeholders and investors in the Benelux region.<br/><br/><b>How CTC can help you?</b> We organize community <b>climate-focused</b> get-togethers & knowledge sharing activities; we host events ranging from intimate, exclusive meetups to large-scale conferences. Our services includes <b>AI-powered and manual investor-founder matchmaking</b>, access to a curated <b>sustainability</b> talent pool and consortia creation.<br/><br/>Against a backdrop of digital & AI age a <b>dedicated climate</b> community with a sense of shared purpose is poised to <b>scale breakthrough climate solutions</b> and drive real-world change.",
 		"tiles": [
 			{
 				"title": "Community",

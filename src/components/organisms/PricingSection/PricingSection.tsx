@@ -4,11 +4,11 @@ import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
-import { Button } from "@/components/atoms/Button";
 import { FoundersAndInvestorsTab } from "@/components/organisms/PricingSection/partials/FoundersAndInvestorsTab";
 import { SponsorsTab } from "@/components/organisms/PricingSection/partials/SponsorsTab";
 import { FallingCircle } from "@/svg/FallingCircle";
 import Loading from "@/app/loading";
+import { TabList } from "@/components/molecules/TabList";
 
 const tabs = [
 	{
@@ -45,18 +45,7 @@ export const PricingSection = () => {
 								<Heading is="h2" className="mb-7">
 									Membership options
 								</Heading>
-								<div className="flex items-center justify-start gap-3">
-									{tabs.map((tab) => (
-										<Button
-											className="text-sm sm:text-base"
-											onClick={() => setActiveTab(tab.id)}
-											key={tab.id}
-											variant={activeTab === tab.id ? "secondary" : "primary"}
-										>
-											{tab.label}
-										</Button>
-									))}
-								</div>
+								<TabList tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
 							</div>
 							<div className="self-end md:self-auto">
 								<FallingCircle className="w-36 md:w-44 lg:w-52" />

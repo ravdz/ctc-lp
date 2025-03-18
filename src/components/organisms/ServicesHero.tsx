@@ -4,9 +4,6 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { RedGradient } from "@/svg/RedGradient";
 import { Star } from "@/svg/Star";
-import { AnimatedCircle } from "@/components/atoms/AnimatedCircle";
-import { Galaxy } from "@/svg/AnimatedGalaxy";
-import { WhiteGradient } from "@/svg/WhiteGradient";
 import services from "@/data/services.json";
 
 export const ServicesHero = () => {
@@ -46,42 +43,31 @@ export const ServicesHero = () => {
 						</div>
 						<RedGradient className="absolute left-0 top-1/2 z-0 w-full max-w-7xl -translate-x-1/2 -translate-y-1/2" />
 					</header>
-					<div className="relative z-10 grid grid-cols-1 gap-4 lg:grid-cols-7">
-						<div className="grid grid-cols-3 grid-rows-2 gap-4 lg:col-span-3">
-							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-800 p-4 pb-[130%]">
-								<Text className="text-lg text-gray-100 md:text-xl lg:text-lg xl:text-xl">
-									Events annualy
-								</Text>
-								<Galaxy className="absolute bottom-4 right-4 z-10 w-1/3" />
-							</div>
-							<div className="relative col-span-2 row-span-2 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/22.jpg" alt="image 22" fill className="object-cover" />
-							</div>
-							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[130%]">
-								<Image src="/img/21.jpg" alt="image 21" fill className="object-cover" />
+					<div className="relative z-10 grid grid-cols-1 gap-4 lg:grid-cols-11">
+						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
+							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-blue-300 pb-[100%]">
+								<Image src="/img/28.png" alt="image 28" fill className="object-cover" />
 							</div>
 						</div>
-						<div className="grid grid-cols-2 grid-rows-2 gap-4 lg:col-span-2">
-							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[50%] grayscale">
-								<Image src="/img/23.jpg" alt="image 23" fill className="object-cover" />
+						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-3">
+							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
+								<Image src="/img/29.png" alt="image 29" fill className="object-cover" />
+							</div>
+						</div>
+						<div className="grid grid-cols-2 grid-rows-2 gap-4 lg:col-span-3">
+							<div className="relative col-span-2 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[60%] grayscale">
+								<Image src="/img/32.png" alt="image 32" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/24.jpg" alt="image 24" fill className="object-cover" />
+								<Image src="/img/30.png" alt="image 30" fill className="object-cover" />
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-green-500 pb-[100%]">
-								<Text className="absolute bottom-8 left-0 z-10 flex px-5 text-lg md:text-xl lg:text-lg xl:text-xl">
-									Events annualy
-								</Text>
-								<WhiteGradient className="absolute -top-1 right-0 z-0 w-full rotate-180" />
-								<AnimatedCircle
-									orbitDirection="counterclockwise"
-									className="absolute right-0 top-0 z-0 w-[150%] translate-x-[45%] rotate-[78deg]"
-								/>
+								<Image src="/img/31.png" alt="image 31" fill className="object-cover" />
 							</div>
 						</div>
-						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
+						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-3">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-300 pb-[100%]">
-								<Image src="/img/25.jpg" alt="image 25" fill className="object-cover" />
+								<Image src="/img/27.png" alt="image 27" fill className="object-cover" />
 							</div>
 						</div>
 					</div>

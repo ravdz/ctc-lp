@@ -27,6 +27,7 @@ const cards = [
 		title: "Pitchdeck creation & training",
 		content: (
 			<ServiceVariant
+				className="[&>div>div>span]:mt-0"
 				title="Pitchdeck creation"
 				badge="paid service"
 				description="A compelling pitch deck and delivery are essential, non-negotiable elements of successful fundraising-yet many founders struggle to get them right. With deep expertise in investor psychology, we help you craft and design a powerful narrative that captures attention and secures funding."

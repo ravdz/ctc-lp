@@ -20,18 +20,20 @@ export const CommunityHero = () => {
 						<div className="grid grid-cols-2 gap-14 border-t border-green-800 pt-8">
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									relevant groups
+									strategic introductions
 								</Heading>
-								<Text className="text-base sm:text-xl">
-									<span className="text-green-400">/</span> powerful<br></br>partnerships
+								<Text className="text-base">
+									<span className="text-green-400">/</span> get introductions with strategic
+									partners carefully matched with your current needs
 								</Text>
 							</div>
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									curated topics
+									curated experiences
 								</Heading>
-								<Text className="text-base sm:text-xl">
-									<span className="text-green-400">/</span> valuable<br></br>experiences
+								<Text className="text-base">
+									<span className="text-green-400">/</span> join exclusive events with top speakers
+									& only the most relevant topics, crafted for the specific target group
 								</Text>
 							</div>
 						</div>
@@ -40,16 +42,19 @@ export const CommunityHero = () => {
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
 									collective wisdom
 								</Heading>
-								<Text className="text-base sm:text-xl">
-									<span className="text-green-400">/</span> crafted resources<br></br>& advisory
+								<Text className="text-base">
+									<span className="text-green-400">/</span> leverage on the community&apos;s
+									collective knowledge & support, get invaluable insight of each others&apos;
+									experiences & challenges
 								</Text>
 							</div>
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									matchmaking
+									expert access & advisory
 								</Heading>
-								<Text className="text-base sm:text-xl">
-									<span className="text-green-400">/</span> strategic<br></br>introductions
+								<Text className="text-base">
+									<span className="text-green-400">/</span> get easy connections with subject-matter
+									experts on the most burning topics
 								</Text>
 							</div>
 						</div>

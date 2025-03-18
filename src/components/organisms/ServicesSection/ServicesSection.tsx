@@ -7,8 +7,8 @@ import { TalentPoolTab } from "./partials/TalentPoolTab";
 import { ConsortiaTab } from "./partials/ConsortiaTab";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
-import { Button } from "@/components/atoms/Button";
 import Loading from "@/app/loading";
+import { TabList } from "@/components/molecules/TabList";
 const tabs = [
 	{
 		id: 1,
@@ -48,18 +48,7 @@ export const ServicesSection = () => {
 							<Heading is="h2" className="mb-7">
 								Services
 							</Heading>
-							<div className="flex items-center justify-start gap-3">
-								{tabs.map((tab) => (
-									<Button
-										className="text-sm sm:text-base"
-										onClick={() => setActiveTab(tab.id)}
-										key={tab.id}
-										variant={activeTab === tab.id ? "secondary" : "primary"}
-									>
-										{tab.label}
-									</Button>
-								))}
-							</div>
+							<TabList tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
 						</div>
 						{activeTab === 1 ? (
 							<InvestorTab />

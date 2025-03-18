@@ -14,13 +14,15 @@ export const FeatureSection = () => {
 				<div className="grid w-full gap-20 lg:grid-cols-2 xl:gap-28">
 					<div>
 						<header className="relative mb-12">
-							<Heading is="h2">{homepage.features.title}</Heading>
+							<Heading className="text-4xl font-light md:text-5xl lg:text-6xl" is="h2">
+								{homepage.features.title}
+							</Heading>
 							<Galaxy className="absolute -right-4 -top-16 z-10 lg:-right-10" />
 						</header>
 
 						<div className="flex flex-col items-stretch justify-start gap-6">
-							<Text is="p" className="font-montserrat text-base">
-								<span dangerouslySetInnerHTML={{ __html: homepage.features.description }} />
+							<Text is="span" className="font-montserrat text-base">
+								<p dangerouslySetInnerHTML={{ __html: homepage.features.description }} />
 							</Text>
 						</div>
 					</div>

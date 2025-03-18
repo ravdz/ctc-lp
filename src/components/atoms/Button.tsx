@@ -8,7 +8,9 @@ import { AnimatedArrow } from "@/components/atoms/AnimatedArrow";
 
 const variants = {
 	primary:
-		"bg-transparent border border-gray-900 text-gray-500 hover:border-gray-700 font-montserrat",
+		"bg-transparent border border-gray-900 text-gray-500 hover:border-gray-500/70 hover:text-gray-500/70 font-montserrat",
+	"primary-reverse":
+		"bg-gray-900 border border-gray-900 text-white hover:border-gray-700 hover:bg-gray-700 font-montserrat",
 	secondary:
 		"text-white bg-gray-900 border border-gray-900 hover:border-gray-700 hover:bg-gray-700 font-sometype-mono",
 };

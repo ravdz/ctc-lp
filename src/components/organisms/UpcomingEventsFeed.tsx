@@ -1,9 +1,9 @@
 "use client";
 import { useState, useMemo } from "react";
+import { TabList } from "../molecules/TabList";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { EventTile } from "@/components/molecules/EventTile";
-import { Button } from "@/components/atoms/Button";
 import { Text } from "@/components/atoms/Text";
 import { ArrowDown } from "@/svg/ArrowDown";
 import homepage from "@/data/homepage.json";
@@ -47,17 +47,8 @@ export const UpcomingEventsFeed = () => {
 					<Heading is="h2" className="mb-7">
 						Upcoming events
 					</Heading>
-					<div className="mb-7 flex items-center justify-start gap-3">
-						{tabs.map((tab) => (
-							<Button
-								onClick={() => setActiveTab(tab.id)}
-								key={tab.id}
-								variant={activeTab === tab.id ? "secondary" : "primary"}
-							>
-								{tab.label}
-							</Button>
-						))}
-					</div>
+					<TabList tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} className="mb-7" />
+
 					{filteredEvents.length ? (
 						<ul className="grid grid-cols-1 items-stretch gap-7 md:grid-cols-2 xl:grid-cols-3">
 							{filteredEvents.map((event, index) => (

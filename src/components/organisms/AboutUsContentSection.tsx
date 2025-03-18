@@ -27,7 +27,7 @@ export const AboutUsContentSection = () => {
 								</Text>
 							</div>
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-gray-800 p-4 pb-[130%]">
-								<Text className="text-lg md:text-xl lg:text-lg xl:text-xl">Events annualy</Text>
+								<Text className="text-lg md:text-xl lg:text-lg xl:text-xl">Events annually</Text>
 								<Text className="absolute bottom-4 right-4 flex items-center justify-start text-5xl font-normal text-blue-300">
 									+
 									<AnimatedCounter
