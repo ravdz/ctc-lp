@@ -41,7 +41,7 @@ export const UpcomingEventsFeed = () => {
 
 	return (
 		<section id="events">
-			<Container className="md:py-22 overflow-hidden py-16 pt-24 md:pt-32">
+			<Container className="md:py-22 py-16 pt-24 md:pt-16">
 				<div className="relative">
 					<ArrowDown className="absolute bottom-full left-0 w-8 -translate-y-6 stroke-green-600 md:w-10 lg:w-14" />
 					<Heading is="h2" className="mb-7">
@@ -50,7 +50,7 @@ export const UpcomingEventsFeed = () => {
 					<TabList tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} className="mb-7" />
 
 					{filteredEvents.length ? (
-						<ul className="grid grid-cols-1 items-stretch gap-7 md:grid-cols-2 xl:grid-cols-3">
+						<ul className="grid grid-cols-1 items-stretch gap-7 pr-5 md:grid-cols-2 lg:pr-12 xl:grid-cols-3 2xl:pr-0">
 							{filteredEvents.map((event, index) => (
 								<EventTile key={index} event={event} />
 							))}

@@ -11,6 +11,7 @@ type Props = {
 	orbitingObject?: React.ReactNode;
 	orbitDirection?: "clockwise" | "counterclockwise";
 	orbitSpeed?: number;
+	strokeWidth?: number;
 };
 
 export const AnimatedCircle = ({
@@ -18,6 +19,7 @@ export const AnimatedCircle = ({
 	orbitingObject = <Star className="w-5 rotate-6" />,
 	orbitDirection = "clockwise",
 	orbitSpeed = 1500,
+	strokeWidth = 1,
 }: Props) => {
 	const containerRef = useRef<HTMLDivElement>(null);
 	const orbitingObjectRef = useRef<HTMLDivElement>(null);
@@ -41,7 +43,7 @@ export const AnimatedCircle = ({
 	});
 	return (
 		<div ref={containerRef} className={className}>
-			<SingleCircle className="w-full" />
+			<SingleCircle className="w-full" strokeWidth={strokeWidth} />
 			<div className="absolute left-0 top-0 opacity-0" ref={orbitingObjectRef}>
 				{orbitingObject}
 			</div>

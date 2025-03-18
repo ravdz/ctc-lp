@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AnimatedEllipsis } from "../atoms/AnimatedEllipsis";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
@@ -46,7 +47,13 @@ export const ServicesHero = () => {
 					<div className="relative z-10 grid grid-cols-1 gap-4 lg:grid-cols-11">
 						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-2">
 							<div className="relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-blue-300 pb-[100%]">
-								<Image src="/img/28.png" alt="image 28" fill className="object-cover" />
+								<AnimatedEllipsis className="absolute left-1/2 top-1/2 z-0 w-full -translate-x-1/2 -translate-y-1/2" />
+								<Image
+									src="/img/28.png"
+									alt="image 28"
+									fill
+									className="relative z-10 object-cover"
+								/>
 							</div>
 						</div>
 						<div className="grid grid-cols-1 grid-rows-1 lg:col-span-3">
