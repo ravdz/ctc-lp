@@ -28,7 +28,7 @@
 		"members": [
 			{
 				"name": "Leopold van Oosten",
-				"position": "Director",
+				"position": "Managing Director",
 				"linkedin": "https://www.linkedin.com/in/leopoldvanoosten/",
 				"image": {
 					"src": "/img/team/leopold.png",
@@ -36,8 +36,17 @@
 				}
 			},
 			{
+				"name": "Gideon van Kleij",
+				"position": "CO-Founder & Board Member",
+				"linkedin": "https://www.linkedin.com/in/gideonvankleij/",
+				"image": {
+					"src": "/img/team/gideon.png",
+					"alt": "Gideon van Kleij"
+				}
+			},
+			{
 				"name": "Paulina Markowska",
-				"position": "Operations Manager",
+				"position": "Operations & Partnership",
 				"linkedin": "https://www.linkedin.com/in/paulina-markowska/",
 				"image": {
 					"src": "/img/team/paulina.png",
@@ -45,12 +54,12 @@
 				}
 			},
 			{
-				"name": "Gideon van Kleij",
-				"position": "Board Member",
-				"linkedin": "https://www.linkedin.com/in/gideonvankleij/",
+				"name": "Deborah Kreis",
+				"position": "Partnership Lead",
+				"linkedin": "https://www.linkedin.com/in/deborahkreis/",
 				"image": {
-					"src": "/img/team/gideon.png",
-					"alt": "Gideon van Kleij"
+					"src": "/img/team/deborah.png",
+					"alt": "Deborah Kreis"
 				}
 			}
 		]

@@ -19,7 +19,6 @@ export const ScheduleCallSection = ({ children }: Props) => {
 						</div>
 						<Button
 							variant="secondary"
-							href="/"
 							hasArrow
 							disabled
 							className="self-end text-base md:text-2xl"

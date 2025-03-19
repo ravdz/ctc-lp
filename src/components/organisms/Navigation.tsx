@@ -22,7 +22,7 @@ const links = [
 	{
 		id: 4,
 		label: "Join us!",
-		url: "/join-us",
+		url: "/membership",
 	},
 ];
 

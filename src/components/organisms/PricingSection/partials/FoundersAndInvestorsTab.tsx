@@ -230,7 +230,7 @@ export const FoundersAndInvestorsTab = () => {
 					<div className="px-2.5">
 						<Button
 							variant="secondary"
-							href="/join-us"
+							href="/membership"
 							className="mx-auto w-fit uppercase"
 							hasArrow
 						>
@@ -240,7 +240,7 @@ export const FoundersAndInvestorsTab = () => {
 					<div className="px-2.5">
 						<Button
 							variant="secondary"
-							href="/join-us"
+							href="/membership"
 							className="mx-auto w-fit uppercase"
 							hasArrow
 						>
@@ -251,7 +251,7 @@ export const FoundersAndInvestorsTab = () => {
 						<Button
 							variant="secondary"
 							className="mx-auto w-fit uppercase"
-							href="/join-us"
+							href="/membership"
 							hasArrow
 						>
 							Fill out form

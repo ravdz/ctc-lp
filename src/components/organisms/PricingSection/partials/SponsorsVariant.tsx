@@ -41,7 +41,7 @@ export const SponsorsVariant = ({ title, subtitle, price, benefits, additionalIn
 						{additionalInfo}
 					</Text>
 				)}
-				<Button className="ml-auto uppercase" hasArrow variant="secondary">
+				<Button className="ml-auto uppercase" hasArrow variant="secondary" href="/contact-us">
 					Book a call
 				</Button>
 			</div>

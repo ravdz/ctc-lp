@@ -71,7 +71,7 @@ const items: Item[] = [
 		],
 		link: {
 			label: "Fill out form",
-			url: "/join-us",
+			url: "/talent-pool",
 		},
 	},
 	{
@@ -91,7 +91,7 @@ const items: Item[] = [
 		],
 		link: {
 			label: "Book a call",
-			url: "/",
+			url: "/contact-us",
 		},
 	},
 ];

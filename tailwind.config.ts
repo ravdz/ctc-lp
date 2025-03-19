@@ -18,6 +18,7 @@ export default {
 			},
 			animation: {
 				"spin-slow": "spin 6s linear infinite",
+				"spin-very-slow": "spin 20s linear infinite",
 			},
 			colors: {
 				blue: {

@@ -1,7 +1,12 @@
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 import { FaqSection } from "@/components/organisms/FaqSection";
 import { Text } from "@/components/atoms/Text";
 import { SmileyFace } from "@/svg/SmileyFace";
+
+type Props = {
+	className?: string;
+};
 
 const faq = [
 	{
@@ -96,6 +101,8 @@ const faq = [
 	},
 ];
 
-export const ServicesFaq = () => {
-	return <FaqSection heading="Services FAQ" className="pb-40 pt-20" items={faq} />;
+export const ServicesFaq = ({ className = "" }: Props) => {
+	return (
+		<FaqSection heading="Services FAQ" className={twMerge("pb-40 pt-20", className)} items={faq} />
+	);
 };
