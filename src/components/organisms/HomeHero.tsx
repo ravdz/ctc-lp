@@ -39,8 +39,8 @@ export const HomeHero = () => {
 						<div className="grid grid-rows-5 gap-3.5">
 							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/1.png" alt="image 1" fill className="object-cover" />
-								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
-									Climate tech summit
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-2xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-base uppercase sm:text-2xs/4 md:text-4xs lg:text-3xs xl:text-2xs/5">
+									Climate tech events
 								</Text>
 							</div>
 							<div className="row-span-2 flex w-full items-end justify-start rounded-2xl bg-green-500 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
@@ -52,7 +52,7 @@ export const HomeHero = () => {
 						<div className="grid grid-rows-2 gap-3.5">
 							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-800 p-6 pb-[66%] sm:p-4 sm:pb-0 md:p-2 lg:p-3 xl:p-4">
 								<Text className="text-xl sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
-									Curated, exclusive events
+									Get access to curated, exclusive experiences
 								</Text>
 								<div className="absolute -right-10 top-0 w-full pb-[100%] sm:bottom-0 sm:top-auto lg:-right-5">
 									<AnimatedCircle
@@ -69,25 +69,28 @@ export const HomeHero = () => {
 							</div>
 							<div className="relative row-span-1 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/2.png" alt="image 2" fill className="object-cover" />
-								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white px-2 py-1 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
-									Community & Talent Pool
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-2xl bg-white px-2 py-1 text-right font-sometype-mono text-base uppercase sm:text-2xs/4 md:text-4xs lg:text-3xs xl:text-2xs/5">
+									Climate community
 								</Text>
 							</div>
 						</div>
 						<div className="grid grid-rows-10 gap-3.5">
 							<div className="relative row-span-4 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/3.png" alt="image 3" fill className="object-cover" />
+								<Text className="absolute left-0 top-5 block max-w-full rounded-r-2xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-base uppercase sm:text-2xs/4 md:text-4xs lg:text-3xs xl:text-2xs/5">
+									Partnerships
+								</Text>
 							</div>
 							<div className="relative row-span-3 w-full overflow-hidden rounded-2xl bg-gray-300 pb-[66%] sm:pb-0">
 								<Image src="/img/4.png" alt="image 4" fill className="object-cover" />
-								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-2xs uppercase md:text-4xs lg:text-3xs xl:text-2xs">
-									Consortia
+								<Text className="absolute bottom-5 left-0 block max-w-full rounded-r-2xl bg-white py-1 pl-4 pr-3 text-right font-sometype-mono text-base uppercase sm:text-2xs/4 md:text-4xs lg:text-3xs xl:text-2xs/5">
+									Strategic advisory
 								</Text>
 							</div>
-							<div className="sm:pb-auto relative row-span-3 flex w-full items-end justify-start rounded-2xl bg-pink-500 p-6 pb-[66%] sm:p-4 md:p-2 lg:p-3 xl:p-4">
+							<div className="sm:pb-auto relative row-span-3 flex w-full items-start justify-start rounded-2xl bg-pink-500 p-6 pb-[66%] sm:p-4 md:p-2 lg:p-3 xl:p-4">
 								<GreenGradient className="absolute right-0 top-0 z-0 w-3/4 lg:w-40" />
 								<Text className="absolute bottom-6 left-6 text-xl sm:relative sm:bottom-auto sm:left-auto sm:text-base md:text-2xs lg:text-sm xl:text-base 2xl:text-lg">
-									Resources<br></br>& advisory
+									Access climate tech talent pool
 								</Text>
 							</div>
 						</div>
