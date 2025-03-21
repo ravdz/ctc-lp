@@ -19,8 +19,8 @@ const sometypeMono = Sometype_Mono({
 export const metadata: Metadata = {
 	title: "Climate Tech Connect",
 	robots: {
-		index: true,
-		follow: true,
+		index: false,
+		follow: false,
 	},
 };
 
