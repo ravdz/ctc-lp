@@ -19,8 +19,8 @@ const sometypeMono = Sometype_Mono({
 export const metadata: Metadata = {
 	title: "Climate Tech Connect",
 	robots: {
-		index: false,
-		follow: false,
+		index: process.env.NEXT_PUBLIC_ENVIRONMENT === "localhost",
+		follow: process.env.NEXT_PUBLIC_ENVIRONMENT === "localhost",
 	},
 };
 
