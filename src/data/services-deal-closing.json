@@ -1,0 +1,87 @@
+{
+	"meta_title": "Deal Closing Service | Climate Tech Connect",
+	"meta_description": "Discover our Deal Closing Service at Climate Tech Connect. Facilitate successful deals and partnerships in the climate technology sector.",
+	"hero": {
+		"title": "Deal closing",
+		"description": "For startups and scale-ups, securing investment is often a make-or-break moment. Yet, many founders find themselves navigating this critical process without the expertise it demands.",
+		"button": {
+			"label": "Schedule a call",
+			"url": "/contact-us"
+		},
+		"feature1": {
+			"title": "navigating complexity",
+			"description": "we help making the legal complexities and strategic nuances manageable"
+		},
+		"feature2": {
+			"title": "risk mitigation",
+			"description": "with our support you're more likely to avoid costly mistakes, safeguard your company against future pitfalls and ensure regulatory compliance"
+		},
+		"feature3": {
+			"title": "strategic alignment",
+			"description": "we ensure that the terms of investment align with the startup's long-term vision and goals"
+		}
+	},
+	"steps": {
+		"heading": "How it works",
+		"steps": [
+			{
+				"label": "Initial consultation",
+				"list": [
+					"assesing stage & needs;",
+					"reviewing existing term sheets/investor interest;",
+					"identifying potential legal and strategic challenges."
+				]
+			},
+			{
+				"label": "Deal refinement",
+				"list": [
+					"reviewing & advising on standard and negotiable terms, ensuring alignement of the long-term goals"
+				]
+			},
+			{
+				"label": "Negotiation support",
+				"list": [
+					"providing expertise in addressing investor objections, value-based closing techniques, investor psychology & balancing demands."
+				]
+			},
+			{
+				"label": "Closing coordination",
+				"list": [
+					"support setting closing timeline, coordinating communication between company counsel, lead investor, and other participants"
+				]
+			},
+			{
+				"label": "Post-closing support",
+				"list": ["advising on implementing any new governance structures."]
+			}
+		]
+	},
+	"benefits": {
+		"heading": "What are the benefits",
+		"content": [
+			{
+				"title": "Streamlined process",
+				"description": "You get a faster and more efficient deal-closing process, with expert management of administrative tasks and real-time visibility into your financing round."
+			},
+			{
+				"title": "Risk protection",
+				"description": "You benefit from risk mitigation strategies that minimize errors and misaligned expectations, ensuring compliance with regulatory requirements and safeguarding your company's interests."
+			},
+			{
+				"title": "Expert Guidance",
+				"description": "You receive seasoned expertise to navigate complex negotiations and legal intricacies, ensuring you secure optimal terms and avoid costly mistakes."
+			},
+			{
+				"title": "Strategic opportunities",
+				"description": "You gain access to strategic partnerships that unlock valuable industry connections, potential customers, and top talent, propelling your venture forward beyond just securing capital."
+			}
+		]
+	},
+	"schedule_call": {
+		"text": "Are you a fundraising <b>founder & need expertise support on how to securely close a deal?</b> Schedule a free call and see how we can support you.",
+		"button": {
+			"label": "Schedule a call",
+			"url": "/contact-us"
+		}
+	}
+}

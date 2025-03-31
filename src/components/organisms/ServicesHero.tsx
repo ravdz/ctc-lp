@@ -26,20 +26,18 @@ export const ServicesHero = () => {
 						</div>
 						<div className="relative z-10 border-t border-green-800 pt-4 md:col-span-1 md:row-span-1 md:row-start-3 md:mb-10">
 							<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-								all profits reinvested
+								{services.hero.feature1.title}
 							</Heading>
 							<Text className="text-base sm:text-xl">
-								<span className="text-green-400">/</span> 100% of profit will be further reinvested
-								into the foundation & ecosystem
+								<span className="text-green-400">/</span> {services.hero.feature1.description}
 							</Text>
 						</div>
 						<div className="relative z-10 border-t border-green-800 pt-4 md:col-span-1 md:row-span-1 md:row-start-4">
 							<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-								success fee terms
+								{services.hero.feature2.title}
 							</Heading>
 							<Text className="text-base sm:text-xl">
-								<span className="text-green-400">/</span> most of our services are offered on
-								success fee terms — you pay only after the result is achieved
+								<span className="text-green-400">/</span> {services.hero.feature2.description}
 							</Text>
 						</div>
 						<RedGradient className="absolute left-0 top-1/2 z-0 w-full max-w-7xl -translate-x-1/2 -translate-y-1/2" />

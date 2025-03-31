@@ -6,6 +6,8 @@ import { Container } from "@/components/atoms/Container";
 import { BenefitsForFounders } from "@/components/organisms/MatchmakingBenefitsSection/partials/BenefitsForFounders";
 import { BenefitsForInvestors } from "@/components/organisms/MatchmakingBenefitsSection/partials/BenefitsForInvestors";
 import { Heading } from "@/components/atoms/Heading";
+import { ScheduleCall } from "@/components/organisms/ScheduleCall";
+import servicesMatchmaking from "@/data/services-matchmaking.json";
 
 const tabs = [
 	{
@@ -33,7 +35,7 @@ export const MatchmakingBenefitsSection = () => {
 								className="text-sm sm:text-base"
 								onClick={() => setActiveTab(tab.id)}
 								key={tab.id}
-								variant={activeTab === tab.id ? "secondary" : "primary"}
+								variant={activeTab === tab.id ? "primary-reverse" : "primary"}
 							>
 								{tab.label}
 							</Button>
@@ -44,6 +46,20 @@ export const MatchmakingBenefitsSection = () => {
 			<div className="pb-12 md:pb-14">
 				{activeTab === 1 ? <BenefitsForFounders /> : <BenefitsForInvestors />}
 			</div>
+			<Container>
+				<ScheduleCall
+					button={{
+						url: servicesMatchmaking.benefits.schedule_call.button.url,
+						label: servicesMatchmaking.benefits.schedule_call.button.label,
+					}}
+				>
+					<p
+						dangerouslySetInnerHTML={{
+							__html: servicesMatchmaking.benefits.schedule_call.text,
+						}}
+					/>
+				</ScheduleCall>
+			</Container>
 		</section>
 	);
 };

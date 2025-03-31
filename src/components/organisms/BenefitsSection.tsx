@@ -8,7 +8,6 @@ type Props = {
 	className?: string;
 	heading?: string;
 	benefits: {
-		id: number;
 		title: string;
 		description: string;
 	}[];
@@ -26,8 +25,8 @@ export const BenefitsSection = ({ benefits, heading, className = "" }: Props) =>
 					)}
 					<div className="w-full rounded-lg bg-green-600 px-8 py-10 md:px-12 md:py-14">
 						<ul className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
-							{benefits.map(({ id, title, description }) => (
-								<li key={id} className="flex w-full items-start justify-stretch gap-3">
+							{benefits.map(({ title, description }, index) => (
+								<li key={index} className="flex w-full items-start justify-stretch gap-3">
 									<Galaxy className="relative w-7 shrink-0" />
 									<div>
 										<Heading is="h3" className="mb-1 block text-base font-bold text-gray-500">

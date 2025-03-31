@@ -1,0 +1,135 @@
+{
+	"meta_title": "Matchmaking Service | Climate Tech Connect",
+	"meta_description": "Explore our Matchmaking Service at Climate Tech Connect. Connect with the right partners to accelerate your climate technology projects.",
+	"hero": {
+		"title": "Investor—founder</br>matchmaking",
+		"description": "Identifying the perfect investor is paramount, as this relationship transcends simple capital acquisition. <b>The right investor becomes a catalyst for your startup's expansion, shapes its strategic trajectory</b>, and plays a pivotal role in determining its enduring success.</br></br>Our extensive network within the Benelux climate-tech ecosystem sets us apart -<b>we've cultivated deep connections with key stakeholders</b>, allowing us to offer unparalleled founder-investor matchmaking.</br></br>This targeted approach ensures we'll connect you with the most relevant of investors; this way every introduction will have the potential to be a game-changer for your venture, saving you time and maximizing your chances of <b>securing not just funding, but a true strategic partner.</b>",
+		"button": {
+			"label": "Schedule a call",
+			"url": "/contact-us"
+		},
+		"feature1": {
+			"title": "time saved",
+			"description": "you're connected only with potential partners that are actually highly interested in your company's profile, and you don't need to scout for them yourself."
+		},
+		"feature2": {
+			"title": "high-quality deals",
+			"description": "alignment on the most crucial aspects, all carefully collected and revised."
+		},
+		"feature3": {
+			"title": "meaningful connections",
+			"description": "connections beyond simple database matching—building real relationships for long-term & possible future opportunities. Network is your net-worth!"
+		}
+	},
+	"steps": {
+		"heading": "How it works",
+		"steps": [
+			{
+				"label": "Application & intake call",
+				"list": [
+					"startups & investors can apply through our website form, providing basic details;",
+					"we schedule an intake call to gather further data & insights."
+				]
+			},
+			{
+				"label": "Data collection",
+				"list": [
+					"we gather key information to assess compatibility— like funding stage, sector focus, investment preferences, strategic goals, etc;",
+					"all the data is securely stored in our internal database and used strictly for matchmaking purposes."
+				]
+			},
+			{
+				"label": "AI + manual matchmaking",
+				"list": [
+					"our custom AI tool scans our network and identifies potential matches based on predefined criteria;",
+					"simultaneously, our team manually assesses compatibility, ensuring a strategic fit beyond just financial metrics;",
+					"this hybrid approach helps us make introductions that are not only data-driven but also relationship-focused."
+				]
+			},
+			{
+				"label": "Match introduction & facilitation",
+				"list": [
+					"once we identify promising matches, we introduce startups to relevant investors through warm introductions;",
+					"depending on preferences, we can facilitate initial meetings or guide the conversation to ensure productive discussions;",
+					"we ensure that both parties are well-prepared for the introduction, aligning expectations and maximizing the chance of success."
+				]
+			},
+			{
+				"label": "Pitch preparation & investor readiness (optional)",
+				"list": [
+					"if needed, we help startups refine their pitch decks, investor narratives, and negotiation strategies before meetings (see Services)."
+				]
+			},
+			{
+				"label": "Follow-ups & ongoing support",
+				"list": [
+					"we check in with both investors and startups post-introduction to gather feedback and support the next steps;",
+					"if the startup progresses toward closing a deal, we can assist with negotiation, legal guidance, and term sheet;",
+					"if a match isn't the right fit, we continue the search to find a better-aligned opportunity."
+				]
+			}
+		]
+	},
+	"benefits": {
+		"heading": "What are the benefits",
+		"for_founders_tab": [
+			{
+				"title": "Strategic alignment",
+				"description": "Not all investors bring the same value. The right investor will understand your industry, provide relevant expertise, and offer strategic guidance that makes you grow. The wrong one may push for changes that don't align with your vision."
+			},
+			{
+				"title": "Favorable deal terms & control",
+				"description": "Investors have different approaches to control, governance, and exit expectations. A misaligned investor might demand too much equity, aggressive growth targets, or restrictive terms, limiting your decision-making power. The right investor aligns with your long-term vision while offering fair terms."
+			},
+			{
+				"title": "Long-term partnership",
+				"description": "Investment relationships often last years, sometimes longer even than co-founder relationships. Choosing the wrong investor can lead to misaligned expectations, conflicts, or pressure for premature exits, which can derail your company's future. And waste your time."
+			},
+			{
+				"title": "Stability & follow-on funding",
+				"description": "Some investors are one-time backers, while others provide follow-on investments in later rounds. The right investor supports your company through multiple stages, reducing the pressure to constantly fundraise from scratch."
+			},
+			{
+				"title": "Network & opportunities",
+				"description": "The right investor opens doors to potential customers, partners, co-investors, and top talent. It's more than just that one person/company. An investor with no industry connections might provide money but little else, missing out on opportunities that could move you forward."
+			},
+			{
+				"title": "Cultural & ethical fit",
+				"description": "A strong personal and cultural fit ensures smoother collaboration. If an investor doesn't align with your values or work style, it can create friction that slows down progress."
+			}
+		],
+		"for_investors_tab": [
+			{
+				"title": "Strategic fit & growth potential",
+				"description": "Not all startups are the right match. The best investments align with your sector expertise, investment thesis, and long-term strategy. Choosing the right startup means backing a team and business model you believe in—one that can scale efficiently and deliver strong returns."
+			},
+			{
+				"title": "Better risk management & due diligence",
+				"description": "By ensuring alignment from the start, you reduce the risk of investing in companies that lack the right traction, governance, or scalability potential. We provide pre-vetted startups so you can focus on opportunities that meet your expectations, saving time on due diligence."
+			},
+			{
+				"title": "Efficient deal flow & time savings",
+				"description": "Sourcing high-quality deals takes time and effort. Instead of sifting through hundreds of mismatched opportunities, our matchmaking service connects you directly with startups that fit your criteria—whether that's industry, stage, ticket size, or market focus."
+			},
+			{
+				"title": "Access to high-quality founders & innovation",
+				"description": "Investing isn't just about who needs money—it's about finding visionary founders with breakthrough ideas. We introduce you to high-potential startups in climate-tech that fit your portfolio's needs and offer scalable, impactful solutions."
+			},
+			{
+				"title": "Stronger founder-investor relationships",
+				"description": "A successful investment isn't just about capital—it's about partnership. Working with a startup that values your input and expertise leads to a more collaborative, productive relationship. The wrong match can result in misalignment, frustration, or even loss of investment."
+			},
+			{
+				"title": "A smarter, more targeted investment approach",
+				"description": "By refining your deal flow, ensuring strategic fit, and helping you build long-term relationships with the right founders, we make your investment process more efficient, focused, and rewarding."
+			}
+		],
+		"schedule_call": {
+			"text": "Are you a <b>founder looking to for a strategic partner? Or an investor looking to back a business that aligns with your goals?</b> Schedule a free call and see how we can support you.",
+			"button": {
+				"label": "Schedule a call",
+				"url": "/contact-us"
+			}
+		}
+	}
+}

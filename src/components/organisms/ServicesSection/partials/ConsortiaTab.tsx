@@ -1,21 +1,47 @@
 import { ServiceVariant } from "./ServiceVariant";
+import { ScheduleCall } from "@/components/organisms/ScheduleCall";
+import { Text } from "@/components/atoms/Text";
+import services from "@/data/services.json";
 
 export const ConsortiaTab = () => {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2">
-			<div className="rounded-lg bg-green-600">
-				<ServiceVariant
-					title="Consortia creation"
-					description="Are you a founder or investor looking to hire talent in climate tech sector? Book a free call so we can discuss the talent matchmaking possibilities for you: "
-					items={[
-						"Book a call with us, free of charge",
-						"Let us know your needs",
-						"Get matched with our curated database of top climate tech talents",
-					]}
-					link={{ label: "Read more", url: "/services/consortia-creation" }}
-					badge="success fee"
-				/>
+		<div>
+			<div className="flex flex-col gap-10">
+				<Text className="text-base/6">
+					<p
+						dangerouslySetInnerHTML={{
+							__html: services.services.consortia_creation_tab.description,
+						}}
+					/>
+				</Text>
+				<div className="grid grid-cols-1 md:grid-cols-2">
+					{services.services.consortia_creation_tab.cards.map(
+						({ title, badge, description, items, button }, index) => (
+							<div className="rounded-lg bg-green-600" key={index}>
+								<ServiceVariant
+									title={title}
+									description={description}
+									items={items}
+									link={button}
+									badge={badge}
+								/>
+							</div>
+						),
+					)}
+				</div>
 			</div>
+			<ScheduleCall
+				button={{
+					url: services.services.consortia_creation_tab.schedule_call.button.url,
+					label: services.services.consortia_creation_tab.schedule_call.button.label,
+				}}
+			>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: services.services.consortia_creation_tab.schedule_call.text,
+					}}
+				/>
+			</ScheduleCall>
 		</div>
 	);
 };

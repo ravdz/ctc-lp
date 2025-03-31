@@ -89,6 +89,16 @@
 					}
 				]
 			}
-		]
+		],
+		"linkedin": {
+			"label": "Connect",
+			"link": "https://www.linkedin.com/company/climatetechconnect/"
+		},
+		"contact_email": "contact@climatetechconnect.nl",
+		"details": {
+			"institution_name": "Stichting Climate Tech Connect",
+			"rsin_tax_number": "867725540",
+			"kvk_number": "96708700"
+		}
 	}
 }

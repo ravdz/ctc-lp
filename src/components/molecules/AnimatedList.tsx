@@ -14,7 +14,7 @@ const Item = ({ id, label }: { id: number; label: string }) => {
 	return (
 		<li key={id} className="mr-4 w-full">
 			<Text
-				className={`flex items-center justify-start gap-4 text-nowrap font-sometype-mono text-base lowercase text-gray-500`}
+				className={`flex items-center justify-start gap-4 truncate text-nowrap font-sometype-mono text-base lowercase text-gray-500`}
 			>
 				{label}
 				<span className={`inline-blocl text-base text-gray-500`}>✺</span>

@@ -1,12 +1,10 @@
 "use client";
 import { useEffect, useRef, useState, Suspense } from "react";
-
 import { useSearchParams } from "next/navigation";
 import { InvestorTab } from "./partials/InvestorTab";
 import { TalentPoolTab } from "./partials/TalentPoolTab";
 import { ConsortiaTab } from "./partials/ConsortiaTab";
 import { Container } from "@/components/atoms/Container";
-import { Heading } from "@/components/atoms/Heading";
 import Loading from "@/app/loading";
 import { TabList } from "@/components/molecules/TabList";
 const tabs = [
@@ -43,21 +41,14 @@ export const ServicesSection = () => {
 		<Suspense fallback={<Loading />}>
 			<section ref={servicesSectionRef} id="services">
 				<Container className="py-10">
-					<div>
-						<div className="mb-10">
-							<Heading is="h2" className="mb-7">
-								Services
-							</Heading>
-							<TabList tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
-						</div>
-						{activeTab === 1 ? (
-							<InvestorTab />
-						) : activeTab === 2 ? (
-							<TalentPoolTab />
-						) : (
-							<ConsortiaTab />
-						)}
-					</div>
+					<TabList tabs={tabs} className="mb-10" activeTab={activeTab} onTabChange={setActiveTab} />
+					{activeTab === 1 ? (
+						<InvestorTab />
+					) : activeTab === 2 ? (
+						<TalentPoolTab />
+					) : (
+						<ConsortiaTab />
+					)}
 				</Container>
 			</section>
 		</Suspense>

@@ -2,7 +2,23 @@
 	"meta_title": "Community | Climate Tech Connect",
 	"meta_description": "Discover the vibrant community at Climate Tech Connect. Connect with like-minded individuals, participate in events, and join our mission to innovate in climate technology.",
 	"hero": {
-		"title": "The power of niche appeal"
+		"title": "The power of niche appeal",
+		"feature1": {
+			"title": "strategic introductions",
+			"description": "get introductions with strategic partners carefully matched with your current needs"
+		},
+		"feature2": {
+			"title": "curated experiences",
+			"description": "join exclusive events with top speakers & only the most relevant topics, crafted for the specific target group"
+		},
+		"feature3": {
+			"title": "collective wisdom",
+			"description": "leverage on the community's collective knowledge & support, get invaluable insight of each others' experiences & challenges"
+		},
+		"feature4": {
+			"title": "expert access & advisory",
+			"description": "get easy connections with subject-matter experts on the most burning topics"
+		}
 	},
 	"content": {
 		"block1": {
@@ -30,6 +46,117 @@
 	},
 	"pricing": {
 		"title": "Membership options",
+		"for_founders_and_investors_tab": {
+			"options": [
+				{
+					"title": "Free Member",
+					"subtitle": "(founder only)",
+					"price": "€ 0,-",
+					"button": {
+						"url": "/membership",
+						"label": "Fill out form"
+					}
+				},
+				{
+					"title": "Paid Member",
+					"subtitle": "(founder or C-level only)",
+					"price": "€ 950,- annually",
+					"button": {
+						"url": "/membership",
+						"label": "Fill out form"
+					}
+				},
+				{
+					"title": "Late Stage Member",
+					"subtitle": "(>1 million rev)",
+					"price": "€ 1295,- annually",
+					"button": {
+						"url": "/membership",
+						"label": "Fill out form"
+					}
+				}
+			],
+			"features": [
+				{
+					"name": "Advisory programs",
+					"options": [
+						{ "name": "Only after attending the first event" },
+						{ "name": "Full" },
+						{ "name": "Full" }
+					]
+				},
+				{
+					"name": "Access to events",
+					"options": [{ "name": "1 per year" }, { "name": "All" }, { "name": "All" }]
+				},
+				{
+					"name": "Invitation to consortia",
+					"options": [{ "name": "Yes" }, { "name": "Yes" }, { "name": "Yes" }]
+				},
+				{
+					"name": "Educational resources",
+					"options": [{ "name": "Yes" }, { "name": "Yes" }, { "name": "Yes" }]
+				},
+				{
+					"name": "Benchmarking",
+					"options": [{ "name": "No" }, { "name": "Yes" }, { "name": "Yes" }]
+				},
+				{
+					"name": "Member content",
+					"description": "(Legal, AI, GTM, etc.)",
+					"options": [
+						{ "name": "No" },
+						{
+							"name": "Yes",
+							"description": "(incl. access to free consultation hours by the experts)"
+						},
+						{
+							"name": "Yes",
+							"description": "(incl. access to free consultation hours by the experts)"
+						}
+					]
+				},
+				{
+					"name": "Investor ready",
+					"options": [
+						{ "name": "No" },
+						{
+							"name": "Yes",
+							"description": "(fee applies)"
+						},
+						{
+							"name": "Yes",
+							"description": "(fee applies)"
+						}
+					]
+				},
+				{
+					"name": "Investor matchmaking",
+					"options": [
+						{ "name": "No" },
+						{ "name": "Yes", "description": "(success fee applies)" },
+						{ "name": "Yes", "description": "(success fee applies)" }
+					]
+				},
+				{
+					"name": "Deal closing",
+					"options": [
+						{ "name": "No" },
+						{ "name": "Yes", "description": "(custom discounted fees apply)" },
+						{ "name": "Yes", "description": "(custom discounted fees apply)" }
+					]
+				},
+				{
+					"name": "Exposure",
+					"options": [{ "name": "No" }, { "name": "No" }, { "name": "No" }]
+				},
+				{
+					"name": "Late Stage Peer Coaching Circle",
+					"description": "(monthly meetup, groups 6-12)",
+					"options": [{ "name": "No" }, { "name": "No" }, { "name": "Yes" }]
+				}
+			]
+		},
 		"for_sponsors_tab": {
 			"card1": {
 				"card_title": "Annual CTC sponsorship",
@@ -56,13 +183,13 @@
 					"price": "€ 4-40K",
 					"additional_info": "*conditions vary per event; schedule a call with us to access complete benefits list per event.",
 					"benefits": [
-						"Council invitation, every 6 months",
+						"Visibility on the events, branded stands",
+						"Keynote speaking slot",
+						"Complimentary tickets to other events",
+						"Media exposure",
 						"Access to network & community database",
-						"Speaker delegation to the events",
-						"Visibility on the events",
-						"Visibility on the website",
-						"Complimentary tickets to all of our events",
-						"No active involvement required"
+						"Social media presence",
+						"Other benefits per event"
 					]
 				}
 			}

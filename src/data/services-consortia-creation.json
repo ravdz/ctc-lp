@@ -1,0 +1,94 @@
+{
+	"meta_title": "Consortia Creation Service | Climate Tech Connect",
+	"meta_description": "Learn about our Consortia Creation Service at Climate Tech Connect. Collaborate with industry leaders to drive innovation in climate technology.",
+
+	"hero": {
+		"title": "Consortia creation",
+		"description": "Forming successful consortia often fails due to misaligned goals, fragmented communication, or mismatched expertise—even among capable organizations. We solve this by acting as the neutral coordinator, <b>bridging gaps between partners while streamlining the entire process</b>, from opportunity identification to proposal success.",
+		"button": {
+			"label": "Schedule a call",
+			"url": "/contact-us"
+		},
+		"feature1": {
+			"title": "strategic alignment",
+			"description": "matching partners based on complementary strengths"
+		},
+		"feature2": {
+			"title": "high-potential opportunities",
+			"description": "we proactively identifies high-potential funding opportunities"
+		},
+		"feature3": {
+			"title": "trusted intermediary",
+			"description": "as a non-profit, we act as intermediary, resolving power dynamics & managing timelines"
+		}
+	},
+	"steps": {
+		"heading": "How it works",
+		"steps": [
+			{
+				"label": "Discovery call",
+				"list": [
+					"we learn about your organization's expertise, goals, and ideal partners;",
+					"identify “non-negotiables” (e.g., geographic focus, ethical boundaries)."
+				]
+			},
+			{
+				"label": "Opportunity mapping",
+				"list": [
+					"we scan global grants, tenders, and calls aligned with your capabilities;",
+					"shortlist 2-3 high-impact opportunities with clear timelines."
+				]
+			},
+			{
+				"label": "Partner curation",
+				"list": [
+					"we use our network to pre-vet and match organizations that fill gaps in your consortium (e.g., technical expertise, regional presence);",
+					"we facilitate introductory workshops to align visions and roles."
+				]
+			},
+			{
+				"label": "Proposal co-creation",
+				"list": [
+					"we provide templates, workflows, and milestone tracking;",
+					"we draft narratives that highlight collective impact."
+				]
+			},
+			{
+				"label": "Submission & follow-up",
+				"list": [
+					"we finalize compliance checks and submit proposals;",
+					"debrief with partners post-deadline—win or lose—to refine future collaborations;",
+					"(optionally) we assist with consortium management, reporting, and stakeholder communication."
+				]
+			}
+		]
+	},
+	"benefits": {
+		"heading": "What are the benefits",
+		"content": [
+			{
+				"title": "Precision partner matching",
+				"description": "We identify and connect organizations with complementary strengths, ensuring your consortium combines expertise, resources, and geographic reach in ways that stand out to funders."
+			},
+			{
+				"title": "Neutral conflict resolution",
+				"description": "As an impartial coordinator, we mediate power imbalances, align competing priorities, and streamline decision-making—keeping the focus on collective success, not internal politics."
+			},
+			{
+				"title": "Proactive opportunity discovery",
+				"description": "Our team continuously scans global grants and tenders, filtering out noise to deliver only the most relevant, high-impact opportunities aligned with your mission."
+			},
+			{
+				"title": "End-to-end efficiency",
+				"description": "From proposal drafting to post-award governance, we handle the logistical heavy lifting, saving partners hundreds of hours while maximizing funding success rates."
+			}
+		]
+	},
+	"schedule_call": {
+		"text": "Are you a <b>founder looking to for a strategic partner</b>? Or an investor looking toback a business that aligns with your goals? Schedule a free call and see how we can support you.",
+		"button": {
+			"label": "Schedule a call",
+			"url": "/contact-us"
+		}
+	}
+}

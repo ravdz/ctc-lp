@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/atoms/Container";
 import { Heading } from "@/components/atoms/Heading";
 
@@ -10,6 +11,7 @@ type Props = {
 		alt?: string;
 		width: number;
 		height: number;
+		href: string;
 	}[];
 };
 
@@ -22,9 +24,11 @@ export const LogosSection = ({ heading, logos }: Props) => {
 						{heading}
 					</Heading>
 					<ul className="flex flex-wrap items-center justify-around gap-12 sm:justify-between">
-						{logos.map(({ id, src, alt = "", width, height }) => (
+						{logos.map(({ id, src, alt = "", width, height, href }) => (
 							<li key={id}>
-								<Image src={src} alt={alt} width={width} height={height} />
+								<Link href={href} target="_blank" className="transition-opacity hover:opacity-70">
+									<Image src={src} alt={alt} width={width} height={height} />
+								</Link>
 							</li>
 						))}
 					</ul>

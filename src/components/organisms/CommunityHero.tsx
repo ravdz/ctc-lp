@@ -4,6 +4,7 @@ import { Text } from "@/components/atoms/Text";
 import { AnimatedSerpent } from "@/components/atoms/AnimatedSerpent";
 import { RedGradient } from "@/svg/RedGradient";
 import { Sparkle } from "@/svg/Sparkle";
+import community from "@/data/community.json";
 
 export const CommunityHero = () => {
 	return (
@@ -12,7 +13,7 @@ export const CommunityHero = () => {
 				<header className="relative grid grid-cols-1 items-start gap-16 md:grid-cols-2 md:gap-0 md:gap-y-3">
 					<div className="relative z-10 md:row-span-1">
 						<Heading className="text-5xl/[4rem] font-extralight tracking-3 md:text-6xl/[5rem] lg:text-7xl/[7rem]">
-							The power of niche appeal
+							{community.hero.title}
 						</Heading>
 						<Sparkle className="absolute bottom-full left-full w-16 stroke-green-600" />
 					</div>
@@ -20,41 +21,36 @@ export const CommunityHero = () => {
 						<div className="grid grid-cols-2 gap-14 border-t border-green-800 pt-8">
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									strategic introductions
+									{community.hero.feature1.title}
 								</Heading>
 								<Text className="text-base">
-									<span className="text-green-400">/</span> get introductions with strategic
-									partners carefully matched with your current needs
+									<span className="text-green-400">/</span> {community.hero.feature1.description}
 								</Text>
 							</div>
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									curated experiences
+									{community.hero.feature2.title}
 								</Heading>
 								<Text className="text-base">
-									<span className="text-green-400">/</span> join exclusive events with top speakers
-									& only the most relevant topics, crafted for the specific target group
+									<span className="text-green-400">/</span> {community.hero.feature2.description}
 								</Text>
 							</div>
 						</div>
 						<div className="grid grid-cols-2 gap-14 border-t border-green-800 pt-8">
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									collective wisdom
+									{community.hero.feature3.title}
 								</Heading>
 								<Text className="text-base">
-									<span className="text-green-400">/</span> leverage on the community&apos;s
-									collective knowledge & support, get invaluable insight of each others&apos;
-									experiences & challenges
+									<span className="text-green-400">/</span> {community.hero.feature3.description}
 								</Text>
 							</div>
 							<div>
 								<Heading is="h2" className="mb-4 text-xl sm:text-3xl md:text-2xl lg:text-3xl">
-									expert access & advisory
+									{community.hero.feature4.title}
 								</Heading>
 								<Text className="text-base">
-									<span className="text-green-400">/</span> get easy connections with subject-matter
-									experts on the most burning topics
+									<span className="text-green-400">/</span> {community.hero.feature4.description}
 								</Text>
 							</div>
 						</div>

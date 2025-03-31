@@ -1,67 +1,49 @@
 import { ServiceVariant } from "@/components/organisms/ServicesSection/partials/ServiceVariant";
 import { Cards } from "@/components/organisms/Cards";
+import { Text } from "@/components/atoms/Text";
+import { ScheduleCall } from "@/components/organisms/ScheduleCall";
+import services from "@/data/services.json";
 
-const cards = [
-	{
-		id: 1,
-		title: "Investor matchmaking",
+const cards = services.services.investors_ready_tab.cards.map(
+	({ closed_card_title, title, description, badge, items, button }, index) => ({
+		id: index + 1,
+		title: closed_card_title,
 		content: (
 			<ServiceVariant
-				title="Investor matchmaking"
-				badge="success fee"
-				description="Leveraging our extensive network of leading impact investors in the Benelux-including venture capitalists, angel investors, and funding partners-we connect you with the right investors for your business. Through a combination of AI-driven insights and expert matchmaking, we ensure tailored introductions to the most relevant partners who align with your vision and growth stage."
-				items={[
-					"AI & manual investor-founder matchmaking",
-					"quality introductions",
-					"unlocking capital",
-				]}
-				link={{
-					label: "Read more",
-					url: "/services/matchmaking",
-				}}
+				title={title}
+				badge={badge}
+				className={badge === "paid service" ? "[&>div>div>span]:mt-0" : ""}
+				description={description}
+				items={items}
+				link={button}
 			/>
 		),
-	},
-	{
-		id: 2,
-		title: "Pitchdeck creation & training",
-		content: (
-			<ServiceVariant
-				className="[&>div>div>span]:mt-0"
-				title="Pitchdeck creation"
-				badge="paid service"
-				description="A compelling pitch deck and delivery are essential, non-negotiable elements of successful fundraising-yet many founders struggle to get them right. With deep expertise in investor psychology, we help you craft and design a powerful narrative that captures attention and secures funding."
-				items={[
-					"strategic pitch delivery",
-					"high-impact narrative",
-					"engaging storytelling",
-					"sleek design",
-				]}
-				link={{
-					label: "Read more",
-					url: "/services/pitchdeck-creation",
-				}}
-			/>
-		),
-	},
-	{
-		id: 3,
-		title: "Deal closing",
-		content: (
-			<ServiceVariant
-				title="Deal closing"
-				badge="success fee"
-				description="Negotiating and closing a deal is a complex process that involves legal intricacies, strategic decision-making, and high-stakes negotiations-challenges that often overwhelm startups and scale-ups. We provide expert guidance to help you secure the best possible terms and close deals with confidence."
-				items={["securing capital", "cap table management", "psychological & tactital positioning"]}
-				link={{
-					label: "Read more",
-					url: "/services/deal-closing",
-				}}
-			/>
-		),
-	},
-];
+	}),
+);
 
 export const InvestorTab = () => {
-	return <Cards cards={cards} />;
+	return (
+		<div>
+			<div className="flex flex-col gap-10">
+				<Text className="text-base/6">
+					<p
+						dangerouslySetInnerHTML={{ __html: services.services.investors_ready_tab.description }}
+					/>
+				</Text>
+				<Cards cards={cards} />
+			</div>
+			<ScheduleCall
+				button={{
+					url: services.services.investors_ready_tab.schedule_call.button.url,
+					label: services.services.investors_ready_tab.schedule_call.button.label,
+				}}
+			>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: services.services.investors_ready_tab.schedule_call.text,
+					}}
+				/>
+			</ScheduleCall>
+		</div>
+	);
 };

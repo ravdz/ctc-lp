@@ -3,6 +3,133 @@
 	"meta_description": "Explore the range of services offered by Climate Tech Connect. From consortia creation to deal closing, we support your climate technology initiatives.",
 	"hero": {
 		"title": "Services",
-		"description": "Beyond our membership and sponsorship options, we offer a range of <b>paid services designed specifically to support founders.</b> While these services are available to everyone, members may receive exclusive discounts.</br></br> By working closely with startups and investors, <b>we've identified the biggest challenges in the ecosystem and crafted solutions to target & bridge those gaps</b>—helping founders navigate obstacles and achieve their goals faster.</br></br> Acting as a <b>strategic connector</b>, we leverage our widespread network & direct access to key industry players to create opportunities for growth."
+		"description": "Beyond our membership and sponsorship options, we offer a range of <b>paid services designed specifically to support founders.</b> While these services are available to everyone, members may receive exclusive discounts.</br></br> By working closely with startups and investors, <b>we've identified the biggest challenges in the ecosystem and crafted solutions to target & bridge those gaps</b>—helping founders navigate obstacles and achieve their goals faster.</br></br> Acting as a <b>strategic connector</b>, we leverage our widespread network & direct access to key industry players to create opportunities for growth.",
+		"feature1": {
+			"title": "all profits reinvested",
+			"description": "100% of profit will be further reinvested into the foundation & ecosystem"
+		},
+		"feature2": {
+			"title": "success fee terms",
+			"description": "most of our services are offered on success fee terms — you pay only after the result is achieved"
+		}
+	},
+	"services": {
+		"investors_ready_tab": {
+			"description": "With Investor Ready service we prepare startups for successful fundraising through hands-on pitchdeck refinement, pitch delivery training & facilitating high-quality AI & manual investor matchmaking. From initial introductions to deal closing and legal support, <b>we help founders navigate the fundraising process.</b>",
+			"cards": [
+				{
+					"closed_card_title": "Investor matchmaking",
+					"title": "Investor matchmaking",
+					"badge": "success fee",
+					"description": "Leveraging our extensive network of leading impact investors in the Benelux-including venture capitalists, angel investors, and funding partners-we connect you with the right investors for your business. Through a combination of AI-driven insights and expert matchmaking, we ensure tailored introductions to the most relevant partners who align with your vision and growth stage.",
+					"items": [
+						"AI & manual investor-founder matchmaking",
+						"quality introductions",
+						"unlocking capital"
+					],
+					"button": {
+						"label": "Read more",
+						"url": "/services/matchmaking"
+					}
+				},
+				{
+					"closed_card_title": "Pitchdeck creation & training",
+					"title": "Pitchdeck creation",
+					"badge": "paid service",
+					"description": "A compelling pitch deck and delivery are essential, non-negotiable elements of successful fundraising-yet many founders struggle to get them right. With deep expertise in investor psychology, we help you craft and design a powerful narrative that captures attention and secures funding.",
+					"items": [
+						"strategic pitch delivery",
+						"high-impact narrative",
+						"engaging storytelling",
+						"sleek design"
+					],
+					"button": {
+						"label": "Read more",
+						"url": "/services/pitchdeck-creation"
+					}
+				},
+				{
+					"closed_card_title": "Deal closing",
+					"title": "Deal closing",
+					"badge": "success fee",
+					"description": "Negotiating and closing a deal is a complex process that involves legal intricacies, strategic decision-making, and high-stakes negotiations-challenges that often overwhelm startups and scale-ups. We provide expert guidance to help you secure the best possible terms and close deals with confidence.",
+					"items": [
+						"securing capital",
+						"cap table management",
+						"psychological & tactital positioning"
+					],
+					"button": {
+						"label": "Read more",
+						"url": "/services/deal-closing"
+					}
+				}
+			],
+			"schedule_call": {
+				"text": "Are you a <b>founder looking to successfully pitch & fundraise?</b> Schedule a free call and see how we can support you.",
+				"button": {
+					"label": "Schedule a call",
+					"url": "/contact-us"
+				}
+			}
+		},
+		"talent_pool_tab": {
+			"description": "The Talent Pool is an exclusive database connecting top professionals with climate-tech startups, scale-ups, and investors seeking the right talent. Our <b>widespread network & deep understanding of the ecosystem allows us to facilitate finding the best possible matches</b> between talent and climate-tech companies. We ensure high quality of the matches by carefully evaluating each application.",
+			"cards": [
+				{
+					"title": "Looking for <b>a role</b>",
+					"badge": "free for candidates",
+					"description": "Are you looking for a role in climate tech sector? Fill out a simple form, you'll be added to our database & matched with a relevant employer:",
+					"steps": [
+						"Fill out a simple form",
+						"We assess your inquiry & add your profile to our database",
+						"You'll be matched with the employer (founder or investors) from the community & get the most relevant offers (free of charge)"
+					],
+					"button": {
+						"label": "Fill out form ",
+						"url": "/talent-pool"
+					}
+				},
+				{
+					"title": "Looking for <b>talent</b>",
+					"badge": "success fee",
+					"description": "Are you a founder or investor looking to hire talent in climate tech sector? Book a free call so we can discuss the talent matchmaking possibilities for you:",
+					"steps": [
+						"Book a call with us, free of charge",
+						"Let us know your needs",
+						"Get matched with our curated database of top climate tech talents"
+					],
+					"button": {
+						"label": "Book a call",
+						"url": "/contact-us"
+					}
+				}
+			]
+		},
+		"consortia_creation_tab": {
+			"description": "Through consortia creation service we want to help startups access larger funding opportunities by forming partnerships & getting access to grants and tenders. <b>Our part is the often missed coordinating role</b>—starting with identifying relevant programs, matching companies with the right partners, and supporting the entire application process.",
+			"cards": [
+				{
+					"title": "Consortia creation",
+					"badge": "success fee",
+					"description": "Are you a founder or investor looking to hire talent in climate tech sector? Book a free call so we can discuss the talent matchmaking possibilities for you:",
+					"items": [
+						"Book a call with us, free of charge",
+						"Let us know your needs",
+						"Get matched with our curated database of top climate tech talents"
+					],
+					"button": {
+						"label": "Read more",
+						"url": "/services/consortia-creation"
+					}
+				}
+			],
+			"schedule_call": {
+				"text": "Are you a <b>founder looking to form a consortia?</b> Schedule a free call and see how we can support you.",
+				"button": {
+					"label": "Schedule a call",
+					"url": "/contact-us"
+				}
+			}
+		}
 	}
 }

@@ -3,27 +3,27 @@ import { Heading } from "@/components/atoms/Heading";
 import { Text } from "@/components/atoms/Text";
 import { Badge } from "@/svg/Badge";
 import { Star } from "@/svg/Star";
+import services from "@/data/services.json";
 
 type Item = {
-	id: number;
-	title: React.ReactNode;
+	title: string;
 	badge: string;
 	description: string;
 	steps: string[];
-	link: {
+	button: {
 		label: string;
 		url: string;
 	};
 };
 
 const FeatureItem = ({ item }: { item: Item }) => {
-	const { title, description, steps, link, badge } = item;
+	const { title, description, steps, badge, button } = item;
 	return (
 		<div className="flex w-full max-w-100 flex-col justify-between gap-6 rounded-lg bg-green-600 p-5 pt-20">
 			<div className="flex flex-col gap-6">
 				<div className="relative w-full pr-24">
 					<Heading is="h3" className="text-3xl font-normal tracking-wide">
-						{title}
+						<span dangerouslySetInnerHTML={{ __html: title }} />
 					</Heading>
 					<div className="absolute bottom-1/2 right-0 flex h-20 w-20 items-center justify-center">
 						<Badge className="absolute left-0 top-0 h-full" />
@@ -46,71 +46,22 @@ const FeatureItem = ({ item }: { item: Item }) => {
 					))}
 				</ul>
 			</div>
-			<Button href={link.url} hasArrow className="w-fit self-end" variant="secondary">
-				{link.label}
+			<Button href={button.url} hasArrow className="w-fit self-end" variant="secondary">
+				{button.label}
 			</Button>
 		</div>
 	);
 };
 
-const items: Item[] = [
-	{
-		id: 1,
-		title: (
-			<>
-				Looking for <b>a role</b>
-			</>
-		),
-		badge: "free for candidates",
-		description:
-			"Are you looking for a role in climate tech sector? Fill out a simple form, you'll be added to our database & matched with a relevant employer:",
-		steps: [
-			"Fill out a simple form",
-			"We assess your inquiry & add your profile to our database",
-			"You'll be matched with the employer (founder or investors) from the community & get the most relevant offers (free of charge)",
-		],
-		link: {
-			label: "Fill out form",
-			url: "/talent-pool",
-		},
-	},
-	{
-		id: 2,
-		title: (
-			<>
-				Looking for <b>talent</b>
-			</>
-		),
-		badge: "success fee",
-		description:
-			"Are you a founder or investor looking to hire talent in climate tech sector? Book a free call so we can discuss the talent matchmaking possibilities for you: ",
-		steps: [
-			"Book a call with us, free of charge",
-			"Let us know your needs",
-			"Get matched with our curated database of top climate tech talents",
-		],
-		link: {
-			label: "Book a call",
-			url: "/contact-us",
-		},
-	},
-];
 export const TalentPoolTab = () => {
 	return (
 		<div className="flex flex-col gap-10">
 			<Text className="text-base/6">
-				The Talent Pool is an exclusive database connecting top professionals with climate-tech
-				startups, scale-ups, and investors seeking the right talent. Our{" "}
-				<b>
-					widespread network & deep understanding of the ecosystem allows us to facilitate finding
-					the best possible matches
-				</b>
-				between talent and climate-tech companies. We ensure high quality of the matches by
-				carefully evaluating each application.
+				<p dangerouslySetInnerHTML={{ __html: services.services.talent_pool_tab.description }} />
 			</Text>
 			<div className="flex flex-col items-stretch justify-start gap-5 md:flex-row md:items-stretch md:justify-start">
-				{items.map((item) => (
-					<FeatureItem key={item.id} item={item} />
+				{services.services.talent_pool_tab.cards.map((item, index) => (
+					<FeatureItem key={index} item={item} />
 				))}
 			</div>
 		</div>
